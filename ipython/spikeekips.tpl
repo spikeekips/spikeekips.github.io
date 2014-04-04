@@ -126,7 +126,7 @@ footer pre
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
   <header>
-    <a href='http://spikeekips.github.io/'><h2>Spike^ekipS</h2></a> work for me
+    <a href='/'><h2>Spike^ekipS</h2></a> work for me
   </header>
 {{ super() }}
 
@@ -155,7 +155,7 @@ footer pre
 <!-- END: Livefyre Embed -->
 
   <footer>
-  <pre><a href='http://spikeekips.github.io/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
+  <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
   </footer>
     </div>
   </div>
