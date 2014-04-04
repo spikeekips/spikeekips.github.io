@@ -133,7 +133,7 @@ footer pre
 <script src="//apis.google.com/js/plusone.js?callback=gpcb">
 </script>
 <div class="g-comments"
-    data-href="http://spikeekips.github.io"
+    data-href="http://spikeekips.github.io/post/"
     data-first_party_property="BLOGGER" 
     data-view_type="">
 </div>
