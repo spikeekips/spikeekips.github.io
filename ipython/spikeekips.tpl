@@ -109,6 +109,19 @@ footer pre
 }
 </style>
 
+</head>
+{%- endblock header -%}
+
+{% block body %}
+<body>
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+  <header>
+    <a href='http://spikeekips.github.io/'><h2>Spike^ekipS</h2></a> work for me
+  </header>
+{{ super() }}
+
+
 <!-- START: Livefyre Embed -->
 <div id="livefyre-comments"></div>
 <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
@@ -132,17 +145,7 @@ footer pre
 
 
 
-</head>
-{%- endblock header -%}
 
-{% block body %}
-<body>
-  <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
-  <header>
-    <a href='http://spikeekips.github.io/'><h2>Spike^ekipS</h2></a> work for me
-  </header>
-{{ super() }}
   <footer>
   <pre><a href='http://spikeekips.github.io/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
   </footer>
