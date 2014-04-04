@@ -134,7 +134,7 @@ footer pre
 </script>
 <div class="g-comments"
     data-href="http://spikeekips.github.io"
-    data-first_party_property="github"
+    data-first_party_property="BLOGGER" 
     data-view_type="">
 </div>
 
