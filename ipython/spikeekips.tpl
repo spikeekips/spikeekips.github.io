@@ -47,9 +47,6 @@ div#notebook {
 }
 </style>
 
-<!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
-
 <!-- Loading mathjax macro -->
 {{ mathjax() }}
 
@@ -93,7 +90,7 @@ div.prompt
     overflow: auto !important;
 }
 
-div.comment
+#comment
 {
     border-style: solid;
     border-color: #d0d0d0;
