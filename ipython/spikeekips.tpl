@@ -93,6 +93,14 @@ div.prompt
     overflow: auto !important;
 }
 
+div.comment
+{
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-width: 1px 0 0 0;
+    margin-top: 1em;
+}
+
 footer
 {
     font-family: monospace;
@@ -102,6 +110,7 @@ footer
     border-width: 1px 0 0 0;
     margin-top: 1em;
 }
+
 footer pre
 {
     border: 0;
@@ -123,7 +132,9 @@ footer pre
 
 
 <!-- START: Livefyre Embed -->
+<div id='comment'>
 <div id="livefyre-comments"></div>
+</div>
 <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
 <script type="text/javascript">
 (function () {
@@ -143,10 +154,6 @@ footer pre
 </script>
 <!-- END: Livefyre Embed -->
 
-
-
-
-  <footer>
   <pre><a href='http://spikeekips.github.io/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
   </footer>
     </div>
