@@ -96,15 +96,18 @@ div.prompt
     border-color: #d0d0d0;
     border-width: 1px 0 0 0;
     margin: 1em 0;
+    padding: 1em 0;
 }
 
 footer
 {
     font-family: monospace;
     text-align: right;
+    /*
     border-style: solid;
     border-color: #d0d0d0;
     border-width: 1px 0 0 0;
+    */
     margin-top: 1em;
 }
 
