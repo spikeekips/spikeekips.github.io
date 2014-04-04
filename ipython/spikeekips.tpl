@@ -130,14 +130,29 @@ footer pre
   </header>
 {{ super() }}
 
-<script src="//apis.google.com/js/plusone.js?callback=gpcb">
-</script>
-<div class="g-comments"
-    data-href="http://spikeekips.github.io/post/"
-    data-first_party_property="BLOGGER" 
-    data-view_type="">
-</div>
 
+<!-- START: Livefyre Embed -->
+<div id='comment'>
+<div id="livefyre-comments"></div>
+</div>
+<script type="text/javascript" src="//zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+<script type="text/javascript">
+(function () {
+    var articleId = fyre.conv.load.makeArticleId(null);
+    fyre.conv.load({}, [{
+        el: 'livefyre-comments',
+        network: "livefyre.com",
+        siteId: "356593",
+        articleId: articleId,
+        signed: false,
+        collectionMeta: {
+            articleId: articleId,
+            url: fyre.conv.load.makeCollectionUrl(),
+        }
+    }], function() {});
+}());
+</script>
+<!-- END: Livefyre Embed -->
 
   <footer>
   <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
