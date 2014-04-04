@@ -130,7 +130,7 @@ footer pre
   </header>
 {{ super() }}
 
-<script src="https://apis.google.com/js/plusone.js">
+<script src="//apis.google.com/js/plusone.js">
 </script>
 <div class="g-comments"
     data-href="[URL]"
