@@ -68,7 +68,7 @@ for i in glob.glob('notebook/*.ipynb') :
         _b = _bf.find('div', {'class': 'g-comments', }, )
         _url = urllib.basejoin('http://spikeekips.github.io/', _target, )
         _b['data-href'] = _url
-        f.write(_bf.prettify(formatter=None, ).encode('utf-8'), )
+        f.write(str(_bf), )
 
     _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0][1], _target, _url, ), )
 

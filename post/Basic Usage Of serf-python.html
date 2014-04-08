@@ -1,17 +1,14 @@
 <!DOCTYPE html>
+
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <title>
-   Basic Usage Of serf-python
-  </title>
-  <link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js">
-  </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
-  </script>
-  <style type="text/css">
-   .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
+<head>
+<meta charset="utf-8"/>
+<title>Basic Usage Of serf-python</title>
+<link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<style type="text/css">
+    .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
 .clearfix:after{clear:both}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -1547,9 +1544,10 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .ipython_tooltip .tooltiptext pre{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-size:100%;background-color:#f7f7f7}
 .pretooltiparrow{left:0;margin:0;top:-16px;width:40px;height:16px;overflow:hidden;position:absolute}
 .pretooltiparrow:before{background-color:#f7f7f7;border:1px #ababab solid;z-index:11;content:"";position:absolute;left:15px;top:10px;width:25px;height:25px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg)}
-  </style>
-  <style type="text/css">
-   .highlight .hll { background-color: #ffffcc }
+
+    </style>
+<style type="text/css">
+    .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -1611,9 +1609,9 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-  </style>
-  <style type="text/css">
-   /* Overrides of notebook CSS for static HTML export */
+    </style>
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
   padding: 8px;
@@ -1638,14 +1636,13 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
-  </style>
-  <!-- Loading mathjax macro -->
-  <!-- Load mathjax -->
-  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-  </script>
-  <!-- MathJax configuration -->
-  <script type="text/x-mathjax-config">
-   MathJax.Hub.Config({
+</style>
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!-- MathJax configuration -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
             displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
@@ -1660,11 +1657,12 @@ div#notebook {
             linebreaks: { automatic: true }
         }
     });
-  </script>
-  <!-- End of mathjax configuration -->
-  <link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css">
-   <style type="text/css">
-    body
+    </script>
+<!-- End of mathjax configuration -->
+<link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+body
 {
     font-family: Ubuntu, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
@@ -1726,143 +1724,87 @@ footer pre
     border: 0;
     background-color: inherit;
 }
-   </style>
-  </link>
- </head>
- <body>
-  <div class="border-box-sizing" id="notebook" tabindex="-1">
-   <div class="container" id="notebook-container">
-    <header>
-     <a href="/">
-      <h2>
-       By Spike ekipS
-      </h2>
-     </a>
-     work for me
-    </header>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h1 id="Basic-Usage-Of-serf-python">
-        Basic Usage Of serf-python
-        <a class="anchor-link" href="#Basic-Usage-Of-serf-python">
-         ¶
-        </a>
-       </h1>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [2]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="k">print</span> <span class="s">'Written at'</span><span class="p">,</span>
+
+</style>
+</link></head>
+<body>
+<div class="border-box-sizing" id="notebook" tabindex="-1">
+<div class="container" id="notebook-container">
+<header>
+<a href="/"><h2>By Spike ekipS</h2></a> work for me
+  </header>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Basic-Usage-Of-serf-python">Basic Usage Of serf-python<a class="anchor-link" href="#Basic-Usage-Of-serf-python">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [2]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">'Written at'</span><span class="p">,</span>
 <span class="o">!</span>date
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_subarea output_stream output_stdout output_text">
-         <pre>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
 Written atTue Apr  8 20:09:18 KST 2014
 
 
 </pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <p>
-        Recently I found some interesting project, that is
-        <a href="http://www.serfdom.io/">
-         serf
-        </a>
-        http://www.serfdom.io/. They explains,
-       </p>
-       <blockquote>
-        <p>
-         Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.
-        </p>
-       </blockquote>
-       <p>
-        For several years, I am trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.
-       </p>
-       <p>
-        In fact, serf is still in development and has the critical limitations,
-       </p>
-       <ul>
-        <li>
-         in serf you can not send or broadcast the messages, which is bigger than about 1024 bytes. To overcome this problems, you will be obliged to use the shared storage.
-        </li>
-        <li>
-         You can not find the mature client libraries for your languages. Until now, only python libraries available, the
-         <a href="https://github.com/KushalP/serfclient-py">
-          serfclient-py
-         </a>
-         and
-         <a href="https://github.com/spikeekips/serf-python">
-          serf-python
-         </a>
-         .
-        </li>
-       </ul>
-       <p>
-        To use serf in my python-based application, I wrote simple client library, written in python, that is
-        <a href="https://github.com/spikeekips/serf-python">
-         serf-python
-        </a>
-        .
-       </p>
-       <p>
-        In this post, I will show you how the serf works and how to use
-        <code>
-         serf-python
-        </code>
-        .
-       </p>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <p id="###..-will-be-continued.">
-        ###.. will be continued.
-        <a class="anchor-link" href="####..-will-be-continued.">
-         ¶
-        </a>
-       </p>
-      </div>
-     </div>
-    </div>
-    <script src="https://apis.google.com/js/plusone.js">
-    </script>
-    <div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html">
-    </div>
-    <footer>
-     <pre><a href="/">Home</a> / Written By <a href="http://github.com/spikeekips">Spike^ekipS</a> | <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a></pre>
-    </footer>
-   </div>
-  </div>
- </body>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Recently I found some interesting project, that is <a href="http://www.serfdom.io/">serf</a> http://www.serfdom.io/. They explains,</p>
+<blockquote>
+<p>Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.</p>
+</blockquote>
+<p>For several years, I am trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.</p>
+<p>In fact, serf is still in development and has the critical limitations,</p>
+<ul>
+<li>in serf you can not send or broadcast the messages, which is bigger than about 1024 bytes. To overcome this problems, you will be obliged to use the shared storage.</li>
+<li>You can not find the mature client libraries for your languages. Until now, only python libraries available, the <a href="https://github.com/KushalP/serfclient-py">serfclient-py</a> and <a href="https://github.com/spikeekips/serf-python">serf-python</a>.</li>
+</ul>
+<p>To use serf in my python-based application, I wrote simple client library, written in python, that is <a href="https://github.com/spikeekips/serf-python">serf-python</a>.</p>
+<p>In this post, I will show you how the serf works and how to use <code>serf-python</code>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p id="###..-will-be-continued.">###.. will be continued.<a class="anchor-link" href="####..-will-be-continued.">¶</a></p>
+</div>
+</div>
+</div>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html">
+</div>
+<footer>
+<pre><a href="/">Home</a> / Written By <a href="http://github.com/spikeekips">Spike^ekipS</a> | <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a></pre>
+</footer>
+</div>
+</div>
+</body>
 </html>

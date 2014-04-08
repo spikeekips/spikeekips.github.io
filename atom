@@ -18,19 +18,16 @@
       <name></name>
     </author>
     <content type="text/html">&lt;!DOCTYPE html&gt;
+
 &lt;html&gt;
- &lt;head&gt;
-  &lt;meta charset="utf-8"/&gt;
-  &lt;title&gt;
-   Basic Usage Of serf-python
-  &lt;/title&gt;
-  &lt;link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/&gt;
-  &lt;script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"&gt;
-  &lt;/script&gt;
-  &lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"&gt;
-  &lt;/script&gt;
-  &lt;style type="text/css"&gt;
-   .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
+&lt;head&gt;
+&lt;meta charset="utf-8"/&gt;
+&lt;title&gt;Basic Usage Of serf-python&lt;/title&gt;
+&lt;link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+    .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
 .clearfix:after{clear:both}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -1566,9 +1563,10 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .ipython_tooltip .tooltiptext pre{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-size:100%;background-color:#f7f7f7}
 .pretooltiparrow{left:0;margin:0;top:-16px;width:40px;height:16px;overflow:hidden;position:absolute}
 .pretooltiparrow:before{background-color:#f7f7f7;border:1px #ababab solid;z-index:11;content:"";position:absolute;left:15px;top:10px;width:25px;height:25px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg)}
-  &lt;/style&gt;
-  &lt;style type="text/css"&gt;
-   .highlight .hll { background-color: #ffffcc }
+
+    &lt;/style&gt;
+&lt;style type="text/css"&gt;
+    .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -1630,9 +1628,9 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-  &lt;/style&gt;
-  &lt;style type="text/css"&gt;
-   /* Overrides of notebook CSS for static HTML export */
+    &lt;/style&gt;
+&lt;style type="text/css"&gt;
+/* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
   padding: 8px;
@@ -1657,14 +1655,13 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
-  &lt;/style&gt;
-  &lt;!-- Loading mathjax macro --&gt;
-  &lt;!-- Load mathjax --&gt;
-  &lt;script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"&gt;
-  &lt;/script&gt;
-  &lt;!-- MathJax configuration --&gt;
-  &lt;script type="text/x-mathjax-config"&gt;
-   MathJax.Hub.Config({
+&lt;/style&gt;
+&lt;!-- Loading mathjax macro --&gt;
+&lt;!-- Load mathjax --&gt;
+&lt;script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"&gt;&lt;/script&gt;
+&lt;!-- MathJax configuration --&gt;
+&lt;script type="text/x-mathjax-config"&gt;
+    MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
             displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
@@ -1679,11 +1676,12 @@ div#notebook {
             linebreaks: { automatic: true }
         }
     });
-  &lt;/script&gt;
-  &lt;!-- End of mathjax configuration --&gt;
-  &lt;link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css"&gt;
-   &lt;style type="text/css"&gt;
-    body
+    &lt;/script&gt;
+&lt;!-- End of mathjax configuration --&gt;
+&lt;link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css"&gt;
+&lt;style type="text/css"&gt;
+
+body
 {
     font-family: Ubuntu, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
@@ -1745,145 +1743,89 @@ footer pre
     border: 0;
     background-color: inherit;
 }
-   &lt;/style&gt;
-  &lt;/link&gt;
- &lt;/head&gt;
- &lt;body&gt;
-  &lt;div class="border-box-sizing" id="notebook" tabindex="-1"&gt;
-   &lt;div class="container" id="notebook-container"&gt;
-    &lt;header&gt;
-     &lt;a href="/"&gt;
-      &lt;h2&gt;
-       By Spike ekipS
-      &lt;/h2&gt;
-     &lt;/a&gt;
-     work for me
-    &lt;/header&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h1 id="Basic-Usage-Of-serf-python"&gt;
-        Basic Usage Of serf-python
-        &lt;a class="anchor-link" href="#Basic-Usage-Of-serf-python"&gt;
-         ¶
-        &lt;/a&gt;
-       &lt;/h1&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [2]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'Written at'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+
+&lt;/style&gt;
+&lt;/link&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="border-box-sizing" id="notebook" tabindex="-1"&gt;
+&lt;div class="container" id="notebook-container"&gt;
+&lt;header&gt;
+&lt;a href="/"&gt;&lt;h2&gt;By Spike ekipS&lt;/h2&gt;&lt;/a&gt; work for me
+  &lt;/header&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Basic-Usage-Of-serf-python"&gt;Basic Usage Of serf-python&lt;a class="anchor-link" href="#Basic-Usage-Of-serf-python"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [2]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'Written at'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
 &lt;span class="o"&gt;!&lt;/span&gt;date
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-         &lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;
 Written atTue Apr  8 20:09:18 KST 2014
 
 
 &lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;p&gt;
-        Recently I found some interesting project, that is
-        &lt;a href="http://www.serfdom.io/"&gt;
-         serf
-        &lt;/a&gt;
-        http://www.serfdom.io/. They explains,
-       &lt;/p&gt;
-       &lt;blockquote&gt;
-        &lt;p&gt;
-         Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.
-        &lt;/p&gt;
-       &lt;/blockquote&gt;
-       &lt;p&gt;
-        For several years, I am trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.
-       &lt;/p&gt;
-       &lt;p&gt;
-        In fact, serf is still in development and has the critical limitations,
-       &lt;/p&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         in serf you can not send or broadcast the messages, which is bigger than about 1024 bytes. To overcome this problems, you will be obliged to use the shared storage.
-        &lt;/li&gt;
-        &lt;li&gt;
-         You can not find the mature client libraries for your languages. Until now, only python libraries available, the
-         &lt;a href="https://github.com/KushalP/serfclient-py"&gt;
-          serfclient-py
-         &lt;/a&gt;
-         and
-         &lt;a href="https://github.com/spikeekips/serf-python"&gt;
-          serf-python
-         &lt;/a&gt;
-         .
-        &lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;p&gt;
-        To use serf in my python-based application, I wrote simple client library, written in python, that is
-        &lt;a href="https://github.com/spikeekips/serf-python"&gt;
-         serf-python
-        &lt;/a&gt;
-        .
-       &lt;/p&gt;
-       &lt;p&gt;
-        In this post, I will show you how the serf works and how to use
-        &lt;code&gt;
-         serf-python
-        &lt;/code&gt;
-        .
-       &lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;p id="###..-will-be-continued."&gt;
-        ###.. will be continued.
-        &lt;a class="anchor-link" href="####..-will-be-continued."&gt;
-         ¶
-        &lt;/a&gt;
-       &lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;script src="https://apis.google.com/js/plusone.js"&gt;
-    &lt;/script&gt;
-    &lt;div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html"&gt;
-    &lt;/div&gt;
-    &lt;footer&gt;
-     &lt;pre&gt;&lt;a href="/"&gt;Home&lt;/a&gt; / Written By &lt;a href="http://github.com/spikeekips"&gt;Spike^ekipS&lt;/a&gt; | &lt;a href="https://plus.google.com/101452362887920966223?rel=author"&gt;Google&lt;/a&gt;&lt;/pre&gt;
-    &lt;/footer&gt;
-   &lt;/div&gt;
-  &lt;/div&gt;
- &lt;/body&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Recently I found some interesting project, that is &lt;a href="http://www.serfdom.io/"&gt;serf&lt;/a&gt; http://www.serfdom.io/. They explains,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For several years, I am trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.&lt;/p&gt;
+&lt;p&gt;In fact, serf is still in development and has the critical limitations,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in serf you can not send or broadcast the messages, which is bigger than about 1024 bytes. To overcome this problems, you will be obliged to use the shared storage.&lt;/li&gt;
+&lt;li&gt;You can not find the mature client libraries for your languages. Until now, only python libraries available, the &lt;a href="https://github.com/KushalP/serfclient-py"&gt;serfclient-py&lt;/a&gt; and &lt;a href="https://github.com/spikeekips/serf-python"&gt;serf-python&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use serf in my python-based application, I wrote simple client library, written in python, that is &lt;a href="https://github.com/spikeekips/serf-python"&gt;serf-python&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this post, I will show you how the serf works and how to use &lt;code&gt;serf-python&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p id="###..-will-be-continued."&gt;###.. will be continued.&lt;a class="anchor-link" href="####..-will-be-continued."&gt;¶&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="https://apis.google.com/js/plusone.js"&gt;&lt;/script&gt;
+&lt;div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html"&gt;
+&lt;/div&gt;
+&lt;footer&gt;
+&lt;pre&gt;&lt;a href="/"&gt;Home&lt;/a&gt; / Written By &lt;a href="http://github.com/spikeekips"&gt;Spike^ekipS&lt;/a&gt; | &lt;a href="https://plus.google.com/101452362887920966223?rel=author"&gt;Google&lt;/a&gt;&lt;/pre&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </content>
   </entry>
@@ -1896,19 +1838,16 @@ Written atTue Apr  8 20:09:18 KST 2014
       <name></name>
     </author>
     <content type="text/html">&lt;!DOCTYPE html&gt;
+
 &lt;html&gt;
- &lt;head&gt;
-  &lt;meta charset="utf-8"/&gt;
-  &lt;title&gt;
-   serializing-python-object-msgpack-vs-json
-  &lt;/title&gt;
-  &lt;link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/&gt;
-  &lt;script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"&gt;
-  &lt;/script&gt;
-  &lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"&gt;
-  &lt;/script&gt;
-  &lt;style type="text/css"&gt;
-   .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
+&lt;head&gt;
+&lt;meta charset="utf-8"/&gt;
+&lt;title&gt;serializing-python-object-msgpack-vs-json&lt;/title&gt;
+&lt;link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;style type="text/css"&gt;
+    .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
 .clearfix:after{clear:both}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -3444,9 +3383,10 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .ipython_tooltip .tooltiptext pre{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-size:100%;background-color:#f7f7f7}
 .pretooltiparrow{left:0;margin:0;top:-16px;width:40px;height:16px;overflow:hidden;position:absolute}
 .pretooltiparrow:before{background-color:#f7f7f7;border:1px #ababab solid;z-index:11;content:"";position:absolute;left:15px;top:10px;width:25px;height:25px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg)}
-  &lt;/style&gt;
-  &lt;style type="text/css"&gt;
-   .highlight .hll { background-color: #ffffcc }
+
+    &lt;/style&gt;
+&lt;style type="text/css"&gt;
+    .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -3508,9 +3448,9 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-  &lt;/style&gt;
-  &lt;style type="text/css"&gt;
-   /* Overrides of notebook CSS for static HTML export */
+    &lt;/style&gt;
+&lt;style type="text/css"&gt;
+/* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
   padding: 8px;
@@ -3535,14 +3475,13 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
-  &lt;/style&gt;
-  &lt;!-- Loading mathjax macro --&gt;
-  &lt;!-- Load mathjax --&gt;
-  &lt;script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"&gt;
-  &lt;/script&gt;
-  &lt;!-- MathJax configuration --&gt;
-  &lt;script type="text/x-mathjax-config"&gt;
-   MathJax.Hub.Config({
+&lt;/style&gt;
+&lt;!-- Loading mathjax macro --&gt;
+&lt;!-- Load mathjax --&gt;
+&lt;script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"&gt;&lt;/script&gt;
+&lt;!-- MathJax configuration --&gt;
+&lt;script type="text/x-mathjax-config"&gt;
+    MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
             displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
@@ -3557,11 +3496,12 @@ div#notebook {
             linebreaks: { automatic: true }
         }
     });
-  &lt;/script&gt;
-  &lt;!-- End of mathjax configuration --&gt;
-  &lt;link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css"&gt;
-   &lt;style type="text/css"&gt;
-    body
+    &lt;/script&gt;
+&lt;!-- End of mathjax configuration --&gt;
+&lt;link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css"&gt;
+&lt;style type="text/css"&gt;
+
+body
 {
     font-family: Ubuntu, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
@@ -3623,158 +3563,120 @@ footer pre
     border: 0;
     background-color: inherit;
 }
-   &lt;/style&gt;
-  &lt;/link&gt;
- &lt;/head&gt;
- &lt;body&gt;
-  &lt;div class="border-box-sizing" id="notebook" tabindex="-1"&gt;
-   &lt;div class="container" id="notebook-container"&gt;
-    &lt;header&gt;
-     &lt;a href="/"&gt;
-      &lt;h2&gt;
-       By Spike ekipS
-      &lt;/h2&gt;
-     &lt;/a&gt;
-     work for me
-    &lt;/header&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h1 id="comparison-of-serializing-python-object-msgpack-vs.-json"&gt;
-        Comparison Of Serializing Python Object: msgpack Vs. Json
-       &lt;/h1&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [26]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'Written at '&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+
+&lt;/style&gt;
+&lt;/link&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="border-box-sizing" id="notebook" tabindex="-1"&gt;
+&lt;div class="container" id="notebook-container"&gt;
+&lt;header&gt;
+&lt;a href="/"&gt;&lt;h2&gt;By Spike ekipS&lt;/h2&gt;&lt;/a&gt; work for me
+  &lt;/header&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="comparison-of-serializing-python-object-msgpack-vs.-json"&gt;Comparison Of Serializing Python Object: msgpack Vs. Json&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [26]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'Written at '&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
 &lt;span class="o"&gt;!&lt;/span&gt; date
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-         &lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;
 Written at Fri Apr  4 18:56:31 KST 2014
 
 &lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;p&gt;
-        I will try to compare the size of serialized data between the several serializing method in Python, especialy
-        &lt;code&gt;
-         json
-        &lt;/code&gt;
-        vs.
-        &lt;code&gt;
-         msgpack
-        &lt;/code&gt;
-        , these are heavily in use in the most of python applications. I will also compare the data with compressing,
-        &lt;code&gt;
-         zlib
-        &lt;/code&gt;
-        and
-        &lt;code&gt;
-         gzip
-        &lt;/code&gt;
-        .
-       &lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h2 id="prerequisits"&gt;
-        Prerequisits
-       &lt;/h2&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [1]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;pylab&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-         &lt;pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I will try to compare the size of serialized data between the several serializing method in Python, especialy &lt;code&gt;json&lt;/code&gt; vs. &lt;code&gt;msgpack&lt;/code&gt;, these are heavily in use in the most of python applications. I will also compare the data with compressing, &lt;code&gt;zlib&lt;/code&gt; and &lt;code&gt;gzip&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="prerequisits"&gt;Prerequisits&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [1]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;pylab&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;
 Populating the interactive namespace from numpy and matplotlib
 
 &lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [2]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_ensure_python_package&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [2]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_ensure_python_package&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;
     &lt;span class="k"&gt;try&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;__import__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[],&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="err"&gt;!&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;__import__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[],&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [3]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [3]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;make_series&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_max&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_dumps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;_l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -3783,61 +3685,55 @@ Populating the interactive namespace from numpy and matplotlib
         &lt;span class="n"&gt;_l&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_dumps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;pandas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;_index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [4]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;loremipsum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;_ensure_python_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'loremipsum'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [4]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;loremipsum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;_ensure_python_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'loremipsum'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;string&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;func_data&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="n"&gt;_m&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;
-    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&lt;&lt;/span&gt; &lt;span class="n"&gt;_m&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;_m&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s"&gt;' '&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;loremipsum&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_paragraphs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;
     
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;_m&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [5]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;func_series&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [6]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;gzip&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [5]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;func_series&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1001&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [6]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;gzip&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;StringIO&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;encode_zlib&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
@@ -3856,2358 +3752,988 @@ Populating the interactive namespace from numpy and matplotlib
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
 &lt;span class="n"&gt;func_compress&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'zlib'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;encode_zlib&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;'zlib'&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;encode_gzip&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h2 id="message-size"&gt;
-        message size
-       &lt;/h2&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [7]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;series&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="raw-string"&gt;
-        raw string
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [8]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="message-size"&gt;message size&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [7]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;series&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="raw-string"&gt;raw string&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [8]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# zlib compression&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'raw(g)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'gzip'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# gzip compression&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="json"&gt;
-        &lt;code&gt;
-         json
-        &lt;/code&gt;
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [9]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="json"&gt;&lt;code&gt;json&lt;/code&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [9]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;json&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'json(z)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'json(g)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dumps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'gzip'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="bson"&gt;
-        &lt;code&gt;
-         bson
-        &lt;/code&gt;
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [10]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;_ensure_python_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'pymongo'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="bson"&gt;&lt;code&gt;bson&lt;/code&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [10]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;_ensure_python_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'pymongo'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bson&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BSON&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;BSON&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'bson(z)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BSON&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'bson(g)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BSON&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'gzip'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="msgpack"&gt;
-        &lt;code&gt;
-         msgpack
-        &lt;/code&gt;
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [11]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;msgpack&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;_ensure_python_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'msgpack-python'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="msgpack"&gt;&lt;code&gt;msgpack&lt;/code&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [11]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;msgpack&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;_ensure_python_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'msgpack-python'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;msgpack&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;packb&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'msgpack(z)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;msgpack&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;packb&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'msgpack(g)'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;make_series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func_series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func_compress&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;msgpack&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;packb&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'gzip'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="result"&gt;
-        Result
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [12]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;display&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="result"&gt;Result&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [12]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;display&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt;
 &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pandas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_html rendered_html output_subarea "&gt;
-         &lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
-          &lt;table border="1" class="dataframe"&gt;
-           &lt;thead&gt;
-            &lt;tr style="text-align: right;"&gt;
-             &lt;th&gt;
-             &lt;/th&gt;
-             &lt;th&gt;
-              bson
-             &lt;/th&gt;
-             &lt;th&gt;
-              bson(g)
-             &lt;/th&gt;
-             &lt;th&gt;
-              bson(z)
-             &lt;/th&gt;
-             &lt;th&gt;
-              json
-             &lt;/th&gt;
-             &lt;th&gt;
-              json(g)
-             &lt;/th&gt;
-             &lt;th&gt;
-              json(z)
-             &lt;/th&gt;
-             &lt;th&gt;
-              msgpack
-             &lt;/th&gt;
-             &lt;th&gt;
-              msgpack(g)
-             &lt;/th&gt;
-             &lt;th&gt;
-              msgpack(z)
-             &lt;/th&gt;
-             &lt;th&gt;
-              raw
-             &lt;/th&gt;
-             &lt;th&gt;
-              raw(g)
-             &lt;/th&gt;
-             &lt;th&gt;
-              raw(z)
-             &lt;/th&gt;
-            &lt;/tr&gt;
-           &lt;/thead&gt;
-           &lt;tbody&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              100
-             &lt;/th&gt;
-             &lt;td&gt;
-              3013
-             &lt;/td&gt;
-             &lt;td&gt;
-              1268
-             &lt;/td&gt;
-             &lt;td&gt;
-              1261
-             &lt;/td&gt;
-             &lt;td&gt;
-              3009
-             &lt;/td&gt;
-             &lt;td&gt;
-              1275
-             &lt;/td&gt;
-             &lt;td&gt;
-              1245
-             &lt;/td&gt;
-             &lt;td&gt;
-              3006
-             &lt;/td&gt;
-             &lt;td&gt;
-              1276
-             &lt;/td&gt;
-             &lt;td&gt;
-              1227
-             &lt;/td&gt;
-             &lt;td&gt;
-              3009
-             &lt;/td&gt;
-             &lt;td&gt;
-              1248
-             &lt;/td&gt;
-             &lt;td&gt;
-              1244
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              110
-             &lt;/th&gt;
-             &lt;td&gt;
-              3313
-             &lt;/td&gt;
-             &lt;td&gt;
-              1375
-             &lt;/td&gt;
-             &lt;td&gt;
-              1338
-             &lt;/td&gt;
-             &lt;td&gt;
-              3309
-             &lt;/td&gt;
-             &lt;td&gt;
-              1363
-             &lt;/td&gt;
-             &lt;td&gt;
-              1347
-             &lt;/td&gt;
-             &lt;td&gt;
-              3306
-             &lt;/td&gt;
-             &lt;td&gt;
-              1348
-             &lt;/td&gt;
-             &lt;td&gt;
-              1338
-             &lt;/td&gt;
-             &lt;td&gt;
-              3309
-             &lt;/td&gt;
-             &lt;td&gt;
-              1329
-             &lt;/td&gt;
-             &lt;td&gt;
-              1342
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              120
-             &lt;/th&gt;
-             &lt;td&gt;
-              3613
-             &lt;/td&gt;
-             &lt;td&gt;
-              1476
-             &lt;/td&gt;
-             &lt;td&gt;
-              1468
-             &lt;/td&gt;
-             &lt;td&gt;
-              3609
-             &lt;/td&gt;
-             &lt;td&gt;
-              1464
-             &lt;/td&gt;
-             &lt;td&gt;
-              1470
-             &lt;/td&gt;
-             &lt;td&gt;
-              3606
-             &lt;/td&gt;
-             &lt;td&gt;
-              1478
-             &lt;/td&gt;
-             &lt;td&gt;
-              1461
-             &lt;/td&gt;
-             &lt;td&gt;
-              3609
-             &lt;/td&gt;
-             &lt;td&gt;
-              1479
-             &lt;/td&gt;
-             &lt;td&gt;
-              1441
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              130
-             &lt;/th&gt;
-             &lt;td&gt;
-              3913
-             &lt;/td&gt;
-             &lt;td&gt;
-              1534
-             &lt;/td&gt;
-             &lt;td&gt;
-              1530
-             &lt;/td&gt;
-             &lt;td&gt;
-              3909
-             &lt;/td&gt;
-             &lt;td&gt;
-              1563
-             &lt;/td&gt;
-             &lt;td&gt;
-              1529
-             &lt;/td&gt;
-             &lt;td&gt;
-              3906
-             &lt;/td&gt;
-             &lt;td&gt;
-              1567
-             &lt;/td&gt;
-             &lt;td&gt;
-              1550
-             &lt;/td&gt;
-             &lt;td&gt;
-              3909
-             &lt;/td&gt;
-             &lt;td&gt;
-              1565
-             &lt;/td&gt;
-             &lt;td&gt;
-              1555
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              140
-             &lt;/th&gt;
-             &lt;td&gt;
-              4213
-             &lt;/td&gt;
-             &lt;td&gt;
-              1654
-             &lt;/td&gt;
-             &lt;td&gt;
-              1660
-             &lt;/td&gt;
-             &lt;td&gt;
-              4209
-             &lt;/td&gt;
-             &lt;td&gt;
-              1655
-             &lt;/td&gt;
-             &lt;td&gt;
-              1653
-             &lt;/td&gt;
-             &lt;td&gt;
-              4206
-             &lt;/td&gt;
-             &lt;td&gt;
-              1661
-             &lt;/td&gt;
-             &lt;td&gt;
-              1613
-             &lt;/td&gt;
-             &lt;td&gt;
-              4209
-             &lt;/td&gt;
-             &lt;td&gt;
-              1659
-             &lt;/td&gt;
-             &lt;td&gt;
-              1632
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              150
-             &lt;/th&gt;
-             &lt;td&gt;
-              4513
-             &lt;/td&gt;
-             &lt;td&gt;
-              1747
-             &lt;/td&gt;
-             &lt;td&gt;
-              1743
-             &lt;/td&gt;
-             &lt;td&gt;
-              4509
-             &lt;/td&gt;
-             &lt;td&gt;
-              1736
-             &lt;/td&gt;
-             &lt;td&gt;
-              1726
-             &lt;/td&gt;
-             &lt;td&gt;
-              4506
-             &lt;/td&gt;
-             &lt;td&gt;
-              1766
-             &lt;/td&gt;
-             &lt;td&gt;
-              1728
-             &lt;/td&gt;
-             &lt;td&gt;
-              4509
-             &lt;/td&gt;
-             &lt;td&gt;
-              1728
-             &lt;/td&gt;
-             &lt;td&gt;
-              1707
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              160
-             &lt;/th&gt;
-             &lt;td&gt;
-              4813
-             &lt;/td&gt;
-             &lt;td&gt;
-              1867
-             &lt;/td&gt;
-             &lt;td&gt;
-              1844
-             &lt;/td&gt;
-             &lt;td&gt;
-              4809
-             &lt;/td&gt;
-             &lt;td&gt;
-              1844
-             &lt;/td&gt;
-             &lt;td&gt;
-              1838
-             &lt;/td&gt;
-             &lt;td&gt;
-              4806
-             &lt;/td&gt;
-             &lt;td&gt;
-              1853
-             &lt;/td&gt;
-             &lt;td&gt;
-              1842
-             &lt;/td&gt;
-             &lt;td&gt;
-              4809
-             &lt;/td&gt;
-             &lt;td&gt;
-              1813
-             &lt;/td&gt;
-             &lt;td&gt;
-              1814
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              170
-             &lt;/th&gt;
-             &lt;td&gt;
-              5113
-             &lt;/td&gt;
-             &lt;td&gt;
-              1933
-             &lt;/td&gt;
-             &lt;td&gt;
-              1932
-             &lt;/td&gt;
-             &lt;td&gt;
-              5109
-             &lt;/td&gt;
-             &lt;td&gt;
-              1920
-             &lt;/td&gt;
-             &lt;td&gt;
-              1955
-             &lt;/td&gt;
-             &lt;td&gt;
-              5106
-             &lt;/td&gt;
-             &lt;td&gt;
-              1928
-             &lt;/td&gt;
-             &lt;td&gt;
-              1950
-             &lt;/td&gt;
-             &lt;td&gt;
-              5109
-             &lt;/td&gt;
-             &lt;td&gt;
-              1924
-             &lt;/td&gt;
-             &lt;td&gt;
-              1940
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              180
-             &lt;/th&gt;
-             &lt;td&gt;
-              5413
-             &lt;/td&gt;
-             &lt;td&gt;
-              2045
-             &lt;/td&gt;
-             &lt;td&gt;
-              2007
-             &lt;/td&gt;
-             &lt;td&gt;
-              5409
-             &lt;/td&gt;
-             &lt;td&gt;
-              2023
-             &lt;/td&gt;
-             &lt;td&gt;
-              2013
-             &lt;/td&gt;
-             &lt;td&gt;
-              5406
-             &lt;/td&gt;
-             &lt;td&gt;
-              2040
-             &lt;/td&gt;
-             &lt;td&gt;
-              2021
-             &lt;/td&gt;
-             &lt;td&gt;
-              5409
-             &lt;/td&gt;
-             &lt;td&gt;
-              2046
-             &lt;/td&gt;
-             &lt;td&gt;
-              2021
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              190
-             &lt;/th&gt;
-             &lt;td&gt;
-              5713
-             &lt;/td&gt;
-             &lt;td&gt;
-              2136
-             &lt;/td&gt;
-             &lt;td&gt;
-              2106
-             &lt;/td&gt;
-             &lt;td&gt;
-              5709
-             &lt;/td&gt;
-             &lt;td&gt;
-              2134
-             &lt;/td&gt;
-             &lt;td&gt;
-              2124
-             &lt;/td&gt;
-             &lt;td&gt;
-              5706
-             &lt;/td&gt;
-             &lt;td&gt;
-              2134
-             &lt;/td&gt;
-             &lt;td&gt;
-              2109
-             &lt;/td&gt;
-             &lt;td&gt;
-              5709
-             &lt;/td&gt;
-             &lt;td&gt;
-              2110
-             &lt;/td&gt;
-             &lt;td&gt;
-              2119
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              200
-             &lt;/th&gt;
-             &lt;td&gt;
-              6013
-             &lt;/td&gt;
-             &lt;td&gt;
-              2240
-             &lt;/td&gt;
-             &lt;td&gt;
-              2206
-             &lt;/td&gt;
-             &lt;td&gt;
-              6009
-             &lt;/td&gt;
-             &lt;td&gt;
-              2230
-             &lt;/td&gt;
-             &lt;td&gt;
-              2205
-             &lt;/td&gt;
-             &lt;td&gt;
-              6006
-             &lt;/td&gt;
-             &lt;td&gt;
-              2202
-             &lt;/td&gt;
-             &lt;td&gt;
-              2220
-             &lt;/td&gt;
-             &lt;td&gt;
-              6009
-             &lt;/td&gt;
-             &lt;td&gt;
-              2230
-             &lt;/td&gt;
-             &lt;td&gt;
-              2191
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              210
-             &lt;/th&gt;
-             &lt;td&gt;
-              6313
-             &lt;/td&gt;
-             &lt;td&gt;
-              2298
-             &lt;/td&gt;
-             &lt;td&gt;
-              2246
-             &lt;/td&gt;
-             &lt;td&gt;
-              6309
-             &lt;/td&gt;
-             &lt;td&gt;
-              2314
-             &lt;/td&gt;
-             &lt;td&gt;
-              2300
-             &lt;/td&gt;
-             &lt;td&gt;
-              6306
-             &lt;/td&gt;
-             &lt;td&gt;
-              2302
-             &lt;/td&gt;
-             &lt;td&gt;
-              2314
-             &lt;/td&gt;
-             &lt;td&gt;
-              6309
-             &lt;/td&gt;
-             &lt;td&gt;
-              2248
-             &lt;/td&gt;
-             &lt;td&gt;
-              2292
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              220
-             &lt;/th&gt;
-             &lt;td&gt;
-              6613
-             &lt;/td&gt;
-             &lt;td&gt;
-              2425
-             &lt;/td&gt;
-             &lt;td&gt;
-              2379
-             &lt;/td&gt;
-             &lt;td&gt;
-              6609
-             &lt;/td&gt;
-             &lt;td&gt;
-              2384
-             &lt;/td&gt;
-             &lt;td&gt;
-              2386
-             &lt;/td&gt;
-             &lt;td&gt;
-              6606
-             &lt;/td&gt;
-             &lt;td&gt;
-              2417
-             &lt;/td&gt;
-             &lt;td&gt;
-              2339
-             &lt;/td&gt;
-             &lt;td&gt;
-              6609
-             &lt;/td&gt;
-             &lt;td&gt;
-              2419
-             &lt;/td&gt;
-             &lt;td&gt;
-              2398
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              230
-             &lt;/th&gt;
-             &lt;td&gt;
-              6913
-             &lt;/td&gt;
-             &lt;td&gt;
-              2538
-             &lt;/td&gt;
-             &lt;td&gt;
-              2483
-             &lt;/td&gt;
-             &lt;td&gt;
-              6909
-             &lt;/td&gt;
-             &lt;td&gt;
-              2484
-             &lt;/td&gt;
-             &lt;td&gt;
-              2479
-             &lt;/td&gt;
-             &lt;td&gt;
-              6906
-             &lt;/td&gt;
-             &lt;td&gt;
-              2490
-             &lt;/td&gt;
-             &lt;td&gt;
-              2491
-             &lt;/td&gt;
-             &lt;td&gt;
-              6909
-             &lt;/td&gt;
-             &lt;td&gt;
-              2470
-             &lt;/td&gt;
-             &lt;td&gt;
-              2492
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              240
-             &lt;/th&gt;
-             &lt;td&gt;
-              7213
-             &lt;/td&gt;
-             &lt;td&gt;
-              2589
-             &lt;/td&gt;
-             &lt;td&gt;
-              2561
-             &lt;/td&gt;
-             &lt;td&gt;
-              7209
-             &lt;/td&gt;
-             &lt;td&gt;
-              2570
-             &lt;/td&gt;
-             &lt;td&gt;
-              2561
-             &lt;/td&gt;
-             &lt;td&gt;
-              7206
-             &lt;/td&gt;
-             &lt;td&gt;
-              2616
-             &lt;/td&gt;
-             &lt;td&gt;
-              2580
-             &lt;/td&gt;
-             &lt;td&gt;
-              7209
-             &lt;/td&gt;
-             &lt;td&gt;
-              2559
-             &lt;/td&gt;
-             &lt;td&gt;
-              2570
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              250
-             &lt;/th&gt;
-             &lt;td&gt;
-              7513
-             &lt;/td&gt;
-             &lt;td&gt;
-              2682
-             &lt;/td&gt;
-             &lt;td&gt;
-              2668
-             &lt;/td&gt;
-             &lt;td&gt;
-              7509
-             &lt;/td&gt;
-             &lt;td&gt;
-              2670
-             &lt;/td&gt;
-             &lt;td&gt;
-              2666
-             &lt;/td&gt;
-             &lt;td&gt;
-              7506
-             &lt;/td&gt;
-             &lt;td&gt;
-              2683
-             &lt;/td&gt;
-             &lt;td&gt;
-              2632
-             &lt;/td&gt;
-             &lt;td&gt;
-              7509
-             &lt;/td&gt;
-             &lt;td&gt;
-              2660
-             &lt;/td&gt;
-             &lt;td&gt;
-              2663
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              260
-             &lt;/th&gt;
-             &lt;td&gt;
-              7813
-             &lt;/td&gt;
-             &lt;td&gt;
-              2765
-             &lt;/td&gt;
-             &lt;td&gt;
-              2746
-             &lt;/td&gt;
-             &lt;td&gt;
-              7809
-             &lt;/td&gt;
-             &lt;td&gt;
-              2736
-             &lt;/td&gt;
-             &lt;td&gt;
-              2748
-             &lt;/td&gt;
-             &lt;td&gt;
-              7806
-             &lt;/td&gt;
-             &lt;td&gt;
-              2771
-             &lt;/td&gt;
-             &lt;td&gt;
-              2750
-             &lt;/td&gt;
-             &lt;td&gt;
-              7809
-             &lt;/td&gt;
-             &lt;td&gt;
-              2764
-             &lt;/td&gt;
-             &lt;td&gt;
-              2734
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              270
-             &lt;/th&gt;
-             &lt;td&gt;
-              8113
-             &lt;/td&gt;
-             &lt;td&gt;
-              2810
-             &lt;/td&gt;
-             &lt;td&gt;
-              2850
-             &lt;/td&gt;
-             &lt;td&gt;
-              8109
-             &lt;/td&gt;
-             &lt;td&gt;
-              2870
-             &lt;/td&gt;
-             &lt;td&gt;
-              2832
-             &lt;/td&gt;
-             &lt;td&gt;
-              8106
-             &lt;/td&gt;
-             &lt;td&gt;
-              2857
-             &lt;/td&gt;
-             &lt;td&gt;
-              2858
-             &lt;/td&gt;
-             &lt;td&gt;
-              8109
-             &lt;/td&gt;
-             &lt;td&gt;
-              2856
-             &lt;/td&gt;
-             &lt;td&gt;
-              2882
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              280
-             &lt;/th&gt;
-             &lt;td&gt;
-              8413
-             &lt;/td&gt;
-             &lt;td&gt;
-              2967
-             &lt;/td&gt;
-             &lt;td&gt;
-              2919
-             &lt;/td&gt;
-             &lt;td&gt;
-              8409
-             &lt;/td&gt;
-             &lt;td&gt;
-              2934
-             &lt;/td&gt;
-             &lt;td&gt;
-              2923
-             &lt;/td&gt;
-             &lt;td&gt;
-              8406
-             &lt;/td&gt;
-             &lt;td&gt;
-              2944
-             &lt;/td&gt;
-             &lt;td&gt;
-              2934
-             &lt;/td&gt;
-             &lt;td&gt;
-              8409
-             &lt;/td&gt;
-             &lt;td&gt;
-              2947
-             &lt;/td&gt;
-             &lt;td&gt;
-              2909
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              290
-             &lt;/th&gt;
-             &lt;td&gt;
-              8713
-             &lt;/td&gt;
-             &lt;td&gt;
-              3031
-             &lt;/td&gt;
-             &lt;td&gt;
-              3048
-             &lt;/td&gt;
-             &lt;td&gt;
-              8709
-             &lt;/td&gt;
-             &lt;td&gt;
-              3008
-             &lt;/td&gt;
-             &lt;td&gt;
-              3012
-             &lt;/td&gt;
-             &lt;td&gt;
-              8706
-             &lt;/td&gt;
-             &lt;td&gt;
-              3025
-             &lt;/td&gt;
-             &lt;td&gt;
-              3001
-             &lt;/td&gt;
-             &lt;td&gt;
-              8709
-             &lt;/td&gt;
-             &lt;td&gt;
-              3048
-             &lt;/td&gt;
-             &lt;td&gt;
-              3054
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              300
-             &lt;/th&gt;
-             &lt;td&gt;
-              9013
-             &lt;/td&gt;
-             &lt;td&gt;
-              3122
-             &lt;/td&gt;
-             &lt;td&gt;
-              3088
-             &lt;/td&gt;
-             &lt;td&gt;
-              9009
-             &lt;/td&gt;
-             &lt;td&gt;
-              3115
-             &lt;/td&gt;
-             &lt;td&gt;
-              3105
-             &lt;/td&gt;
-             &lt;td&gt;
-              9006
-             &lt;/td&gt;
-             &lt;td&gt;
-              3170
-             &lt;/td&gt;
-             &lt;td&gt;
-              3099
-             &lt;/td&gt;
-             &lt;td&gt;
-              9009
-             &lt;/td&gt;
-             &lt;td&gt;
-              3075
-             &lt;/td&gt;
-             &lt;td&gt;
-              3057
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              310
-             &lt;/th&gt;
-             &lt;td&gt;
-              9313
-             &lt;/td&gt;
-             &lt;td&gt;
-              3213
-             &lt;/td&gt;
-             &lt;td&gt;
-              3205
-             &lt;/td&gt;
-             &lt;td&gt;
-              9309
-             &lt;/td&gt;
-             &lt;td&gt;
-              3190
-             &lt;/td&gt;
-             &lt;td&gt;
-              3195
-             &lt;/td&gt;
-             &lt;td&gt;
-              9306
-             &lt;/td&gt;
-             &lt;td&gt;
-              3204
-             &lt;/td&gt;
-             &lt;td&gt;
-              3188
-             &lt;/td&gt;
-             &lt;td&gt;
-              9309
-             &lt;/td&gt;
-             &lt;td&gt;
-              3200
-             &lt;/td&gt;
-             &lt;td&gt;
-              3213
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              320
-             &lt;/th&gt;
-             &lt;td&gt;
-              9613
-             &lt;/td&gt;
-             &lt;td&gt;
-              3289
-             &lt;/td&gt;
-             &lt;td&gt;
-              3285
-             &lt;/td&gt;
-             &lt;td&gt;
-              9609
-             &lt;/td&gt;
-             &lt;td&gt;
-              3256
-             &lt;/td&gt;
-             &lt;td&gt;
-              3314
-             &lt;/td&gt;
-             &lt;td&gt;
-              9606
-             &lt;/td&gt;
-             &lt;td&gt;
-              3269
-             &lt;/td&gt;
-             &lt;td&gt;
-              3294
-             &lt;/td&gt;
-             &lt;td&gt;
-              9609
-             &lt;/td&gt;
-             &lt;td&gt;
-              3298
-             &lt;/td&gt;
-             &lt;td&gt;
-              3300
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              330
-             &lt;/th&gt;
-             &lt;td&gt;
-              9913
-             &lt;/td&gt;
-             &lt;td&gt;
-              3379
-             &lt;/td&gt;
-             &lt;td&gt;
-              3386
-             &lt;/td&gt;
-             &lt;td&gt;
-              9909
-             &lt;/td&gt;
-             &lt;td&gt;
-              3352
-             &lt;/td&gt;
-             &lt;td&gt;
-              3371
-             &lt;/td&gt;
-             &lt;td&gt;
-              9906
-             &lt;/td&gt;
-             &lt;td&gt;
-              3395
-             &lt;/td&gt;
-             &lt;td&gt;
-              3365
-             &lt;/td&gt;
-             &lt;td&gt;
-              9909
-             &lt;/td&gt;
-             &lt;td&gt;
-              3406
-             &lt;/td&gt;
-             &lt;td&gt;
-              3373
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              340
-             &lt;/th&gt;
-             &lt;td&gt;
-              10213
-             &lt;/td&gt;
-             &lt;td&gt;
-              3488
-             &lt;/td&gt;
-             &lt;td&gt;
-              3470
-             &lt;/td&gt;
-             &lt;td&gt;
-              10209
-             &lt;/td&gt;
-             &lt;td&gt;
-              3454
-             &lt;/td&gt;
-             &lt;td&gt;
-              3466
-             &lt;/td&gt;
-             &lt;td&gt;
-              10206
-             &lt;/td&gt;
-             &lt;td&gt;
-              3496
-             &lt;/td&gt;
-             &lt;td&gt;
-              3465
-             &lt;/td&gt;
-             &lt;td&gt;
-              10209
-             &lt;/td&gt;
-             &lt;td&gt;
-              3495
-             &lt;/td&gt;
-             &lt;td&gt;
-              3465
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              350
-             &lt;/th&gt;
-             &lt;td&gt;
-              10513
-             &lt;/td&gt;
-             &lt;td&gt;
-              3593
-             &lt;/td&gt;
-             &lt;td&gt;
-              3557
-             &lt;/td&gt;
-             &lt;td&gt;
-              10509
-             &lt;/td&gt;
-             &lt;td&gt;
-              3556
-             &lt;/td&gt;
-             &lt;td&gt;
-              3505
-             &lt;/td&gt;
-             &lt;td&gt;
-              10506
-             &lt;/td&gt;
-             &lt;td&gt;
-              3552
-             &lt;/td&gt;
-             &lt;td&gt;
-              3524
-             &lt;/td&gt;
-             &lt;td&gt;
-              10509
-             &lt;/td&gt;
-             &lt;td&gt;
-              3578
-             &lt;/td&gt;
-             &lt;td&gt;
-              3564
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              360
-             &lt;/th&gt;
-             &lt;td&gt;
-              10813
-             &lt;/td&gt;
-             &lt;td&gt;
-              3643
-             &lt;/td&gt;
-             &lt;td&gt;
-              3644
-             &lt;/td&gt;
-             &lt;td&gt;
-              10809
-             &lt;/td&gt;
-             &lt;td&gt;
-              3642
-             &lt;/td&gt;
-             &lt;td&gt;
-              3636
-             &lt;/td&gt;
-             &lt;td&gt;
-              10806
-             &lt;/td&gt;
-             &lt;td&gt;
-              3666
-             &lt;/td&gt;
-             &lt;td&gt;
-              3629
-             &lt;/td&gt;
-             &lt;td&gt;
-              10809
-             &lt;/td&gt;
-             &lt;td&gt;
-              3632
-             &lt;/td&gt;
-             &lt;td&gt;
-              3631
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              370
-             &lt;/th&gt;
-             &lt;td&gt;
-              11113
-             &lt;/td&gt;
-             &lt;td&gt;
-              3701
-             &lt;/td&gt;
-             &lt;td&gt;
-              3697
-             &lt;/td&gt;
-             &lt;td&gt;
-              11109
-             &lt;/td&gt;
-             &lt;td&gt;
-              3750
-             &lt;/td&gt;
-             &lt;td&gt;
-              3739
-             &lt;/td&gt;
-             &lt;td&gt;
-              11106
-             &lt;/td&gt;
-             &lt;td&gt;
-              3717
-             &lt;/td&gt;
-             &lt;td&gt;
-              3709
-             &lt;/td&gt;
-             &lt;td&gt;
-              11109
-             &lt;/td&gt;
-             &lt;td&gt;
-              3731
-             &lt;/td&gt;
-             &lt;td&gt;
-              3713
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              380
-             &lt;/th&gt;
-             &lt;td&gt;
-              11413
-             &lt;/td&gt;
-             &lt;td&gt;
-              3836
-             &lt;/td&gt;
-             &lt;td&gt;
-              3839
-             &lt;/td&gt;
-             &lt;td&gt;
-              11409
-             &lt;/td&gt;
-             &lt;td&gt;
-              3831
-             &lt;/td&gt;
-             &lt;td&gt;
-              3796
-             &lt;/td&gt;
-             &lt;td&gt;
-              11406
-             &lt;/td&gt;
-             &lt;td&gt;
-              3796
-             &lt;/td&gt;
-             &lt;td&gt;
-              3806
-             &lt;/td&gt;
-             &lt;td&gt;
-              11409
-             &lt;/td&gt;
-             &lt;td&gt;
-              3827
-             &lt;/td&gt;
-             &lt;td&gt;
-              3809
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              390
-             &lt;/th&gt;
-             &lt;td&gt;
-              11713
-             &lt;/td&gt;
-             &lt;td&gt;
-              3950
-             &lt;/td&gt;
-             &lt;td&gt;
-              3905
-             &lt;/td&gt;
-             &lt;td&gt;
-              11709
-             &lt;/td&gt;
-             &lt;td&gt;
-              3963
-             &lt;/td&gt;
-             &lt;td&gt;
-              3920
-             &lt;/td&gt;
-             &lt;td&gt;
-              11706
-             &lt;/td&gt;
-             &lt;td&gt;
-              3882
-             &lt;/td&gt;
-             &lt;td&gt;
-              3910
-             &lt;/td&gt;
-             &lt;td&gt;
-              11709
-             &lt;/td&gt;
-             &lt;td&gt;
-              3882
-             &lt;/td&gt;
-             &lt;td&gt;
-              3890
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              400
-             &lt;/th&gt;
-             &lt;td&gt;
-              12013
-             &lt;/td&gt;
-             &lt;td&gt;
-              4002
-             &lt;/td&gt;
-             &lt;td&gt;
-              3984
-             &lt;/td&gt;
-             &lt;td&gt;
-              12009
-             &lt;/td&gt;
-             &lt;td&gt;
-              4014
-             &lt;/td&gt;
-             &lt;td&gt;
-              3977
-             &lt;/td&gt;
-             &lt;td&gt;
-              12006
-             &lt;/td&gt;
-             &lt;td&gt;
-              4009
-             &lt;/td&gt;
-             &lt;td&gt;
-              3988
-             &lt;/td&gt;
-             &lt;td&gt;
-              12009
-             &lt;/td&gt;
-             &lt;td&gt;
-              3992
-             &lt;/td&gt;
-             &lt;td&gt;
-              3960
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              410
-             &lt;/th&gt;
-             &lt;td&gt;
-              12313
-             &lt;/td&gt;
-             &lt;td&gt;
-              4128
-             &lt;/td&gt;
-             &lt;td&gt;
-              4048
-             &lt;/td&gt;
-             &lt;td&gt;
-              12309
-             &lt;/td&gt;
-             &lt;td&gt;
-              4066
-             &lt;/td&gt;
-             &lt;td&gt;
-              4089
-             &lt;/td&gt;
-             &lt;td&gt;
-              12306
-             &lt;/td&gt;
-             &lt;td&gt;
-              4075
-             &lt;/td&gt;
-             &lt;td&gt;
-              4062
-             &lt;/td&gt;
-             &lt;td&gt;
-              12309
-             &lt;/td&gt;
-             &lt;td&gt;
-              4091
-             &lt;/td&gt;
-             &lt;td&gt;
-              4094
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              420
-             &lt;/th&gt;
-             &lt;td&gt;
-              12613
-             &lt;/td&gt;
-             &lt;td&gt;
-              4137
-             &lt;/td&gt;
-             &lt;td&gt;
-              4181
-             &lt;/td&gt;
-             &lt;td&gt;
-              12609
-             &lt;/td&gt;
-             &lt;td&gt;
-              4181
-             &lt;/td&gt;
-             &lt;td&gt;
-              4132
-             &lt;/td&gt;
-             &lt;td&gt;
-              12606
-             &lt;/td&gt;
-             &lt;td&gt;
-              4167
-             &lt;/td&gt;
-             &lt;td&gt;
-              4175
-             &lt;/td&gt;
-             &lt;td&gt;
-              12609
-             &lt;/td&gt;
-             &lt;td&gt;
-              4159
-             &lt;/td&gt;
-             &lt;td&gt;
-              4169
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              430
-             &lt;/th&gt;
-             &lt;td&gt;
-              12913
-             &lt;/td&gt;
-             &lt;td&gt;
-              4286
-             &lt;/td&gt;
-             &lt;td&gt;
-              4257
-             &lt;/td&gt;
-             &lt;td&gt;
-              12909
-             &lt;/td&gt;
-             &lt;td&gt;
-              4260
-             &lt;/td&gt;
-             &lt;td&gt;
-              4254
-             &lt;/td&gt;
-             &lt;td&gt;
-              12906
-             &lt;/td&gt;
-             &lt;td&gt;
-              4285
-             &lt;/td&gt;
-             &lt;td&gt;
-              4206
-             &lt;/td&gt;
-             &lt;td&gt;
-              12909
-             &lt;/td&gt;
-             &lt;td&gt;
-              4240
-             &lt;/td&gt;
-             &lt;td&gt;
-              4255
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              440
-             &lt;/th&gt;
-             &lt;td&gt;
-              13213
-             &lt;/td&gt;
-             &lt;td&gt;
-              4360
-             &lt;/td&gt;
-             &lt;td&gt;
-              4325
-             &lt;/td&gt;
-             &lt;td&gt;
-              13209
-             &lt;/td&gt;
-             &lt;td&gt;
-              4346
-             &lt;/td&gt;
-             &lt;td&gt;
-              4325
-             &lt;/td&gt;
-             &lt;td&gt;
-              13206
-             &lt;/td&gt;
-             &lt;td&gt;
-              4346
-             &lt;/td&gt;
-             &lt;td&gt;
-              4323
-             &lt;/td&gt;
-             &lt;td&gt;
-              13209
-             &lt;/td&gt;
-             &lt;td&gt;
-              4353
-             &lt;/td&gt;
-             &lt;td&gt;
-              4379
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              450
-             &lt;/th&gt;
-             &lt;td&gt;
-              13513
-             &lt;/td&gt;
-             &lt;td&gt;
-              4424
-             &lt;/td&gt;
-             &lt;td&gt;
-              4400
-             &lt;/td&gt;
-             &lt;td&gt;
-              13509
-             &lt;/td&gt;
-             &lt;td&gt;
-              4415
-             &lt;/td&gt;
-             &lt;td&gt;
-              4392
-             &lt;/td&gt;
-             &lt;td&gt;
-              13506
-             &lt;/td&gt;
-             &lt;td&gt;
-              4399
-             &lt;/td&gt;
-             &lt;td&gt;
-              4441
-             &lt;/td&gt;
-             &lt;td&gt;
-              13509
-             &lt;/td&gt;
-             &lt;td&gt;
-              4438
-             &lt;/td&gt;
-             &lt;td&gt;
-              4401
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              460
-             &lt;/th&gt;
-             &lt;td&gt;
-              13813
-             &lt;/td&gt;
-             &lt;td&gt;
-              4508
-             &lt;/td&gt;
-             &lt;td&gt;
-              4524
-             &lt;/td&gt;
-             &lt;td&gt;
-              13809
-             &lt;/td&gt;
-             &lt;td&gt;
-              4558
-             &lt;/td&gt;
-             &lt;td&gt;
-              4479
-             &lt;/td&gt;
-             &lt;td&gt;
-              13806
-             &lt;/td&gt;
-             &lt;td&gt;
-              4525
-             &lt;/td&gt;
-             &lt;td&gt;
-              4496
-             &lt;/td&gt;
-             &lt;td&gt;
-              13809
-             &lt;/td&gt;
-             &lt;td&gt;
-              4528
-             &lt;/td&gt;
-             &lt;td&gt;
-              4517
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              470
-             &lt;/th&gt;
-             &lt;td&gt;
-              14113
-             &lt;/td&gt;
-             &lt;td&gt;
-              4659
-             &lt;/td&gt;
-             &lt;td&gt;
-              4631
-             &lt;/td&gt;
-             &lt;td&gt;
-              14109
-             &lt;/td&gt;
-             &lt;td&gt;
-              4586
-             &lt;/td&gt;
-             &lt;td&gt;
-              4635
-             &lt;/td&gt;
-             &lt;td&gt;
-              14106
-             &lt;/td&gt;
-             &lt;td&gt;
-              4617
-             &lt;/td&gt;
-             &lt;td&gt;
-              4619
-             &lt;/td&gt;
-             &lt;td&gt;
-              14109
-             &lt;/td&gt;
-             &lt;td&gt;
-              4631
-             &lt;/td&gt;
-             &lt;td&gt;
-              4608
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              480
-             &lt;/th&gt;
-             &lt;td&gt;
-              14413
-             &lt;/td&gt;
-             &lt;td&gt;
-              4661
-             &lt;/td&gt;
-             &lt;td&gt;
-              4651
-             &lt;/td&gt;
-             &lt;td&gt;
-              14409
-             &lt;/td&gt;
-             &lt;td&gt;
-              4677
-             &lt;/td&gt;
-             &lt;td&gt;
-              4718
-             &lt;/td&gt;
-             &lt;td&gt;
-              14406
-             &lt;/td&gt;
-             &lt;td&gt;
-              4695
-             &lt;/td&gt;
-             &lt;td&gt;
-              4669
-             &lt;/td&gt;
-             &lt;td&gt;
-              14409
-             &lt;/td&gt;
-             &lt;td&gt;
-              4685
-             &lt;/td&gt;
-             &lt;td&gt;
-              4663
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              490
-             &lt;/th&gt;
-             &lt;td&gt;
-              14713
-             &lt;/td&gt;
-             &lt;td&gt;
-              4820
-             &lt;/td&gt;
-             &lt;td&gt;
-              4769
-             &lt;/td&gt;
-             &lt;td&gt;
-              14709
-             &lt;/td&gt;
-             &lt;td&gt;
-              4757
-             &lt;/td&gt;
-             &lt;td&gt;
-              4753
-             &lt;/td&gt;
-             &lt;td&gt;
-              14706
-             &lt;/td&gt;
-             &lt;td&gt;
-              4808
-             &lt;/td&gt;
-             &lt;td&gt;
-              4781
-             &lt;/td&gt;
-             &lt;td&gt;
-              14709
-             &lt;/td&gt;
-             &lt;td&gt;
-              4835
-             &lt;/td&gt;
-             &lt;td&gt;
-              4747
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              500
-             &lt;/th&gt;
-             &lt;td&gt;
-              15013
-             &lt;/td&gt;
-             &lt;td&gt;
-              4838
-             &lt;/td&gt;
-             &lt;td&gt;
-              4834
-             &lt;/td&gt;
-             &lt;td&gt;
-              15009
-             &lt;/td&gt;
-             &lt;td&gt;
-              4832
-             &lt;/td&gt;
-             &lt;td&gt;
-              4840
-             &lt;/td&gt;
-             &lt;td&gt;
-              15006
-             &lt;/td&gt;
-             &lt;td&gt;
-              4883
-             &lt;/td&gt;
-             &lt;td&gt;
-              4838
-             &lt;/td&gt;
-             &lt;td&gt;
-              15009
-             &lt;/td&gt;
-             &lt;td&gt;
-              4893
-             &lt;/td&gt;
-             &lt;td&gt;
-              4860
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              510
-             &lt;/th&gt;
-             &lt;td&gt;
-              15313
-             &lt;/td&gt;
-             &lt;td&gt;
-              4943
-             &lt;/td&gt;
-             &lt;td&gt;
-              4988
-             &lt;/td&gt;
-             &lt;td&gt;
-              15309
-             &lt;/td&gt;
-             &lt;td&gt;
-              4943
-             &lt;/td&gt;
-             &lt;td&gt;
-              4984
-             &lt;/td&gt;
-             &lt;td&gt;
-              15306
-             &lt;/td&gt;
-             &lt;td&gt;
-              4951
-             &lt;/td&gt;
-             &lt;td&gt;
-              4906
-             &lt;/td&gt;
-             &lt;td&gt;
-              15309
-             &lt;/td&gt;
-             &lt;td&gt;
-              4970
-             &lt;/td&gt;
-             &lt;td&gt;
-              4948
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              520
-             &lt;/th&gt;
-             &lt;td&gt;
-              15613
-             &lt;/td&gt;
-             &lt;td&gt;
-              5065
-             &lt;/td&gt;
-             &lt;td&gt;
-              5024
-             &lt;/td&gt;
-             &lt;td&gt;
-              15609
-             &lt;/td&gt;
-             &lt;td&gt;
-              5024
-             &lt;/td&gt;
-             &lt;td&gt;
-              4973
-             &lt;/td&gt;
-             &lt;td&gt;
-              15606
-             &lt;/td&gt;
-             &lt;td&gt;
-              5063
-             &lt;/td&gt;
-             &lt;td&gt;
-              5081
-             &lt;/td&gt;
-             &lt;td&gt;
-              15609
-             &lt;/td&gt;
-             &lt;td&gt;
-              5024
-             &lt;/td&gt;
-             &lt;td&gt;
-              5076
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              530
-             &lt;/th&gt;
-             &lt;td&gt;
-              15913
-             &lt;/td&gt;
-             &lt;td&gt;
-              5119
-             &lt;/td&gt;
-             &lt;td&gt;
-              5106
-             &lt;/td&gt;
-             &lt;td&gt;
-              15909
-             &lt;/td&gt;
-             &lt;td&gt;
-              5137
-             &lt;/td&gt;
-             &lt;td&gt;
-              5138
-             &lt;/td&gt;
-             &lt;td&gt;
-              15906
-             &lt;/td&gt;
-             &lt;td&gt;
-              5130
-             &lt;/td&gt;
-             &lt;td&gt;
-              5070
-             &lt;/td&gt;
-             &lt;td&gt;
-              15909
-             &lt;/td&gt;
-             &lt;td&gt;
-              5094
-             &lt;/td&gt;
-             &lt;td&gt;
-              5129
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              540
-             &lt;/th&gt;
-             &lt;td&gt;
-              16213
-             &lt;/td&gt;
-             &lt;td&gt;
-              5255
-             &lt;/td&gt;
-             &lt;td&gt;
-              5226
-             &lt;/td&gt;
-             &lt;td&gt;
-              16209
-             &lt;/td&gt;
-             &lt;td&gt;
-              5187
-             &lt;/td&gt;
-             &lt;td&gt;
-              5211
-             &lt;/td&gt;
-             &lt;td&gt;
-              16206
-             &lt;/td&gt;
-             &lt;td&gt;
-              5224
-             &lt;/td&gt;
-             &lt;td&gt;
-              5228
-             &lt;/td&gt;
-             &lt;td&gt;
-              16209
-             &lt;/td&gt;
-             &lt;td&gt;
-              5220
-             &lt;/td&gt;
-             &lt;td&gt;
-              5202
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              550
-             &lt;/th&gt;
-             &lt;td&gt;
-              16513
-             &lt;/td&gt;
-             &lt;td&gt;
-              5291
-             &lt;/td&gt;
-             &lt;td&gt;
-              5253
-             &lt;/td&gt;
-             &lt;td&gt;
-              16509
-             &lt;/td&gt;
-             &lt;td&gt;
-              5272
-             &lt;/td&gt;
-             &lt;td&gt;
-              5348
-             &lt;/td&gt;
-             &lt;td&gt;
-              16506
-             &lt;/td&gt;
-             &lt;td&gt;
-              5271
-             &lt;/td&gt;
-             &lt;td&gt;
-              5327
-             &lt;/td&gt;
-             &lt;td&gt;
-              16509
-             &lt;/td&gt;
-             &lt;td&gt;
-              5339
-             &lt;/td&gt;
-             &lt;td&gt;
-              5321
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              560
-             &lt;/th&gt;
-             &lt;td&gt;
-              16813
-             &lt;/td&gt;
-             &lt;td&gt;
-              5397
-             &lt;/td&gt;
-             &lt;td&gt;
-              5387
-             &lt;/td&gt;
-             &lt;td&gt;
-              16809
-             &lt;/td&gt;
-             &lt;td&gt;
-              5448
-             &lt;/td&gt;
-             &lt;td&gt;
-              5368
-             &lt;/td&gt;
-             &lt;td&gt;
-              16806
-             &lt;/td&gt;
-             &lt;td&gt;
-              5401
-             &lt;/td&gt;
-             &lt;td&gt;
-              5375
-             &lt;/td&gt;
-             &lt;td&gt;
-              16809
-             &lt;/td&gt;
-             &lt;td&gt;
-              5409
-             &lt;/td&gt;
-             &lt;td&gt;
-              5419
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              570
-             &lt;/th&gt;
-             &lt;td&gt;
-              17113
-             &lt;/td&gt;
-             &lt;td&gt;
-              5502
-             &lt;/td&gt;
-             &lt;td&gt;
-              5446
-             &lt;/td&gt;
-             &lt;td&gt;
-              17109
-             &lt;/td&gt;
-             &lt;td&gt;
-              5449
-             &lt;/td&gt;
-             &lt;td&gt;
-              5449
-             &lt;/td&gt;
-             &lt;td&gt;
-              17106
-             &lt;/td&gt;
-             &lt;td&gt;
-              5467
-             &lt;/td&gt;
-             &lt;td&gt;
-              5502
-             &lt;/td&gt;
-             &lt;td&gt;
-              17109
-             &lt;/td&gt;
-             &lt;td&gt;
-              5494
-             &lt;/td&gt;
-             &lt;td&gt;
-              5442
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              580
-             &lt;/th&gt;
-             &lt;td&gt;
-              17413
-             &lt;/td&gt;
-             &lt;td&gt;
-              5512
-             &lt;/td&gt;
-             &lt;td&gt;
-              5501
-             &lt;/td&gt;
-             &lt;td&gt;
-              17409
-             &lt;/td&gt;
-             &lt;td&gt;
-              5579
-             &lt;/td&gt;
-             &lt;td&gt;
-              5566
-             &lt;/td&gt;
-             &lt;td&gt;
-              17406
-             &lt;/td&gt;
-             &lt;td&gt;
-              5578
-             &lt;/td&gt;
-             &lt;td&gt;
-              5486
-             &lt;/td&gt;
-             &lt;td&gt;
-              17409
-             &lt;/td&gt;
-             &lt;td&gt;
-              5566
-             &lt;/td&gt;
-             &lt;td&gt;
-              5487
-             &lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-             &lt;th&gt;
-              590
-             &lt;/th&gt;
-             &lt;td&gt;
-              17713
-             &lt;/td&gt;
-             &lt;td&gt;
-              5662
-             &lt;/td&gt;
-             &lt;td&gt;
-              5639
-             &lt;/td&gt;
-             &lt;td&gt;
-              17709
-             &lt;/td&gt;
-             &lt;td&gt;
-              5652
-             &lt;/td&gt;
-             &lt;td&gt;
-              5593
-             &lt;/td&gt;
-             &lt;td&gt;
-              17706
-             &lt;/td&gt;
-             &lt;td&gt;
-              5643
-             &lt;/td&gt;
-             &lt;td&gt;
-              5607
-             &lt;/td&gt;
-             &lt;td&gt;
-              17709
-             &lt;/td&gt;
-             &lt;td&gt;
-              5678
-             &lt;/td&gt;
-             &lt;td&gt;
-              5624
-             &lt;/td&gt;
-            &lt;/tr&gt;
-           &lt;/tbody&gt;
-          &lt;/table&gt;
-          &lt;p&gt;
-           50 rows × 12 columns
-          &lt;/p&gt;
-         &lt;/div&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [13]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_html rendered_html output_subarea "&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+&lt;thead&gt;
+&lt;tr style="text-align: right;"&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;bson&lt;/th&gt;
+&lt;th&gt;bson(g)&lt;/th&gt;
+&lt;th&gt;bson(z)&lt;/th&gt;
+&lt;th&gt;json&lt;/th&gt;
+&lt;th&gt;json(g)&lt;/th&gt;
+&lt;th&gt;json(z)&lt;/th&gt;
+&lt;th&gt;msgpack&lt;/th&gt;
+&lt;th&gt;msgpack(g)&lt;/th&gt;
+&lt;th&gt;msgpack(z)&lt;/th&gt;
+&lt;th&gt;raw&lt;/th&gt;
+&lt;th&gt;raw(g)&lt;/th&gt;
+&lt;th&gt;raw(z)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;100&lt;/th&gt;
+&lt;td&gt;  3013&lt;/td&gt;
+&lt;td&gt; 1268&lt;/td&gt;
+&lt;td&gt; 1261&lt;/td&gt;
+&lt;td&gt;  3009&lt;/td&gt;
+&lt;td&gt; 1275&lt;/td&gt;
+&lt;td&gt; 1245&lt;/td&gt;
+&lt;td&gt;  3006&lt;/td&gt;
+&lt;td&gt; 1276&lt;/td&gt;
+&lt;td&gt; 1227&lt;/td&gt;
+&lt;td&gt;  3009&lt;/td&gt;
+&lt;td&gt; 1248&lt;/td&gt;
+&lt;td&gt; 1244&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;110&lt;/th&gt;
+&lt;td&gt;  3313&lt;/td&gt;
+&lt;td&gt; 1375&lt;/td&gt;
+&lt;td&gt; 1338&lt;/td&gt;
+&lt;td&gt;  3309&lt;/td&gt;
+&lt;td&gt; 1363&lt;/td&gt;
+&lt;td&gt; 1347&lt;/td&gt;
+&lt;td&gt;  3306&lt;/td&gt;
+&lt;td&gt; 1348&lt;/td&gt;
+&lt;td&gt; 1338&lt;/td&gt;
+&lt;td&gt;  3309&lt;/td&gt;
+&lt;td&gt; 1329&lt;/td&gt;
+&lt;td&gt; 1342&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;120&lt;/th&gt;
+&lt;td&gt;  3613&lt;/td&gt;
+&lt;td&gt; 1476&lt;/td&gt;
+&lt;td&gt; 1468&lt;/td&gt;
+&lt;td&gt;  3609&lt;/td&gt;
+&lt;td&gt; 1464&lt;/td&gt;
+&lt;td&gt; 1470&lt;/td&gt;
+&lt;td&gt;  3606&lt;/td&gt;
+&lt;td&gt; 1478&lt;/td&gt;
+&lt;td&gt; 1461&lt;/td&gt;
+&lt;td&gt;  3609&lt;/td&gt;
+&lt;td&gt; 1479&lt;/td&gt;
+&lt;td&gt; 1441&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;130&lt;/th&gt;
+&lt;td&gt;  3913&lt;/td&gt;
+&lt;td&gt; 1534&lt;/td&gt;
+&lt;td&gt; 1530&lt;/td&gt;
+&lt;td&gt;  3909&lt;/td&gt;
+&lt;td&gt; 1563&lt;/td&gt;
+&lt;td&gt; 1529&lt;/td&gt;
+&lt;td&gt;  3906&lt;/td&gt;
+&lt;td&gt; 1567&lt;/td&gt;
+&lt;td&gt; 1550&lt;/td&gt;
+&lt;td&gt;  3909&lt;/td&gt;
+&lt;td&gt; 1565&lt;/td&gt;
+&lt;td&gt; 1555&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;140&lt;/th&gt;
+&lt;td&gt;  4213&lt;/td&gt;
+&lt;td&gt; 1654&lt;/td&gt;
+&lt;td&gt; 1660&lt;/td&gt;
+&lt;td&gt;  4209&lt;/td&gt;
+&lt;td&gt; 1655&lt;/td&gt;
+&lt;td&gt; 1653&lt;/td&gt;
+&lt;td&gt;  4206&lt;/td&gt;
+&lt;td&gt; 1661&lt;/td&gt;
+&lt;td&gt; 1613&lt;/td&gt;
+&lt;td&gt;  4209&lt;/td&gt;
+&lt;td&gt; 1659&lt;/td&gt;
+&lt;td&gt; 1632&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;150&lt;/th&gt;
+&lt;td&gt;  4513&lt;/td&gt;
+&lt;td&gt; 1747&lt;/td&gt;
+&lt;td&gt; 1743&lt;/td&gt;
+&lt;td&gt;  4509&lt;/td&gt;
+&lt;td&gt; 1736&lt;/td&gt;
+&lt;td&gt; 1726&lt;/td&gt;
+&lt;td&gt;  4506&lt;/td&gt;
+&lt;td&gt; 1766&lt;/td&gt;
+&lt;td&gt; 1728&lt;/td&gt;
+&lt;td&gt;  4509&lt;/td&gt;
+&lt;td&gt; 1728&lt;/td&gt;
+&lt;td&gt; 1707&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;160&lt;/th&gt;
+&lt;td&gt;  4813&lt;/td&gt;
+&lt;td&gt; 1867&lt;/td&gt;
+&lt;td&gt; 1844&lt;/td&gt;
+&lt;td&gt;  4809&lt;/td&gt;
+&lt;td&gt; 1844&lt;/td&gt;
+&lt;td&gt; 1838&lt;/td&gt;
+&lt;td&gt;  4806&lt;/td&gt;
+&lt;td&gt; 1853&lt;/td&gt;
+&lt;td&gt; 1842&lt;/td&gt;
+&lt;td&gt;  4809&lt;/td&gt;
+&lt;td&gt; 1813&lt;/td&gt;
+&lt;td&gt; 1814&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;170&lt;/th&gt;
+&lt;td&gt;  5113&lt;/td&gt;
+&lt;td&gt; 1933&lt;/td&gt;
+&lt;td&gt; 1932&lt;/td&gt;
+&lt;td&gt;  5109&lt;/td&gt;
+&lt;td&gt; 1920&lt;/td&gt;
+&lt;td&gt; 1955&lt;/td&gt;
+&lt;td&gt;  5106&lt;/td&gt;
+&lt;td&gt; 1928&lt;/td&gt;
+&lt;td&gt; 1950&lt;/td&gt;
+&lt;td&gt;  5109&lt;/td&gt;
+&lt;td&gt; 1924&lt;/td&gt;
+&lt;td&gt; 1940&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;180&lt;/th&gt;
+&lt;td&gt;  5413&lt;/td&gt;
+&lt;td&gt; 2045&lt;/td&gt;
+&lt;td&gt; 2007&lt;/td&gt;
+&lt;td&gt;  5409&lt;/td&gt;
+&lt;td&gt; 2023&lt;/td&gt;
+&lt;td&gt; 2013&lt;/td&gt;
+&lt;td&gt;  5406&lt;/td&gt;
+&lt;td&gt; 2040&lt;/td&gt;
+&lt;td&gt; 2021&lt;/td&gt;
+&lt;td&gt;  5409&lt;/td&gt;
+&lt;td&gt; 2046&lt;/td&gt;
+&lt;td&gt; 2021&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;190&lt;/th&gt;
+&lt;td&gt;  5713&lt;/td&gt;
+&lt;td&gt; 2136&lt;/td&gt;
+&lt;td&gt; 2106&lt;/td&gt;
+&lt;td&gt;  5709&lt;/td&gt;
+&lt;td&gt; 2134&lt;/td&gt;
+&lt;td&gt; 2124&lt;/td&gt;
+&lt;td&gt;  5706&lt;/td&gt;
+&lt;td&gt; 2134&lt;/td&gt;
+&lt;td&gt; 2109&lt;/td&gt;
+&lt;td&gt;  5709&lt;/td&gt;
+&lt;td&gt; 2110&lt;/td&gt;
+&lt;td&gt; 2119&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;200&lt;/th&gt;
+&lt;td&gt;  6013&lt;/td&gt;
+&lt;td&gt; 2240&lt;/td&gt;
+&lt;td&gt; 2206&lt;/td&gt;
+&lt;td&gt;  6009&lt;/td&gt;
+&lt;td&gt; 2230&lt;/td&gt;
+&lt;td&gt; 2205&lt;/td&gt;
+&lt;td&gt;  6006&lt;/td&gt;
+&lt;td&gt; 2202&lt;/td&gt;
+&lt;td&gt; 2220&lt;/td&gt;
+&lt;td&gt;  6009&lt;/td&gt;
+&lt;td&gt; 2230&lt;/td&gt;
+&lt;td&gt; 2191&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;210&lt;/th&gt;
+&lt;td&gt;  6313&lt;/td&gt;
+&lt;td&gt; 2298&lt;/td&gt;
+&lt;td&gt; 2246&lt;/td&gt;
+&lt;td&gt;  6309&lt;/td&gt;
+&lt;td&gt; 2314&lt;/td&gt;
+&lt;td&gt; 2300&lt;/td&gt;
+&lt;td&gt;  6306&lt;/td&gt;
+&lt;td&gt; 2302&lt;/td&gt;
+&lt;td&gt; 2314&lt;/td&gt;
+&lt;td&gt;  6309&lt;/td&gt;
+&lt;td&gt; 2248&lt;/td&gt;
+&lt;td&gt; 2292&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;220&lt;/th&gt;
+&lt;td&gt;  6613&lt;/td&gt;
+&lt;td&gt; 2425&lt;/td&gt;
+&lt;td&gt; 2379&lt;/td&gt;
+&lt;td&gt;  6609&lt;/td&gt;
+&lt;td&gt; 2384&lt;/td&gt;
+&lt;td&gt; 2386&lt;/td&gt;
+&lt;td&gt;  6606&lt;/td&gt;
+&lt;td&gt; 2417&lt;/td&gt;
+&lt;td&gt; 2339&lt;/td&gt;
+&lt;td&gt;  6609&lt;/td&gt;
+&lt;td&gt; 2419&lt;/td&gt;
+&lt;td&gt; 2398&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;230&lt;/th&gt;
+&lt;td&gt;  6913&lt;/td&gt;
+&lt;td&gt; 2538&lt;/td&gt;
+&lt;td&gt; 2483&lt;/td&gt;
+&lt;td&gt;  6909&lt;/td&gt;
+&lt;td&gt; 2484&lt;/td&gt;
+&lt;td&gt; 2479&lt;/td&gt;
+&lt;td&gt;  6906&lt;/td&gt;
+&lt;td&gt; 2490&lt;/td&gt;
+&lt;td&gt; 2491&lt;/td&gt;
+&lt;td&gt;  6909&lt;/td&gt;
+&lt;td&gt; 2470&lt;/td&gt;
+&lt;td&gt; 2492&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;240&lt;/th&gt;
+&lt;td&gt;  7213&lt;/td&gt;
+&lt;td&gt; 2589&lt;/td&gt;
+&lt;td&gt; 2561&lt;/td&gt;
+&lt;td&gt;  7209&lt;/td&gt;
+&lt;td&gt; 2570&lt;/td&gt;
+&lt;td&gt; 2561&lt;/td&gt;
+&lt;td&gt;  7206&lt;/td&gt;
+&lt;td&gt; 2616&lt;/td&gt;
+&lt;td&gt; 2580&lt;/td&gt;
+&lt;td&gt;  7209&lt;/td&gt;
+&lt;td&gt; 2559&lt;/td&gt;
+&lt;td&gt; 2570&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;250&lt;/th&gt;
+&lt;td&gt;  7513&lt;/td&gt;
+&lt;td&gt; 2682&lt;/td&gt;
+&lt;td&gt; 2668&lt;/td&gt;
+&lt;td&gt;  7509&lt;/td&gt;
+&lt;td&gt; 2670&lt;/td&gt;
+&lt;td&gt; 2666&lt;/td&gt;
+&lt;td&gt;  7506&lt;/td&gt;
+&lt;td&gt; 2683&lt;/td&gt;
+&lt;td&gt; 2632&lt;/td&gt;
+&lt;td&gt;  7509&lt;/td&gt;
+&lt;td&gt; 2660&lt;/td&gt;
+&lt;td&gt; 2663&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;260&lt;/th&gt;
+&lt;td&gt;  7813&lt;/td&gt;
+&lt;td&gt; 2765&lt;/td&gt;
+&lt;td&gt; 2746&lt;/td&gt;
+&lt;td&gt;  7809&lt;/td&gt;
+&lt;td&gt; 2736&lt;/td&gt;
+&lt;td&gt; 2748&lt;/td&gt;
+&lt;td&gt;  7806&lt;/td&gt;
+&lt;td&gt; 2771&lt;/td&gt;
+&lt;td&gt; 2750&lt;/td&gt;
+&lt;td&gt;  7809&lt;/td&gt;
+&lt;td&gt; 2764&lt;/td&gt;
+&lt;td&gt; 2734&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;270&lt;/th&gt;
+&lt;td&gt;  8113&lt;/td&gt;
+&lt;td&gt; 2810&lt;/td&gt;
+&lt;td&gt; 2850&lt;/td&gt;
+&lt;td&gt;  8109&lt;/td&gt;
+&lt;td&gt; 2870&lt;/td&gt;
+&lt;td&gt; 2832&lt;/td&gt;
+&lt;td&gt;  8106&lt;/td&gt;
+&lt;td&gt; 2857&lt;/td&gt;
+&lt;td&gt; 2858&lt;/td&gt;
+&lt;td&gt;  8109&lt;/td&gt;
+&lt;td&gt; 2856&lt;/td&gt;
+&lt;td&gt; 2882&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;280&lt;/th&gt;
+&lt;td&gt;  8413&lt;/td&gt;
+&lt;td&gt; 2967&lt;/td&gt;
+&lt;td&gt; 2919&lt;/td&gt;
+&lt;td&gt;  8409&lt;/td&gt;
+&lt;td&gt; 2934&lt;/td&gt;
+&lt;td&gt; 2923&lt;/td&gt;
+&lt;td&gt;  8406&lt;/td&gt;
+&lt;td&gt; 2944&lt;/td&gt;
+&lt;td&gt; 2934&lt;/td&gt;
+&lt;td&gt;  8409&lt;/td&gt;
+&lt;td&gt; 2947&lt;/td&gt;
+&lt;td&gt; 2909&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;290&lt;/th&gt;
+&lt;td&gt;  8713&lt;/td&gt;
+&lt;td&gt; 3031&lt;/td&gt;
+&lt;td&gt; 3048&lt;/td&gt;
+&lt;td&gt;  8709&lt;/td&gt;
+&lt;td&gt; 3008&lt;/td&gt;
+&lt;td&gt; 3012&lt;/td&gt;
+&lt;td&gt;  8706&lt;/td&gt;
+&lt;td&gt; 3025&lt;/td&gt;
+&lt;td&gt; 3001&lt;/td&gt;
+&lt;td&gt;  8709&lt;/td&gt;
+&lt;td&gt; 3048&lt;/td&gt;
+&lt;td&gt; 3054&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;300&lt;/th&gt;
+&lt;td&gt;  9013&lt;/td&gt;
+&lt;td&gt; 3122&lt;/td&gt;
+&lt;td&gt; 3088&lt;/td&gt;
+&lt;td&gt;  9009&lt;/td&gt;
+&lt;td&gt; 3115&lt;/td&gt;
+&lt;td&gt; 3105&lt;/td&gt;
+&lt;td&gt;  9006&lt;/td&gt;
+&lt;td&gt; 3170&lt;/td&gt;
+&lt;td&gt; 3099&lt;/td&gt;
+&lt;td&gt;  9009&lt;/td&gt;
+&lt;td&gt; 3075&lt;/td&gt;
+&lt;td&gt; 3057&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;310&lt;/th&gt;
+&lt;td&gt;  9313&lt;/td&gt;
+&lt;td&gt; 3213&lt;/td&gt;
+&lt;td&gt; 3205&lt;/td&gt;
+&lt;td&gt;  9309&lt;/td&gt;
+&lt;td&gt; 3190&lt;/td&gt;
+&lt;td&gt; 3195&lt;/td&gt;
+&lt;td&gt;  9306&lt;/td&gt;
+&lt;td&gt; 3204&lt;/td&gt;
+&lt;td&gt; 3188&lt;/td&gt;
+&lt;td&gt;  9309&lt;/td&gt;
+&lt;td&gt; 3200&lt;/td&gt;
+&lt;td&gt; 3213&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;320&lt;/th&gt;
+&lt;td&gt;  9613&lt;/td&gt;
+&lt;td&gt; 3289&lt;/td&gt;
+&lt;td&gt; 3285&lt;/td&gt;
+&lt;td&gt;  9609&lt;/td&gt;
+&lt;td&gt; 3256&lt;/td&gt;
+&lt;td&gt; 3314&lt;/td&gt;
+&lt;td&gt;  9606&lt;/td&gt;
+&lt;td&gt; 3269&lt;/td&gt;
+&lt;td&gt; 3294&lt;/td&gt;
+&lt;td&gt;  9609&lt;/td&gt;
+&lt;td&gt; 3298&lt;/td&gt;
+&lt;td&gt; 3300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;330&lt;/th&gt;
+&lt;td&gt;  9913&lt;/td&gt;
+&lt;td&gt; 3379&lt;/td&gt;
+&lt;td&gt; 3386&lt;/td&gt;
+&lt;td&gt;  9909&lt;/td&gt;
+&lt;td&gt; 3352&lt;/td&gt;
+&lt;td&gt; 3371&lt;/td&gt;
+&lt;td&gt;  9906&lt;/td&gt;
+&lt;td&gt; 3395&lt;/td&gt;
+&lt;td&gt; 3365&lt;/td&gt;
+&lt;td&gt;  9909&lt;/td&gt;
+&lt;td&gt; 3406&lt;/td&gt;
+&lt;td&gt; 3373&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;340&lt;/th&gt;
+&lt;td&gt; 10213&lt;/td&gt;
+&lt;td&gt; 3488&lt;/td&gt;
+&lt;td&gt; 3470&lt;/td&gt;
+&lt;td&gt; 10209&lt;/td&gt;
+&lt;td&gt; 3454&lt;/td&gt;
+&lt;td&gt; 3466&lt;/td&gt;
+&lt;td&gt; 10206&lt;/td&gt;
+&lt;td&gt; 3496&lt;/td&gt;
+&lt;td&gt; 3465&lt;/td&gt;
+&lt;td&gt; 10209&lt;/td&gt;
+&lt;td&gt; 3495&lt;/td&gt;
+&lt;td&gt; 3465&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;350&lt;/th&gt;
+&lt;td&gt; 10513&lt;/td&gt;
+&lt;td&gt; 3593&lt;/td&gt;
+&lt;td&gt; 3557&lt;/td&gt;
+&lt;td&gt; 10509&lt;/td&gt;
+&lt;td&gt; 3556&lt;/td&gt;
+&lt;td&gt; 3505&lt;/td&gt;
+&lt;td&gt; 10506&lt;/td&gt;
+&lt;td&gt; 3552&lt;/td&gt;
+&lt;td&gt; 3524&lt;/td&gt;
+&lt;td&gt; 10509&lt;/td&gt;
+&lt;td&gt; 3578&lt;/td&gt;
+&lt;td&gt; 3564&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;360&lt;/th&gt;
+&lt;td&gt; 10813&lt;/td&gt;
+&lt;td&gt; 3643&lt;/td&gt;
+&lt;td&gt; 3644&lt;/td&gt;
+&lt;td&gt; 10809&lt;/td&gt;
+&lt;td&gt; 3642&lt;/td&gt;
+&lt;td&gt; 3636&lt;/td&gt;
+&lt;td&gt; 10806&lt;/td&gt;
+&lt;td&gt; 3666&lt;/td&gt;
+&lt;td&gt; 3629&lt;/td&gt;
+&lt;td&gt; 10809&lt;/td&gt;
+&lt;td&gt; 3632&lt;/td&gt;
+&lt;td&gt; 3631&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;370&lt;/th&gt;
+&lt;td&gt; 11113&lt;/td&gt;
+&lt;td&gt; 3701&lt;/td&gt;
+&lt;td&gt; 3697&lt;/td&gt;
+&lt;td&gt; 11109&lt;/td&gt;
+&lt;td&gt; 3750&lt;/td&gt;
+&lt;td&gt; 3739&lt;/td&gt;
+&lt;td&gt; 11106&lt;/td&gt;
+&lt;td&gt; 3717&lt;/td&gt;
+&lt;td&gt; 3709&lt;/td&gt;
+&lt;td&gt; 11109&lt;/td&gt;
+&lt;td&gt; 3731&lt;/td&gt;
+&lt;td&gt; 3713&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;380&lt;/th&gt;
+&lt;td&gt; 11413&lt;/td&gt;
+&lt;td&gt; 3836&lt;/td&gt;
+&lt;td&gt; 3839&lt;/td&gt;
+&lt;td&gt; 11409&lt;/td&gt;
+&lt;td&gt; 3831&lt;/td&gt;
+&lt;td&gt; 3796&lt;/td&gt;
+&lt;td&gt; 11406&lt;/td&gt;
+&lt;td&gt; 3796&lt;/td&gt;
+&lt;td&gt; 3806&lt;/td&gt;
+&lt;td&gt; 11409&lt;/td&gt;
+&lt;td&gt; 3827&lt;/td&gt;
+&lt;td&gt; 3809&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;390&lt;/th&gt;
+&lt;td&gt; 11713&lt;/td&gt;
+&lt;td&gt; 3950&lt;/td&gt;
+&lt;td&gt; 3905&lt;/td&gt;
+&lt;td&gt; 11709&lt;/td&gt;
+&lt;td&gt; 3963&lt;/td&gt;
+&lt;td&gt; 3920&lt;/td&gt;
+&lt;td&gt; 11706&lt;/td&gt;
+&lt;td&gt; 3882&lt;/td&gt;
+&lt;td&gt; 3910&lt;/td&gt;
+&lt;td&gt; 11709&lt;/td&gt;
+&lt;td&gt; 3882&lt;/td&gt;
+&lt;td&gt; 3890&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;400&lt;/th&gt;
+&lt;td&gt; 12013&lt;/td&gt;
+&lt;td&gt; 4002&lt;/td&gt;
+&lt;td&gt; 3984&lt;/td&gt;
+&lt;td&gt; 12009&lt;/td&gt;
+&lt;td&gt; 4014&lt;/td&gt;
+&lt;td&gt; 3977&lt;/td&gt;
+&lt;td&gt; 12006&lt;/td&gt;
+&lt;td&gt; 4009&lt;/td&gt;
+&lt;td&gt; 3988&lt;/td&gt;
+&lt;td&gt; 12009&lt;/td&gt;
+&lt;td&gt; 3992&lt;/td&gt;
+&lt;td&gt; 3960&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;410&lt;/th&gt;
+&lt;td&gt; 12313&lt;/td&gt;
+&lt;td&gt; 4128&lt;/td&gt;
+&lt;td&gt; 4048&lt;/td&gt;
+&lt;td&gt; 12309&lt;/td&gt;
+&lt;td&gt; 4066&lt;/td&gt;
+&lt;td&gt; 4089&lt;/td&gt;
+&lt;td&gt; 12306&lt;/td&gt;
+&lt;td&gt; 4075&lt;/td&gt;
+&lt;td&gt; 4062&lt;/td&gt;
+&lt;td&gt; 12309&lt;/td&gt;
+&lt;td&gt; 4091&lt;/td&gt;
+&lt;td&gt; 4094&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;420&lt;/th&gt;
+&lt;td&gt; 12613&lt;/td&gt;
+&lt;td&gt; 4137&lt;/td&gt;
+&lt;td&gt; 4181&lt;/td&gt;
+&lt;td&gt; 12609&lt;/td&gt;
+&lt;td&gt; 4181&lt;/td&gt;
+&lt;td&gt; 4132&lt;/td&gt;
+&lt;td&gt; 12606&lt;/td&gt;
+&lt;td&gt; 4167&lt;/td&gt;
+&lt;td&gt; 4175&lt;/td&gt;
+&lt;td&gt; 12609&lt;/td&gt;
+&lt;td&gt; 4159&lt;/td&gt;
+&lt;td&gt; 4169&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;430&lt;/th&gt;
+&lt;td&gt; 12913&lt;/td&gt;
+&lt;td&gt; 4286&lt;/td&gt;
+&lt;td&gt; 4257&lt;/td&gt;
+&lt;td&gt; 12909&lt;/td&gt;
+&lt;td&gt; 4260&lt;/td&gt;
+&lt;td&gt; 4254&lt;/td&gt;
+&lt;td&gt; 12906&lt;/td&gt;
+&lt;td&gt; 4285&lt;/td&gt;
+&lt;td&gt; 4206&lt;/td&gt;
+&lt;td&gt; 12909&lt;/td&gt;
+&lt;td&gt; 4240&lt;/td&gt;
+&lt;td&gt; 4255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;440&lt;/th&gt;
+&lt;td&gt; 13213&lt;/td&gt;
+&lt;td&gt; 4360&lt;/td&gt;
+&lt;td&gt; 4325&lt;/td&gt;
+&lt;td&gt; 13209&lt;/td&gt;
+&lt;td&gt; 4346&lt;/td&gt;
+&lt;td&gt; 4325&lt;/td&gt;
+&lt;td&gt; 13206&lt;/td&gt;
+&lt;td&gt; 4346&lt;/td&gt;
+&lt;td&gt; 4323&lt;/td&gt;
+&lt;td&gt; 13209&lt;/td&gt;
+&lt;td&gt; 4353&lt;/td&gt;
+&lt;td&gt; 4379&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;450&lt;/th&gt;
+&lt;td&gt; 13513&lt;/td&gt;
+&lt;td&gt; 4424&lt;/td&gt;
+&lt;td&gt; 4400&lt;/td&gt;
+&lt;td&gt; 13509&lt;/td&gt;
+&lt;td&gt; 4415&lt;/td&gt;
+&lt;td&gt; 4392&lt;/td&gt;
+&lt;td&gt; 13506&lt;/td&gt;
+&lt;td&gt; 4399&lt;/td&gt;
+&lt;td&gt; 4441&lt;/td&gt;
+&lt;td&gt; 13509&lt;/td&gt;
+&lt;td&gt; 4438&lt;/td&gt;
+&lt;td&gt; 4401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;460&lt;/th&gt;
+&lt;td&gt; 13813&lt;/td&gt;
+&lt;td&gt; 4508&lt;/td&gt;
+&lt;td&gt; 4524&lt;/td&gt;
+&lt;td&gt; 13809&lt;/td&gt;
+&lt;td&gt; 4558&lt;/td&gt;
+&lt;td&gt; 4479&lt;/td&gt;
+&lt;td&gt; 13806&lt;/td&gt;
+&lt;td&gt; 4525&lt;/td&gt;
+&lt;td&gt; 4496&lt;/td&gt;
+&lt;td&gt; 13809&lt;/td&gt;
+&lt;td&gt; 4528&lt;/td&gt;
+&lt;td&gt; 4517&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;470&lt;/th&gt;
+&lt;td&gt; 14113&lt;/td&gt;
+&lt;td&gt; 4659&lt;/td&gt;
+&lt;td&gt; 4631&lt;/td&gt;
+&lt;td&gt; 14109&lt;/td&gt;
+&lt;td&gt; 4586&lt;/td&gt;
+&lt;td&gt; 4635&lt;/td&gt;
+&lt;td&gt; 14106&lt;/td&gt;
+&lt;td&gt; 4617&lt;/td&gt;
+&lt;td&gt; 4619&lt;/td&gt;
+&lt;td&gt; 14109&lt;/td&gt;
+&lt;td&gt; 4631&lt;/td&gt;
+&lt;td&gt; 4608&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;480&lt;/th&gt;
+&lt;td&gt; 14413&lt;/td&gt;
+&lt;td&gt; 4661&lt;/td&gt;
+&lt;td&gt; 4651&lt;/td&gt;
+&lt;td&gt; 14409&lt;/td&gt;
+&lt;td&gt; 4677&lt;/td&gt;
+&lt;td&gt; 4718&lt;/td&gt;
+&lt;td&gt; 14406&lt;/td&gt;
+&lt;td&gt; 4695&lt;/td&gt;
+&lt;td&gt; 4669&lt;/td&gt;
+&lt;td&gt; 14409&lt;/td&gt;
+&lt;td&gt; 4685&lt;/td&gt;
+&lt;td&gt; 4663&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;490&lt;/th&gt;
+&lt;td&gt; 14713&lt;/td&gt;
+&lt;td&gt; 4820&lt;/td&gt;
+&lt;td&gt; 4769&lt;/td&gt;
+&lt;td&gt; 14709&lt;/td&gt;
+&lt;td&gt; 4757&lt;/td&gt;
+&lt;td&gt; 4753&lt;/td&gt;
+&lt;td&gt; 14706&lt;/td&gt;
+&lt;td&gt; 4808&lt;/td&gt;
+&lt;td&gt; 4781&lt;/td&gt;
+&lt;td&gt; 14709&lt;/td&gt;
+&lt;td&gt; 4835&lt;/td&gt;
+&lt;td&gt; 4747&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;500&lt;/th&gt;
+&lt;td&gt; 15013&lt;/td&gt;
+&lt;td&gt; 4838&lt;/td&gt;
+&lt;td&gt; 4834&lt;/td&gt;
+&lt;td&gt; 15009&lt;/td&gt;
+&lt;td&gt; 4832&lt;/td&gt;
+&lt;td&gt; 4840&lt;/td&gt;
+&lt;td&gt; 15006&lt;/td&gt;
+&lt;td&gt; 4883&lt;/td&gt;
+&lt;td&gt; 4838&lt;/td&gt;
+&lt;td&gt; 15009&lt;/td&gt;
+&lt;td&gt; 4893&lt;/td&gt;
+&lt;td&gt; 4860&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;510&lt;/th&gt;
+&lt;td&gt; 15313&lt;/td&gt;
+&lt;td&gt; 4943&lt;/td&gt;
+&lt;td&gt; 4988&lt;/td&gt;
+&lt;td&gt; 15309&lt;/td&gt;
+&lt;td&gt; 4943&lt;/td&gt;
+&lt;td&gt; 4984&lt;/td&gt;
+&lt;td&gt; 15306&lt;/td&gt;
+&lt;td&gt; 4951&lt;/td&gt;
+&lt;td&gt; 4906&lt;/td&gt;
+&lt;td&gt; 15309&lt;/td&gt;
+&lt;td&gt; 4970&lt;/td&gt;
+&lt;td&gt; 4948&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;520&lt;/th&gt;
+&lt;td&gt; 15613&lt;/td&gt;
+&lt;td&gt; 5065&lt;/td&gt;
+&lt;td&gt; 5024&lt;/td&gt;
+&lt;td&gt; 15609&lt;/td&gt;
+&lt;td&gt; 5024&lt;/td&gt;
+&lt;td&gt; 4973&lt;/td&gt;
+&lt;td&gt; 15606&lt;/td&gt;
+&lt;td&gt; 5063&lt;/td&gt;
+&lt;td&gt; 5081&lt;/td&gt;
+&lt;td&gt; 15609&lt;/td&gt;
+&lt;td&gt; 5024&lt;/td&gt;
+&lt;td&gt; 5076&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;530&lt;/th&gt;
+&lt;td&gt; 15913&lt;/td&gt;
+&lt;td&gt; 5119&lt;/td&gt;
+&lt;td&gt; 5106&lt;/td&gt;
+&lt;td&gt; 15909&lt;/td&gt;
+&lt;td&gt; 5137&lt;/td&gt;
+&lt;td&gt; 5138&lt;/td&gt;
+&lt;td&gt; 15906&lt;/td&gt;
+&lt;td&gt; 5130&lt;/td&gt;
+&lt;td&gt; 5070&lt;/td&gt;
+&lt;td&gt; 15909&lt;/td&gt;
+&lt;td&gt; 5094&lt;/td&gt;
+&lt;td&gt; 5129&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;540&lt;/th&gt;
+&lt;td&gt; 16213&lt;/td&gt;
+&lt;td&gt; 5255&lt;/td&gt;
+&lt;td&gt; 5226&lt;/td&gt;
+&lt;td&gt; 16209&lt;/td&gt;
+&lt;td&gt; 5187&lt;/td&gt;
+&lt;td&gt; 5211&lt;/td&gt;
+&lt;td&gt; 16206&lt;/td&gt;
+&lt;td&gt; 5224&lt;/td&gt;
+&lt;td&gt; 5228&lt;/td&gt;
+&lt;td&gt; 16209&lt;/td&gt;
+&lt;td&gt; 5220&lt;/td&gt;
+&lt;td&gt; 5202&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;550&lt;/th&gt;
+&lt;td&gt; 16513&lt;/td&gt;
+&lt;td&gt; 5291&lt;/td&gt;
+&lt;td&gt; 5253&lt;/td&gt;
+&lt;td&gt; 16509&lt;/td&gt;
+&lt;td&gt; 5272&lt;/td&gt;
+&lt;td&gt; 5348&lt;/td&gt;
+&lt;td&gt; 16506&lt;/td&gt;
+&lt;td&gt; 5271&lt;/td&gt;
+&lt;td&gt; 5327&lt;/td&gt;
+&lt;td&gt; 16509&lt;/td&gt;
+&lt;td&gt; 5339&lt;/td&gt;
+&lt;td&gt; 5321&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;560&lt;/th&gt;
+&lt;td&gt; 16813&lt;/td&gt;
+&lt;td&gt; 5397&lt;/td&gt;
+&lt;td&gt; 5387&lt;/td&gt;
+&lt;td&gt; 16809&lt;/td&gt;
+&lt;td&gt; 5448&lt;/td&gt;
+&lt;td&gt; 5368&lt;/td&gt;
+&lt;td&gt; 16806&lt;/td&gt;
+&lt;td&gt; 5401&lt;/td&gt;
+&lt;td&gt; 5375&lt;/td&gt;
+&lt;td&gt; 16809&lt;/td&gt;
+&lt;td&gt; 5409&lt;/td&gt;
+&lt;td&gt; 5419&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;570&lt;/th&gt;
+&lt;td&gt; 17113&lt;/td&gt;
+&lt;td&gt; 5502&lt;/td&gt;
+&lt;td&gt; 5446&lt;/td&gt;
+&lt;td&gt; 17109&lt;/td&gt;
+&lt;td&gt; 5449&lt;/td&gt;
+&lt;td&gt; 5449&lt;/td&gt;
+&lt;td&gt; 17106&lt;/td&gt;
+&lt;td&gt; 5467&lt;/td&gt;
+&lt;td&gt; 5502&lt;/td&gt;
+&lt;td&gt; 17109&lt;/td&gt;
+&lt;td&gt; 5494&lt;/td&gt;
+&lt;td&gt; 5442&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;580&lt;/th&gt;
+&lt;td&gt; 17413&lt;/td&gt;
+&lt;td&gt; 5512&lt;/td&gt;
+&lt;td&gt; 5501&lt;/td&gt;
+&lt;td&gt; 17409&lt;/td&gt;
+&lt;td&gt; 5579&lt;/td&gt;
+&lt;td&gt; 5566&lt;/td&gt;
+&lt;td&gt; 17406&lt;/td&gt;
+&lt;td&gt; 5578&lt;/td&gt;
+&lt;td&gt; 5486&lt;/td&gt;
+&lt;td&gt; 17409&lt;/td&gt;
+&lt;td&gt; 5566&lt;/td&gt;
+&lt;td&gt; 5487&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th&gt;590&lt;/th&gt;
+&lt;td&gt; 17713&lt;/td&gt;
+&lt;td&gt; 5662&lt;/td&gt;
+&lt;td&gt; 5639&lt;/td&gt;
+&lt;td&gt; 17709&lt;/td&gt;
+&lt;td&gt; 5652&lt;/td&gt;
+&lt;td&gt; 5593&lt;/td&gt;
+&lt;td&gt; 17706&lt;/td&gt;
+&lt;td&gt; 5643&lt;/td&gt;
+&lt;td&gt; 5607&lt;/td&gt;
+&lt;td&gt; 17709&lt;/td&gt;
+&lt;td&gt; 5678&lt;/td&gt;
+&lt;td&gt; 5624&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;50 rows × 12 columns&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [13]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
 &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="size-comparison-by-method"&gt;Size Comparison By Method&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [14]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[14]:&lt;/div&gt;
+&lt;div class="output_text output_subarea output_pyout"&gt;
+&lt;pre&gt;
+&amp;lt;matplotlib.axes.AxesSubplot at 0x4033150&amp;gt;
 &lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="size-comparison-by-method"&gt;
-        Size Comparison By Method
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [14]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt output_prompt"&gt;
-         Out[14]:
-        &lt;/div&gt;
-        &lt;div class="output_text output_subarea output_pyout"&gt;
-         &lt;pre&gt;
-&lt;matplotlib.axes.AxesSubplot at 0x4033150&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_png output_subarea "&gt;
-         &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABKMAAAFwCAYAAABkaLg3AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABKMAAAFwCAYAAABkaLg3AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl81NW9//H3JGEJhCUhQEAIIRJJgigBQpQiCS4Qrxu4
 FoRe3C5ae7FibKVasdW6oL0iiIAtVizS+tNKqbSCgkaISgICYiFYCKsgS1hC2LPM74+vM5mZTIaQ
 7ZvJeT0fj/P4fs93CWd4m/u4fHrOGYfT6XQKAAAAAAAAaAAhdg8AAAAAAAAA5qAYBQAAAAAAgAZD
@@ -6608,54 +5134,45 @@ NMgEBgaaAQMGGJfLZYzhz7eT1NWMJTc314SHh5uAgADzxBNPXPV9fYy5js2AAAAAAAAAwA1wxDY9
 AAAAAAAANA4MowAAAAAAAFBvGEYBAAAAAACg3jCMAgAAAAAAQL1hGAUAAAAAAIB6wzAKAAAAAAAA
 9YZhFAAAAAAAAOoNwygAAAAAAADUm/8DsvT+D0rySbcAAAAASUVORK5CYII=
 "&gt;
-         &lt;/img&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h3 id="size-comparison-by-method-and-zlib-compressed"&gt;
-        Size Comparison By Method And zlib Compressed
-       &lt;/h3&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [15]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,(&lt;/span&gt;&lt;span class="s"&gt;'bson(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/img&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="size-comparison-by-method-and-zlib-compressed"&gt;Size Comparison By Method And zlib Compressed&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [15]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,(&lt;/span&gt;&lt;span class="s"&gt;'bson(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'raw(z)'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[15]:&lt;/div&gt;
+&lt;div class="output_text output_subarea output_pyout"&gt;
+&lt;pre&gt;
+&amp;lt;matplotlib.axes.AxesSubplot at 0x4037250&amp;gt;
 &lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt output_prompt"&gt;
-         Out[15]:
-        &lt;/div&gt;
-        &lt;div class="output_text output_subarea output_pyout"&gt;
-         &lt;pre&gt;
-&lt;matplotlib.axes.AxesSubplot at 0x4037250&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_png output_subarea "&gt;
-         &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJYAAAFwCAYAAADqsvFLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJYAAAFwCAYAAADqsvFLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl8VPXVx/HPJKyBJGSDLEBCwr4vsojIIhZ9Va27iIri
 VupSV2zLoz7Sp7ao1IpaVLBatGC11Vp3qYIBQQk7lIQtCxASIPsess19/rhkSCAJJJnJzHC/79dr
 XnJn7tz7mxwHMmfOOddmGIaBiIiIiIiIiIhIM/m4ewEiIiIiIiIiIuKdlFgSEREREREREZEWUWJJ
@@ -8392,50 +6909,43 @@ iIiIiIiIwgMTS0RERERERERE5BcmloiIiIiIiIiIyC9MLBERERERERERkV+YWCIiIiIiIiIiIr8w
 sURERERERERERH5hYomIiIiIiIiIiPzCxBIREREREREREfnl/wfQdoJm/5JyvAAAAABJRU5ErkJg
 gg==
 "&gt;
-         &lt;/img&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h2 id="compress-rate-by-method"&gt;
-        Compress Rate By Method
-       &lt;/h2&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [16]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;111&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/img&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="compress-rate-by-method"&gt;Compress Rate By Method&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [16]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;111&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;(z)'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
     
 &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;legend&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_png output_subarea "&gt;
-         &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XdcleX/x/HXAWSogIgpIiIuECdogJoDv85faWKO3Jqj
 Mq1cDUdfbapZWpazb660oVaONHc4KsQZpjjBgThBWTIEzu+PYxSBZogckPfz8bgfcu77uq/zubj9
 h/fjuq7bYDQajYiIiIiIiIiIiOSBhbkLEBERERERERGRokvhkoiIiIiIiIiI5JnCJRERERERERER
@@ -9254,50 +7764,43 @@ Gtnv98cxeVfX4+Njbm5u0uv1Mp1O8/HxIe8Ku76+zuXlZXq9Xt7e3pI431XyVf3Ker1Ot9vN+fl5
 JpPJH61dTz5xAQ8AAAAAfvFPXosDAAAA4P+gXAIAAACgNOUSAAAAAKUplwAAAAAoTbkEAAAAQGnK
 JQAAAABKUy4BAAAAUJpyCQAAAIDSfgLj4TXZjwWhwQAAAABJRU5ErkJggg==
 "&gt;
-         &lt;/img&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h2 id="compression-method-gzip-vs.-zlib"&gt;
-        Compression Method: gzip vs. zlib
-       &lt;/h2&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [17]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;111&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/img&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="compression-method-gzip-vs.-zlib"&gt;Compression Method: gzip vs. zlib&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [17]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;111&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;(z)'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;(g)'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;div&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;(g)'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt; z/g'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;legend&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_png output_subarea "&gt;
-         &lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8W/W9+P+XvIe87XjFA8cOZDjONhkk4QaSkEDZI6tQ
 RtPSCRd6S0sbaOEL/CilUCgkudBCQyilcCnDSQiUELJwSEKGsx0n8d5Dlqek8/vjWIpky1uyJPv9
 fDz0SHR0JH1s2ZbO+7yHRlEUBSGEEEIIIYQQQgghBsDL1QsQQgghhBBCCCGEEJ5LgktCCCGEEEII
@@ -11470,85 +9973,67 @@ IiIiIiIi+j+/5GVxRERERERERET0e+DkEhERERERERER+Y2TS0RERERERERE5DdOLhERERERERER
 kd84uURERERERERERH7j5BIREREREREREfmNk0tEREREREREROQ3Ti4REREREREREZHf/gM2xYiQ
 l4itIwAAAABJRU5ErkJggg==
 "&gt;
-         &lt;/img&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-     &lt;div class="input"&gt;
-      &lt;div class="prompt input_prompt"&gt;
-       In [18]:
-      &lt;/div&gt;
-      &lt;div class="inner_cell"&gt;
-       &lt;div class="input_area"&gt;
-        &lt;div class="highlight"&gt;
-         &lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/img&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [18]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'bson'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'msgpack'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'raw'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;(z)'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loc&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt;&lt;span class="s"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;(g)'&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'index'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="output_wrapper"&gt;
-      &lt;div class="output"&gt;
-       &lt;div class="output_area"&gt;
-        &lt;div class="prompt"&gt;
-        &lt;/div&gt;
-        &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-         &lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;
 bson 84
 json 93
 msgpack 78
 raw 76
 
 &lt;/pre&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;h1 id="conclusion"&gt;
-        Conclusion
-       &lt;/h1&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="cell border-box-sizing text_cell rendered"&gt;
-     &lt;div class="prompt input_prompt"&gt;
-     &lt;/div&gt;
-     &lt;div class="inner_cell"&gt;
-      &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-       &lt;p&gt;
-        I compared which serializing method and tool shows the best compaction result with or without compressing. As the result is shown above, I could not find any meaningful differences between the methods. At first, I have expected the
-        &lt;code&gt;
-         bson
-        &lt;/code&gt;
-        will show the best compaction result because it can serialize as binaries, but on the contrary,
-        &lt;code&gt;
-         bson
-        &lt;/code&gt;
-        makes the input to be oversized.
-       &lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;script src="https://apis.google.com/js/plusone.js"&gt;
-    &lt;/script&gt;
-    &lt;div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html"&gt;
-    &lt;/div&gt;
-    &lt;footer&gt;
-     &lt;pre&gt;&lt;a href="/"&gt;Home&lt;/a&gt; / Written By &lt;a href="http://github.com/spikeekips"&gt;Spike^ekipS&lt;/a&gt; | &lt;a href="https://plus.google.com/101452362887920966223?rel=author"&gt;Google&lt;/a&gt;&lt;/pre&gt;
-    &lt;/footer&gt;
-   &lt;/div&gt;
-  &lt;/div&gt;
- &lt;/body&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I compared which serializing method and tool shows the best compaction result with or without compressing. As the result is shown above, I could not find any meaningful differences between the methods. At first, I have expected the &lt;code&gt;bson&lt;/code&gt; will show the best compaction result because it can serialize as binaries, but on the contrary, &lt;code&gt;bson&lt;/code&gt; makes the input to be oversized.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="https://apis.google.com/js/plusone.js"&gt;&lt;/script&gt;
+&lt;div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html"&gt;
+&lt;/div&gt;
+&lt;footer&gt;
+&lt;pre&gt;&lt;a href="/"&gt;Home&lt;/a&gt; / Written By &lt;a href="http://github.com/spikeekips"&gt;Spike^ekipS&lt;/a&gt; | &lt;a href="https://plus.google.com/101452362887920966223?rel=author"&gt;Google&lt;/a&gt;&lt;/pre&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </content>
   </entry>

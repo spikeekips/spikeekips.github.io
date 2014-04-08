@@ -1,17 +1,14 @@
 <!DOCTYPE html>
+
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <title>
-   serializing-python-object-msgpack-vs-json
-  </title>
-  <link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js">
-  </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
-  </script>
-  <style type="text/css">
-   .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
+<head>
+<meta charset="utf-8"/>
+<title>serializing-python-object-msgpack-vs-json</title>
+<link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<style type="text/css">
+    .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
 .clearfix:after{clear:both}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -1547,9 +1544,10 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .ipython_tooltip .tooltiptext pre{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-size:100%;background-color:#f7f7f7}
 .pretooltiparrow{left:0;margin:0;top:-16px;width:40px;height:16px;overflow:hidden;position:absolute}
 .pretooltiparrow:before{background-color:#f7f7f7;border:1px #ababab solid;z-index:11;content:"";position:absolute;left:15px;top:10px;width:25px;height:25px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg)}
-  </style>
-  <style type="text/css">
-   .highlight .hll { background-color: #ffffcc }
+
+    </style>
+<style type="text/css">
+    .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -1611,9 +1609,9 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-  </style>
-  <style type="text/css">
-   /* Overrides of notebook CSS for static HTML export */
+    </style>
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
   padding: 8px;
@@ -1638,14 +1636,13 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
-  </style>
-  <!-- Loading mathjax macro -->
-  <!-- Load mathjax -->
-  <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-  </script>
-  <!-- MathJax configuration -->
-  <script type="text/x-mathjax-config">
-   MathJax.Hub.Config({
+</style>
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!-- MathJax configuration -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
             displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
@@ -1660,11 +1657,12 @@ div#notebook {
             linebreaks: { automatic: true }
         }
     });
-  </script>
-  <!-- End of mathjax configuration -->
-  <link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css">
-   <style type="text/css">
-    body
+    </script>
+<!-- End of mathjax configuration -->
+<link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+body
 {
     font-family: Ubuntu, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
@@ -1726,158 +1724,120 @@ footer pre
     border: 0;
     background-color: inherit;
 }
-   </style>
-  </link>
- </head>
- <body>
-  <div class="border-box-sizing" id="notebook" tabindex="-1">
-   <div class="container" id="notebook-container">
-    <header>
-     <a href="/">
-      <h2>
-       By Spike ekipS
-      </h2>
-     </a>
-     work for me
-    </header>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h1 id="comparison-of-serializing-python-object-msgpack-vs.-json">
-        Comparison Of Serializing Python Object: msgpack Vs. Json
-       </h1>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [26]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="k">print</span> <span class="s">'Written at '</span><span class="p">,</span>
+
+</style>
+</link></head>
+<body>
+<div class="border-box-sizing" id="notebook" tabindex="-1">
+<div class="container" id="notebook-container">
+<header>
+<a href="/"><h2>By Spike ekipS</h2></a> work for me
+  </header>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="comparison-of-serializing-python-object-msgpack-vs.-json">Comparison Of Serializing Python Object: msgpack Vs. Json</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [26]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">'Written at '</span><span class="p">,</span>
 <span class="o">!</span> date
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_subarea output_stream output_stdout output_text">
-         <pre>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
 Written at Fri Apr  4 18:56:31 KST 2014
 
 </pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <p>
-        I will try to compare the size of serialized data between the several serializing method in Python, especialy
-        <code>
-         json
-        </code>
-        vs.
-        <code>
-         msgpack
-        </code>
-        , these are heavily in use in the most of python applications. I will also compare the data with compressing,
-        <code>
-         zlib
-        </code>
-        and
-        <code>
-         gzip
-        </code>
-        .
-       </p>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h2 id="prerequisits">
-        Prerequisits
-       </h2>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [1]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_subarea output_stream output_stdout output_text">
-         <pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I will try to compare the size of serialized data between the several serializing method in Python, especialy <code>json</code> vs. <code>msgpack</code>, these are heavily in use in the most of python applications. I will also compare the data with compressing, <code>zlib</code> and <code>gzip</code>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="prerequisits">Prerequisits</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [1]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
 Populating the interactive namespace from numpy and matplotlib
 
 </pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [2]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="k">def</span> <span class="nf">_ensure_python_package</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [2]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">_ensure_python_package</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
     <span class="n">_name</span> <span class="o">=</span> <span class="n">name</span> <span class="k">if</span> <span class="n">name</span> <span class="k">else</span> <span class="n">n</span>
     <span class="k">try</span> <span class="p">:</span>
         <span class="k">return</span> <span class="nb">__import__</span><span class="p">(</span><span class="n">_name</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">)</span>
     <span class="k">except</span> <span class="ne">ImportError</span> <span class="p">:</span>
         <span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="err">$</span><span class="n">n</span>
         <span class="k">return</span> <span class="nb">__import__</span><span class="p">(</span><span class="n">_name</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">[],</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [3]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="kn">import</span> <span class="nn">pandas</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [3]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pandas</span>
 
 <span class="k">def</span> <span class="nf">make_series</span> <span class="p">(</span><span class="n">_max</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_dumps</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
     <span class="n">_l</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
@@ -1886,61 +1846,55 @@ Populating the interactive namespace from numpy and matplotlib
         <span class="n">_l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">func_dumps</span><span class="p">(</span><span class="n">func_data</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="p">),</span> <span class="p">),</span> <span class="p">),</span> <span class="p">)</span>
 
     <span class="k">return</span> <span class="n">pandas</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">_l</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">_index</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [4]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">loremipsum</span> <span class="o">=</span> <span class="n">_ensure_python_package</span><span class="p">(</span><span class="s">'loremipsum'</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [4]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">loremipsum</span> <span class="o">=</span> <span class="n">_ensure_python_package</span><span class="p">(</span><span class="s">'loremipsum'</span><span class="p">,</span> <span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">string</span>
 
 <span class="k">def</span> <span class="nf">func_data</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
     <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
     <span class="n">_m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="mi">30</span>
-    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o"><</span> <span class="n">_m</span> <span class="p">:</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">_m</span> <span class="p">:</span>
         <span class="n">s</span> <span class="o">+=</span> <span class="s">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">loremipsum</span><span class="o">.</span><span class="n">get_paragraphs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">))</span>
     
     <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">v</span><span class="o">=</span><span class="n">s</span><span class="p">[:</span><span class="n">_m</span><span class="p">],</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [5]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">func_series</span> <span class="o">=</span> <span class="k">lambda</span> <span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1001</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [6]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="kn">import</span> <span class="nn">gzip</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [5]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">func_series</span> <span class="o">=</span> <span class="k">lambda</span> <span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1001</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [6]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">gzip</span>
 <span class="kn">import</span> <span class="nn">StringIO</span>
 
 <span class="k">def</span> <span class="nf">encode_zlib</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
@@ -1959,2358 +1913,988 @@ Populating the interactive namespace from numpy and matplotlib
         <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
 <span class="n">func_compress</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">f</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="s">'zlib'</span> <span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="p">(</span><span class="n">encode_zlib</span> <span class="k">if</span> <span class="n">z</span> <span class="o">==</span> <span class="s">'zlib'</span> <span class="k">else</span> <span class="n">encode_gzip</span><span class="p">)(</span><span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h2 id="message-size">
-        message size
-       </h2>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [7]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">series</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="raw-string">
-        raw string
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [8]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">series</span><span class="p">[</span><span class="s">'raw'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="message-size">message size</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [7]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">series</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="raw-string">raw string</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [8]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">series</span><span class="p">[</span><span class="s">'raw'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'raw(z)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="nb">str</span><span class="p">),</span> <span class="p">)</span> <span class="c"># zlib compression</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'raw(g)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="s">'gzip'</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span> <span class="c"># gzip compression</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="json">
-        <code>
-         json
-        </code>
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [9]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="kn">import</span> <span class="nn">json</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="json"><code>json</code></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [9]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">json</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'json'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">,</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'json(z)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'json(g)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">,</span> <span class="s">'gzip'</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="bson">
-        <code>
-         bson
-        </code>
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [10]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">_ensure_python_package</span><span class="p">(</span><span class="s">'pymongo'</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="bson"><code>bson</code></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [10]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">_ensure_python_package</span><span class="p">(</span><span class="s">'pymongo'</span><span class="p">,</span> <span class="p">)</span>
 <span class="kn">from</span> <span class="nn">bson</span> <span class="kn">import</span> <span class="n">BSON</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'bson'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">BSON</span><span class="o">.</span><span class="n">encode</span><span class="p">,</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'bson(z)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="n">BSON</span><span class="o">.</span><span class="n">encode</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'bson(g)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="n">BSON</span><span class="o">.</span><span class="n">encode</span><span class="p">,</span> <span class="s">'gzip'</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="msgpack">
-        <code>
-         msgpack
-        </code>
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [11]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">msgpack</span> <span class="o">=</span> <span class="n">_ensure_python_package</span><span class="p">(</span><span class="s">'msgpack-python'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="msgpack"><code>msgpack</code></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [11]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">msgpack</span> <span class="o">=</span> <span class="n">_ensure_python_package</span><span class="p">(</span><span class="s">'msgpack-python'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'msgpack'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">msgpack</span><span class="o">.</span><span class="n">packb</span><span class="p">,</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'msgpack(z)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="n">msgpack</span><span class="o">.</span><span class="n">packb</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span>
 <span class="n">series</span><span class="p">[</span><span class="s">'msgpack(g)'</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_series</span><span class="p">(</span><span class="n">func_series</span><span class="p">,</span> <span class="n">func_data</span><span class="p">,</span> <span class="n">func_compress</span><span class="p">(</span><span class="n">msgpack</span><span class="o">.</span><span class="n">packb</span><span class="p">,</span> <span class="s">'gzip'</span><span class="p">,</span> <span class="p">),</span> <span class="p">)</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="result">
-        Result
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [12]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="result">Result</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [12]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
 <span class="kn">import</span> <span class="nn">pandas</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">[:</span><span class="mi">50</span><span class="p">])</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_html rendered_html output_subarea ">
-         <div style="max-height:1000px;max-width:1500px;overflow:auto;">
-          <table border="1" class="dataframe">
-           <thead>
-            <tr style="text-align: right;">
-             <th>
-             </th>
-             <th>
-              bson
-             </th>
-             <th>
-              bson(g)
-             </th>
-             <th>
-              bson(z)
-             </th>
-             <th>
-              json
-             </th>
-             <th>
-              json(g)
-             </th>
-             <th>
-              json(z)
-             </th>
-             <th>
-              msgpack
-             </th>
-             <th>
-              msgpack(g)
-             </th>
-             <th>
-              msgpack(z)
-             </th>
-             <th>
-              raw
-             </th>
-             <th>
-              raw(g)
-             </th>
-             <th>
-              raw(z)
-             </th>
-            </tr>
-           </thead>
-           <tbody>
-            <tr>
-             <th>
-              100
-             </th>
-             <td>
-              3013
-             </td>
-             <td>
-              1268
-             </td>
-             <td>
-              1261
-             </td>
-             <td>
-              3009
-             </td>
-             <td>
-              1275
-             </td>
-             <td>
-              1245
-             </td>
-             <td>
-              3006
-             </td>
-             <td>
-              1276
-             </td>
-             <td>
-              1227
-             </td>
-             <td>
-              3009
-             </td>
-             <td>
-              1248
-             </td>
-             <td>
-              1244
-             </td>
-            </tr>
-            <tr>
-             <th>
-              110
-             </th>
-             <td>
-              3313
-             </td>
-             <td>
-              1375
-             </td>
-             <td>
-              1338
-             </td>
-             <td>
-              3309
-             </td>
-             <td>
-              1363
-             </td>
-             <td>
-              1347
-             </td>
-             <td>
-              3306
-             </td>
-             <td>
-              1348
-             </td>
-             <td>
-              1338
-             </td>
-             <td>
-              3309
-             </td>
-             <td>
-              1329
-             </td>
-             <td>
-              1342
-             </td>
-            </tr>
-            <tr>
-             <th>
-              120
-             </th>
-             <td>
-              3613
-             </td>
-             <td>
-              1476
-             </td>
-             <td>
-              1468
-             </td>
-             <td>
-              3609
-             </td>
-             <td>
-              1464
-             </td>
-             <td>
-              1470
-             </td>
-             <td>
-              3606
-             </td>
-             <td>
-              1478
-             </td>
-             <td>
-              1461
-             </td>
-             <td>
-              3609
-             </td>
-             <td>
-              1479
-             </td>
-             <td>
-              1441
-             </td>
-            </tr>
-            <tr>
-             <th>
-              130
-             </th>
-             <td>
-              3913
-             </td>
-             <td>
-              1534
-             </td>
-             <td>
-              1530
-             </td>
-             <td>
-              3909
-             </td>
-             <td>
-              1563
-             </td>
-             <td>
-              1529
-             </td>
-             <td>
-              3906
-             </td>
-             <td>
-              1567
-             </td>
-             <td>
-              1550
-             </td>
-             <td>
-              3909
-             </td>
-             <td>
-              1565
-             </td>
-             <td>
-              1555
-             </td>
-            </tr>
-            <tr>
-             <th>
-              140
-             </th>
-             <td>
-              4213
-             </td>
-             <td>
-              1654
-             </td>
-             <td>
-              1660
-             </td>
-             <td>
-              4209
-             </td>
-             <td>
-              1655
-             </td>
-             <td>
-              1653
-             </td>
-             <td>
-              4206
-             </td>
-             <td>
-              1661
-             </td>
-             <td>
-              1613
-             </td>
-             <td>
-              4209
-             </td>
-             <td>
-              1659
-             </td>
-             <td>
-              1632
-             </td>
-            </tr>
-            <tr>
-             <th>
-              150
-             </th>
-             <td>
-              4513
-             </td>
-             <td>
-              1747
-             </td>
-             <td>
-              1743
-             </td>
-             <td>
-              4509
-             </td>
-             <td>
-              1736
-             </td>
-             <td>
-              1726
-             </td>
-             <td>
-              4506
-             </td>
-             <td>
-              1766
-             </td>
-             <td>
-              1728
-             </td>
-             <td>
-              4509
-             </td>
-             <td>
-              1728
-             </td>
-             <td>
-              1707
-             </td>
-            </tr>
-            <tr>
-             <th>
-              160
-             </th>
-             <td>
-              4813
-             </td>
-             <td>
-              1867
-             </td>
-             <td>
-              1844
-             </td>
-             <td>
-              4809
-             </td>
-             <td>
-              1844
-             </td>
-             <td>
-              1838
-             </td>
-             <td>
-              4806
-             </td>
-             <td>
-              1853
-             </td>
-             <td>
-              1842
-             </td>
-             <td>
-              4809
-             </td>
-             <td>
-              1813
-             </td>
-             <td>
-              1814
-             </td>
-            </tr>
-            <tr>
-             <th>
-              170
-             </th>
-             <td>
-              5113
-             </td>
-             <td>
-              1933
-             </td>
-             <td>
-              1932
-             </td>
-             <td>
-              5109
-             </td>
-             <td>
-              1920
-             </td>
-             <td>
-              1955
-             </td>
-             <td>
-              5106
-             </td>
-             <td>
-              1928
-             </td>
-             <td>
-              1950
-             </td>
-             <td>
-              5109
-             </td>
-             <td>
-              1924
-             </td>
-             <td>
-              1940
-             </td>
-            </tr>
-            <tr>
-             <th>
-              180
-             </th>
-             <td>
-              5413
-             </td>
-             <td>
-              2045
-             </td>
-             <td>
-              2007
-             </td>
-             <td>
-              5409
-             </td>
-             <td>
-              2023
-             </td>
-             <td>
-              2013
-             </td>
-             <td>
-              5406
-             </td>
-             <td>
-              2040
-             </td>
-             <td>
-              2021
-             </td>
-             <td>
-              5409
-             </td>
-             <td>
-              2046
-             </td>
-             <td>
-              2021
-             </td>
-            </tr>
-            <tr>
-             <th>
-              190
-             </th>
-             <td>
-              5713
-             </td>
-             <td>
-              2136
-             </td>
-             <td>
-              2106
-             </td>
-             <td>
-              5709
-             </td>
-             <td>
-              2134
-             </td>
-             <td>
-              2124
-             </td>
-             <td>
-              5706
-             </td>
-             <td>
-              2134
-             </td>
-             <td>
-              2109
-             </td>
-             <td>
-              5709
-             </td>
-             <td>
-              2110
-             </td>
-             <td>
-              2119
-             </td>
-            </tr>
-            <tr>
-             <th>
-              200
-             </th>
-             <td>
-              6013
-             </td>
-             <td>
-              2240
-             </td>
-             <td>
-              2206
-             </td>
-             <td>
-              6009
-             </td>
-             <td>
-              2230
-             </td>
-             <td>
-              2205
-             </td>
-             <td>
-              6006
-             </td>
-             <td>
-              2202
-             </td>
-             <td>
-              2220
-             </td>
-             <td>
-              6009
-             </td>
-             <td>
-              2230
-             </td>
-             <td>
-              2191
-             </td>
-            </tr>
-            <tr>
-             <th>
-              210
-             </th>
-             <td>
-              6313
-             </td>
-             <td>
-              2298
-             </td>
-             <td>
-              2246
-             </td>
-             <td>
-              6309
-             </td>
-             <td>
-              2314
-             </td>
-             <td>
-              2300
-             </td>
-             <td>
-              6306
-             </td>
-             <td>
-              2302
-             </td>
-             <td>
-              2314
-             </td>
-             <td>
-              6309
-             </td>
-             <td>
-              2248
-             </td>
-             <td>
-              2292
-             </td>
-            </tr>
-            <tr>
-             <th>
-              220
-             </th>
-             <td>
-              6613
-             </td>
-             <td>
-              2425
-             </td>
-             <td>
-              2379
-             </td>
-             <td>
-              6609
-             </td>
-             <td>
-              2384
-             </td>
-             <td>
-              2386
-             </td>
-             <td>
-              6606
-             </td>
-             <td>
-              2417
-             </td>
-             <td>
-              2339
-             </td>
-             <td>
-              6609
-             </td>
-             <td>
-              2419
-             </td>
-             <td>
-              2398
-             </td>
-            </tr>
-            <tr>
-             <th>
-              230
-             </th>
-             <td>
-              6913
-             </td>
-             <td>
-              2538
-             </td>
-             <td>
-              2483
-             </td>
-             <td>
-              6909
-             </td>
-             <td>
-              2484
-             </td>
-             <td>
-              2479
-             </td>
-             <td>
-              6906
-             </td>
-             <td>
-              2490
-             </td>
-             <td>
-              2491
-             </td>
-             <td>
-              6909
-             </td>
-             <td>
-              2470
-             </td>
-             <td>
-              2492
-             </td>
-            </tr>
-            <tr>
-             <th>
-              240
-             </th>
-             <td>
-              7213
-             </td>
-             <td>
-              2589
-             </td>
-             <td>
-              2561
-             </td>
-             <td>
-              7209
-             </td>
-             <td>
-              2570
-             </td>
-             <td>
-              2561
-             </td>
-             <td>
-              7206
-             </td>
-             <td>
-              2616
-             </td>
-             <td>
-              2580
-             </td>
-             <td>
-              7209
-             </td>
-             <td>
-              2559
-             </td>
-             <td>
-              2570
-             </td>
-            </tr>
-            <tr>
-             <th>
-              250
-             </th>
-             <td>
-              7513
-             </td>
-             <td>
-              2682
-             </td>
-             <td>
-              2668
-             </td>
-             <td>
-              7509
-             </td>
-             <td>
-              2670
-             </td>
-             <td>
-              2666
-             </td>
-             <td>
-              7506
-             </td>
-             <td>
-              2683
-             </td>
-             <td>
-              2632
-             </td>
-             <td>
-              7509
-             </td>
-             <td>
-              2660
-             </td>
-             <td>
-              2663
-             </td>
-            </tr>
-            <tr>
-             <th>
-              260
-             </th>
-             <td>
-              7813
-             </td>
-             <td>
-              2765
-             </td>
-             <td>
-              2746
-             </td>
-             <td>
-              7809
-             </td>
-             <td>
-              2736
-             </td>
-             <td>
-              2748
-             </td>
-             <td>
-              7806
-             </td>
-             <td>
-              2771
-             </td>
-             <td>
-              2750
-             </td>
-             <td>
-              7809
-             </td>
-             <td>
-              2764
-             </td>
-             <td>
-              2734
-             </td>
-            </tr>
-            <tr>
-             <th>
-              270
-             </th>
-             <td>
-              8113
-             </td>
-             <td>
-              2810
-             </td>
-             <td>
-              2850
-             </td>
-             <td>
-              8109
-             </td>
-             <td>
-              2870
-             </td>
-             <td>
-              2832
-             </td>
-             <td>
-              8106
-             </td>
-             <td>
-              2857
-             </td>
-             <td>
-              2858
-             </td>
-             <td>
-              8109
-             </td>
-             <td>
-              2856
-             </td>
-             <td>
-              2882
-             </td>
-            </tr>
-            <tr>
-             <th>
-              280
-             </th>
-             <td>
-              8413
-             </td>
-             <td>
-              2967
-             </td>
-             <td>
-              2919
-             </td>
-             <td>
-              8409
-             </td>
-             <td>
-              2934
-             </td>
-             <td>
-              2923
-             </td>
-             <td>
-              8406
-             </td>
-             <td>
-              2944
-             </td>
-             <td>
-              2934
-             </td>
-             <td>
-              8409
-             </td>
-             <td>
-              2947
-             </td>
-             <td>
-              2909
-             </td>
-            </tr>
-            <tr>
-             <th>
-              290
-             </th>
-             <td>
-              8713
-             </td>
-             <td>
-              3031
-             </td>
-             <td>
-              3048
-             </td>
-             <td>
-              8709
-             </td>
-             <td>
-              3008
-             </td>
-             <td>
-              3012
-             </td>
-             <td>
-              8706
-             </td>
-             <td>
-              3025
-             </td>
-             <td>
-              3001
-             </td>
-             <td>
-              8709
-             </td>
-             <td>
-              3048
-             </td>
-             <td>
-              3054
-             </td>
-            </tr>
-            <tr>
-             <th>
-              300
-             </th>
-             <td>
-              9013
-             </td>
-             <td>
-              3122
-             </td>
-             <td>
-              3088
-             </td>
-             <td>
-              9009
-             </td>
-             <td>
-              3115
-             </td>
-             <td>
-              3105
-             </td>
-             <td>
-              9006
-             </td>
-             <td>
-              3170
-             </td>
-             <td>
-              3099
-             </td>
-             <td>
-              9009
-             </td>
-             <td>
-              3075
-             </td>
-             <td>
-              3057
-             </td>
-            </tr>
-            <tr>
-             <th>
-              310
-             </th>
-             <td>
-              9313
-             </td>
-             <td>
-              3213
-             </td>
-             <td>
-              3205
-             </td>
-             <td>
-              9309
-             </td>
-             <td>
-              3190
-             </td>
-             <td>
-              3195
-             </td>
-             <td>
-              9306
-             </td>
-             <td>
-              3204
-             </td>
-             <td>
-              3188
-             </td>
-             <td>
-              9309
-             </td>
-             <td>
-              3200
-             </td>
-             <td>
-              3213
-             </td>
-            </tr>
-            <tr>
-             <th>
-              320
-             </th>
-             <td>
-              9613
-             </td>
-             <td>
-              3289
-             </td>
-             <td>
-              3285
-             </td>
-             <td>
-              9609
-             </td>
-             <td>
-              3256
-             </td>
-             <td>
-              3314
-             </td>
-             <td>
-              9606
-             </td>
-             <td>
-              3269
-             </td>
-             <td>
-              3294
-             </td>
-             <td>
-              9609
-             </td>
-             <td>
-              3298
-             </td>
-             <td>
-              3300
-             </td>
-            </tr>
-            <tr>
-             <th>
-              330
-             </th>
-             <td>
-              9913
-             </td>
-             <td>
-              3379
-             </td>
-             <td>
-              3386
-             </td>
-             <td>
-              9909
-             </td>
-             <td>
-              3352
-             </td>
-             <td>
-              3371
-             </td>
-             <td>
-              9906
-             </td>
-             <td>
-              3395
-             </td>
-             <td>
-              3365
-             </td>
-             <td>
-              9909
-             </td>
-             <td>
-              3406
-             </td>
-             <td>
-              3373
-             </td>
-            </tr>
-            <tr>
-             <th>
-              340
-             </th>
-             <td>
-              10213
-             </td>
-             <td>
-              3488
-             </td>
-             <td>
-              3470
-             </td>
-             <td>
-              10209
-             </td>
-             <td>
-              3454
-             </td>
-             <td>
-              3466
-             </td>
-             <td>
-              10206
-             </td>
-             <td>
-              3496
-             </td>
-             <td>
-              3465
-             </td>
-             <td>
-              10209
-             </td>
-             <td>
-              3495
-             </td>
-             <td>
-              3465
-             </td>
-            </tr>
-            <tr>
-             <th>
-              350
-             </th>
-             <td>
-              10513
-             </td>
-             <td>
-              3593
-             </td>
-             <td>
-              3557
-             </td>
-             <td>
-              10509
-             </td>
-             <td>
-              3556
-             </td>
-             <td>
-              3505
-             </td>
-             <td>
-              10506
-             </td>
-             <td>
-              3552
-             </td>
-             <td>
-              3524
-             </td>
-             <td>
-              10509
-             </td>
-             <td>
-              3578
-             </td>
-             <td>
-              3564
-             </td>
-            </tr>
-            <tr>
-             <th>
-              360
-             </th>
-             <td>
-              10813
-             </td>
-             <td>
-              3643
-             </td>
-             <td>
-              3644
-             </td>
-             <td>
-              10809
-             </td>
-             <td>
-              3642
-             </td>
-             <td>
-              3636
-             </td>
-             <td>
-              10806
-             </td>
-             <td>
-              3666
-             </td>
-             <td>
-              3629
-             </td>
-             <td>
-              10809
-             </td>
-             <td>
-              3632
-             </td>
-             <td>
-              3631
-             </td>
-            </tr>
-            <tr>
-             <th>
-              370
-             </th>
-             <td>
-              11113
-             </td>
-             <td>
-              3701
-             </td>
-             <td>
-              3697
-             </td>
-             <td>
-              11109
-             </td>
-             <td>
-              3750
-             </td>
-             <td>
-              3739
-             </td>
-             <td>
-              11106
-             </td>
-             <td>
-              3717
-             </td>
-             <td>
-              3709
-             </td>
-             <td>
-              11109
-             </td>
-             <td>
-              3731
-             </td>
-             <td>
-              3713
-             </td>
-            </tr>
-            <tr>
-             <th>
-              380
-             </th>
-             <td>
-              11413
-             </td>
-             <td>
-              3836
-             </td>
-             <td>
-              3839
-             </td>
-             <td>
-              11409
-             </td>
-             <td>
-              3831
-             </td>
-             <td>
-              3796
-             </td>
-             <td>
-              11406
-             </td>
-             <td>
-              3796
-             </td>
-             <td>
-              3806
-             </td>
-             <td>
-              11409
-             </td>
-             <td>
-              3827
-             </td>
-             <td>
-              3809
-             </td>
-            </tr>
-            <tr>
-             <th>
-              390
-             </th>
-             <td>
-              11713
-             </td>
-             <td>
-              3950
-             </td>
-             <td>
-              3905
-             </td>
-             <td>
-              11709
-             </td>
-             <td>
-              3963
-             </td>
-             <td>
-              3920
-             </td>
-             <td>
-              11706
-             </td>
-             <td>
-              3882
-             </td>
-             <td>
-              3910
-             </td>
-             <td>
-              11709
-             </td>
-             <td>
-              3882
-             </td>
-             <td>
-              3890
-             </td>
-            </tr>
-            <tr>
-             <th>
-              400
-             </th>
-             <td>
-              12013
-             </td>
-             <td>
-              4002
-             </td>
-             <td>
-              3984
-             </td>
-             <td>
-              12009
-             </td>
-             <td>
-              4014
-             </td>
-             <td>
-              3977
-             </td>
-             <td>
-              12006
-             </td>
-             <td>
-              4009
-             </td>
-             <td>
-              3988
-             </td>
-             <td>
-              12009
-             </td>
-             <td>
-              3992
-             </td>
-             <td>
-              3960
-             </td>
-            </tr>
-            <tr>
-             <th>
-              410
-             </th>
-             <td>
-              12313
-             </td>
-             <td>
-              4128
-             </td>
-             <td>
-              4048
-             </td>
-             <td>
-              12309
-             </td>
-             <td>
-              4066
-             </td>
-             <td>
-              4089
-             </td>
-             <td>
-              12306
-             </td>
-             <td>
-              4075
-             </td>
-             <td>
-              4062
-             </td>
-             <td>
-              12309
-             </td>
-             <td>
-              4091
-             </td>
-             <td>
-              4094
-             </td>
-            </tr>
-            <tr>
-             <th>
-              420
-             </th>
-             <td>
-              12613
-             </td>
-             <td>
-              4137
-             </td>
-             <td>
-              4181
-             </td>
-             <td>
-              12609
-             </td>
-             <td>
-              4181
-             </td>
-             <td>
-              4132
-             </td>
-             <td>
-              12606
-             </td>
-             <td>
-              4167
-             </td>
-             <td>
-              4175
-             </td>
-             <td>
-              12609
-             </td>
-             <td>
-              4159
-             </td>
-             <td>
-              4169
-             </td>
-            </tr>
-            <tr>
-             <th>
-              430
-             </th>
-             <td>
-              12913
-             </td>
-             <td>
-              4286
-             </td>
-             <td>
-              4257
-             </td>
-             <td>
-              12909
-             </td>
-             <td>
-              4260
-             </td>
-             <td>
-              4254
-             </td>
-             <td>
-              12906
-             </td>
-             <td>
-              4285
-             </td>
-             <td>
-              4206
-             </td>
-             <td>
-              12909
-             </td>
-             <td>
-              4240
-             </td>
-             <td>
-              4255
-             </td>
-            </tr>
-            <tr>
-             <th>
-              440
-             </th>
-             <td>
-              13213
-             </td>
-             <td>
-              4360
-             </td>
-             <td>
-              4325
-             </td>
-             <td>
-              13209
-             </td>
-             <td>
-              4346
-             </td>
-             <td>
-              4325
-             </td>
-             <td>
-              13206
-             </td>
-             <td>
-              4346
-             </td>
-             <td>
-              4323
-             </td>
-             <td>
-              13209
-             </td>
-             <td>
-              4353
-             </td>
-             <td>
-              4379
-             </td>
-            </tr>
-            <tr>
-             <th>
-              450
-             </th>
-             <td>
-              13513
-             </td>
-             <td>
-              4424
-             </td>
-             <td>
-              4400
-             </td>
-             <td>
-              13509
-             </td>
-             <td>
-              4415
-             </td>
-             <td>
-              4392
-             </td>
-             <td>
-              13506
-             </td>
-             <td>
-              4399
-             </td>
-             <td>
-              4441
-             </td>
-             <td>
-              13509
-             </td>
-             <td>
-              4438
-             </td>
-             <td>
-              4401
-             </td>
-            </tr>
-            <tr>
-             <th>
-              460
-             </th>
-             <td>
-              13813
-             </td>
-             <td>
-              4508
-             </td>
-             <td>
-              4524
-             </td>
-             <td>
-              13809
-             </td>
-             <td>
-              4558
-             </td>
-             <td>
-              4479
-             </td>
-             <td>
-              13806
-             </td>
-             <td>
-              4525
-             </td>
-             <td>
-              4496
-             </td>
-             <td>
-              13809
-             </td>
-             <td>
-              4528
-             </td>
-             <td>
-              4517
-             </td>
-            </tr>
-            <tr>
-             <th>
-              470
-             </th>
-             <td>
-              14113
-             </td>
-             <td>
-              4659
-             </td>
-             <td>
-              4631
-             </td>
-             <td>
-              14109
-             </td>
-             <td>
-              4586
-             </td>
-             <td>
-              4635
-             </td>
-             <td>
-              14106
-             </td>
-             <td>
-              4617
-             </td>
-             <td>
-              4619
-             </td>
-             <td>
-              14109
-             </td>
-             <td>
-              4631
-             </td>
-             <td>
-              4608
-             </td>
-            </tr>
-            <tr>
-             <th>
-              480
-             </th>
-             <td>
-              14413
-             </td>
-             <td>
-              4661
-             </td>
-             <td>
-              4651
-             </td>
-             <td>
-              14409
-             </td>
-             <td>
-              4677
-             </td>
-             <td>
-              4718
-             </td>
-             <td>
-              14406
-             </td>
-             <td>
-              4695
-             </td>
-             <td>
-              4669
-             </td>
-             <td>
-              14409
-             </td>
-             <td>
-              4685
-             </td>
-             <td>
-              4663
-             </td>
-            </tr>
-            <tr>
-             <th>
-              490
-             </th>
-             <td>
-              14713
-             </td>
-             <td>
-              4820
-             </td>
-             <td>
-              4769
-             </td>
-             <td>
-              14709
-             </td>
-             <td>
-              4757
-             </td>
-             <td>
-              4753
-             </td>
-             <td>
-              14706
-             </td>
-             <td>
-              4808
-             </td>
-             <td>
-              4781
-             </td>
-             <td>
-              14709
-             </td>
-             <td>
-              4835
-             </td>
-             <td>
-              4747
-             </td>
-            </tr>
-            <tr>
-             <th>
-              500
-             </th>
-             <td>
-              15013
-             </td>
-             <td>
-              4838
-             </td>
-             <td>
-              4834
-             </td>
-             <td>
-              15009
-             </td>
-             <td>
-              4832
-             </td>
-             <td>
-              4840
-             </td>
-             <td>
-              15006
-             </td>
-             <td>
-              4883
-             </td>
-             <td>
-              4838
-             </td>
-             <td>
-              15009
-             </td>
-             <td>
-              4893
-             </td>
-             <td>
-              4860
-             </td>
-            </tr>
-            <tr>
-             <th>
-              510
-             </th>
-             <td>
-              15313
-             </td>
-             <td>
-              4943
-             </td>
-             <td>
-              4988
-             </td>
-             <td>
-              15309
-             </td>
-             <td>
-              4943
-             </td>
-             <td>
-              4984
-             </td>
-             <td>
-              15306
-             </td>
-             <td>
-              4951
-             </td>
-             <td>
-              4906
-             </td>
-             <td>
-              15309
-             </td>
-             <td>
-              4970
-             </td>
-             <td>
-              4948
-             </td>
-            </tr>
-            <tr>
-             <th>
-              520
-             </th>
-             <td>
-              15613
-             </td>
-             <td>
-              5065
-             </td>
-             <td>
-              5024
-             </td>
-             <td>
-              15609
-             </td>
-             <td>
-              5024
-             </td>
-             <td>
-              4973
-             </td>
-             <td>
-              15606
-             </td>
-             <td>
-              5063
-             </td>
-             <td>
-              5081
-             </td>
-             <td>
-              15609
-             </td>
-             <td>
-              5024
-             </td>
-             <td>
-              5076
-             </td>
-            </tr>
-            <tr>
-             <th>
-              530
-             </th>
-             <td>
-              15913
-             </td>
-             <td>
-              5119
-             </td>
-             <td>
-              5106
-             </td>
-             <td>
-              15909
-             </td>
-             <td>
-              5137
-             </td>
-             <td>
-              5138
-             </td>
-             <td>
-              15906
-             </td>
-             <td>
-              5130
-             </td>
-             <td>
-              5070
-             </td>
-             <td>
-              15909
-             </td>
-             <td>
-              5094
-             </td>
-             <td>
-              5129
-             </td>
-            </tr>
-            <tr>
-             <th>
-              540
-             </th>
-             <td>
-              16213
-             </td>
-             <td>
-              5255
-             </td>
-             <td>
-              5226
-             </td>
-             <td>
-              16209
-             </td>
-             <td>
-              5187
-             </td>
-             <td>
-              5211
-             </td>
-             <td>
-              16206
-             </td>
-             <td>
-              5224
-             </td>
-             <td>
-              5228
-             </td>
-             <td>
-              16209
-             </td>
-             <td>
-              5220
-             </td>
-             <td>
-              5202
-             </td>
-            </tr>
-            <tr>
-             <th>
-              550
-             </th>
-             <td>
-              16513
-             </td>
-             <td>
-              5291
-             </td>
-             <td>
-              5253
-             </td>
-             <td>
-              16509
-             </td>
-             <td>
-              5272
-             </td>
-             <td>
-              5348
-             </td>
-             <td>
-              16506
-             </td>
-             <td>
-              5271
-             </td>
-             <td>
-              5327
-             </td>
-             <td>
-              16509
-             </td>
-             <td>
-              5339
-             </td>
-             <td>
-              5321
-             </td>
-            </tr>
-            <tr>
-             <th>
-              560
-             </th>
-             <td>
-              16813
-             </td>
-             <td>
-              5397
-             </td>
-             <td>
-              5387
-             </td>
-             <td>
-              16809
-             </td>
-             <td>
-              5448
-             </td>
-             <td>
-              5368
-             </td>
-             <td>
-              16806
-             </td>
-             <td>
-              5401
-             </td>
-             <td>
-              5375
-             </td>
-             <td>
-              16809
-             </td>
-             <td>
-              5409
-             </td>
-             <td>
-              5419
-             </td>
-            </tr>
-            <tr>
-             <th>
-              570
-             </th>
-             <td>
-              17113
-             </td>
-             <td>
-              5502
-             </td>
-             <td>
-              5446
-             </td>
-             <td>
-              17109
-             </td>
-             <td>
-              5449
-             </td>
-             <td>
-              5449
-             </td>
-             <td>
-              17106
-             </td>
-             <td>
-              5467
-             </td>
-             <td>
-              5502
-             </td>
-             <td>
-              17109
-             </td>
-             <td>
-              5494
-             </td>
-             <td>
-              5442
-             </td>
-            </tr>
-            <tr>
-             <th>
-              580
-             </th>
-             <td>
-              17413
-             </td>
-             <td>
-              5512
-             </td>
-             <td>
-              5501
-             </td>
-             <td>
-              17409
-             </td>
-             <td>
-              5579
-             </td>
-             <td>
-              5566
-             </td>
-             <td>
-              17406
-             </td>
-             <td>
-              5578
-             </td>
-             <td>
-              5486
-             </td>
-             <td>
-              17409
-             </td>
-             <td>
-              5566
-             </td>
-             <td>
-              5487
-             </td>
-            </tr>
-            <tr>
-             <th>
-              590
-             </th>
-             <td>
-              17713
-             </td>
-             <td>
-              5662
-             </td>
-             <td>
-              5639
-             </td>
-             <td>
-              17709
-             </td>
-             <td>
-              5652
-             </td>
-             <td>
-              5593
-             </td>
-             <td>
-              17706
-             </td>
-             <td>
-              5643
-             </td>
-             <td>
-              5607
-             </td>
-             <td>
-              17709
-             </td>
-             <td>
-              5678
-             </td>
-             <td>
-              5624
-             </td>
-            </tr>
-           </tbody>
-          </table>
-          <p>
-           50 rows × 12 columns
-          </p>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [13]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_html rendered_html output_subarea ">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>bson</th>
+<th>bson(g)</th>
+<th>bson(z)</th>
+<th>json</th>
+<th>json(g)</th>
+<th>json(z)</th>
+<th>msgpack</th>
+<th>msgpack(g)</th>
+<th>msgpack(z)</th>
+<th>raw</th>
+<th>raw(g)</th>
+<th>raw(z)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>100</th>
+<td>  3013</td>
+<td> 1268</td>
+<td> 1261</td>
+<td>  3009</td>
+<td> 1275</td>
+<td> 1245</td>
+<td>  3006</td>
+<td> 1276</td>
+<td> 1227</td>
+<td>  3009</td>
+<td> 1248</td>
+<td> 1244</td>
+</tr>
+<tr>
+<th>110</th>
+<td>  3313</td>
+<td> 1375</td>
+<td> 1338</td>
+<td>  3309</td>
+<td> 1363</td>
+<td> 1347</td>
+<td>  3306</td>
+<td> 1348</td>
+<td> 1338</td>
+<td>  3309</td>
+<td> 1329</td>
+<td> 1342</td>
+</tr>
+<tr>
+<th>120</th>
+<td>  3613</td>
+<td> 1476</td>
+<td> 1468</td>
+<td>  3609</td>
+<td> 1464</td>
+<td> 1470</td>
+<td>  3606</td>
+<td> 1478</td>
+<td> 1461</td>
+<td>  3609</td>
+<td> 1479</td>
+<td> 1441</td>
+</tr>
+<tr>
+<th>130</th>
+<td>  3913</td>
+<td> 1534</td>
+<td> 1530</td>
+<td>  3909</td>
+<td> 1563</td>
+<td> 1529</td>
+<td>  3906</td>
+<td> 1567</td>
+<td> 1550</td>
+<td>  3909</td>
+<td> 1565</td>
+<td> 1555</td>
+</tr>
+<tr>
+<th>140</th>
+<td>  4213</td>
+<td> 1654</td>
+<td> 1660</td>
+<td>  4209</td>
+<td> 1655</td>
+<td> 1653</td>
+<td>  4206</td>
+<td> 1661</td>
+<td> 1613</td>
+<td>  4209</td>
+<td> 1659</td>
+<td> 1632</td>
+</tr>
+<tr>
+<th>150</th>
+<td>  4513</td>
+<td> 1747</td>
+<td> 1743</td>
+<td>  4509</td>
+<td> 1736</td>
+<td> 1726</td>
+<td>  4506</td>
+<td> 1766</td>
+<td> 1728</td>
+<td>  4509</td>
+<td> 1728</td>
+<td> 1707</td>
+</tr>
+<tr>
+<th>160</th>
+<td>  4813</td>
+<td> 1867</td>
+<td> 1844</td>
+<td>  4809</td>
+<td> 1844</td>
+<td> 1838</td>
+<td>  4806</td>
+<td> 1853</td>
+<td> 1842</td>
+<td>  4809</td>
+<td> 1813</td>
+<td> 1814</td>
+</tr>
+<tr>
+<th>170</th>
+<td>  5113</td>
+<td> 1933</td>
+<td> 1932</td>
+<td>  5109</td>
+<td> 1920</td>
+<td> 1955</td>
+<td>  5106</td>
+<td> 1928</td>
+<td> 1950</td>
+<td>  5109</td>
+<td> 1924</td>
+<td> 1940</td>
+</tr>
+<tr>
+<th>180</th>
+<td>  5413</td>
+<td> 2045</td>
+<td> 2007</td>
+<td>  5409</td>
+<td> 2023</td>
+<td> 2013</td>
+<td>  5406</td>
+<td> 2040</td>
+<td> 2021</td>
+<td>  5409</td>
+<td> 2046</td>
+<td> 2021</td>
+</tr>
+<tr>
+<th>190</th>
+<td>  5713</td>
+<td> 2136</td>
+<td> 2106</td>
+<td>  5709</td>
+<td> 2134</td>
+<td> 2124</td>
+<td>  5706</td>
+<td> 2134</td>
+<td> 2109</td>
+<td>  5709</td>
+<td> 2110</td>
+<td> 2119</td>
+</tr>
+<tr>
+<th>200</th>
+<td>  6013</td>
+<td> 2240</td>
+<td> 2206</td>
+<td>  6009</td>
+<td> 2230</td>
+<td> 2205</td>
+<td>  6006</td>
+<td> 2202</td>
+<td> 2220</td>
+<td>  6009</td>
+<td> 2230</td>
+<td> 2191</td>
+</tr>
+<tr>
+<th>210</th>
+<td>  6313</td>
+<td> 2298</td>
+<td> 2246</td>
+<td>  6309</td>
+<td> 2314</td>
+<td> 2300</td>
+<td>  6306</td>
+<td> 2302</td>
+<td> 2314</td>
+<td>  6309</td>
+<td> 2248</td>
+<td> 2292</td>
+</tr>
+<tr>
+<th>220</th>
+<td>  6613</td>
+<td> 2425</td>
+<td> 2379</td>
+<td>  6609</td>
+<td> 2384</td>
+<td> 2386</td>
+<td>  6606</td>
+<td> 2417</td>
+<td> 2339</td>
+<td>  6609</td>
+<td> 2419</td>
+<td> 2398</td>
+</tr>
+<tr>
+<th>230</th>
+<td>  6913</td>
+<td> 2538</td>
+<td> 2483</td>
+<td>  6909</td>
+<td> 2484</td>
+<td> 2479</td>
+<td>  6906</td>
+<td> 2490</td>
+<td> 2491</td>
+<td>  6909</td>
+<td> 2470</td>
+<td> 2492</td>
+</tr>
+<tr>
+<th>240</th>
+<td>  7213</td>
+<td> 2589</td>
+<td> 2561</td>
+<td>  7209</td>
+<td> 2570</td>
+<td> 2561</td>
+<td>  7206</td>
+<td> 2616</td>
+<td> 2580</td>
+<td>  7209</td>
+<td> 2559</td>
+<td> 2570</td>
+</tr>
+<tr>
+<th>250</th>
+<td>  7513</td>
+<td> 2682</td>
+<td> 2668</td>
+<td>  7509</td>
+<td> 2670</td>
+<td> 2666</td>
+<td>  7506</td>
+<td> 2683</td>
+<td> 2632</td>
+<td>  7509</td>
+<td> 2660</td>
+<td> 2663</td>
+</tr>
+<tr>
+<th>260</th>
+<td>  7813</td>
+<td> 2765</td>
+<td> 2746</td>
+<td>  7809</td>
+<td> 2736</td>
+<td> 2748</td>
+<td>  7806</td>
+<td> 2771</td>
+<td> 2750</td>
+<td>  7809</td>
+<td> 2764</td>
+<td> 2734</td>
+</tr>
+<tr>
+<th>270</th>
+<td>  8113</td>
+<td> 2810</td>
+<td> 2850</td>
+<td>  8109</td>
+<td> 2870</td>
+<td> 2832</td>
+<td>  8106</td>
+<td> 2857</td>
+<td> 2858</td>
+<td>  8109</td>
+<td> 2856</td>
+<td> 2882</td>
+</tr>
+<tr>
+<th>280</th>
+<td>  8413</td>
+<td> 2967</td>
+<td> 2919</td>
+<td>  8409</td>
+<td> 2934</td>
+<td> 2923</td>
+<td>  8406</td>
+<td> 2944</td>
+<td> 2934</td>
+<td>  8409</td>
+<td> 2947</td>
+<td> 2909</td>
+</tr>
+<tr>
+<th>290</th>
+<td>  8713</td>
+<td> 3031</td>
+<td> 3048</td>
+<td>  8709</td>
+<td> 3008</td>
+<td> 3012</td>
+<td>  8706</td>
+<td> 3025</td>
+<td> 3001</td>
+<td>  8709</td>
+<td> 3048</td>
+<td> 3054</td>
+</tr>
+<tr>
+<th>300</th>
+<td>  9013</td>
+<td> 3122</td>
+<td> 3088</td>
+<td>  9009</td>
+<td> 3115</td>
+<td> 3105</td>
+<td>  9006</td>
+<td> 3170</td>
+<td> 3099</td>
+<td>  9009</td>
+<td> 3075</td>
+<td> 3057</td>
+</tr>
+<tr>
+<th>310</th>
+<td>  9313</td>
+<td> 3213</td>
+<td> 3205</td>
+<td>  9309</td>
+<td> 3190</td>
+<td> 3195</td>
+<td>  9306</td>
+<td> 3204</td>
+<td> 3188</td>
+<td>  9309</td>
+<td> 3200</td>
+<td> 3213</td>
+</tr>
+<tr>
+<th>320</th>
+<td>  9613</td>
+<td> 3289</td>
+<td> 3285</td>
+<td>  9609</td>
+<td> 3256</td>
+<td> 3314</td>
+<td>  9606</td>
+<td> 3269</td>
+<td> 3294</td>
+<td>  9609</td>
+<td> 3298</td>
+<td> 3300</td>
+</tr>
+<tr>
+<th>330</th>
+<td>  9913</td>
+<td> 3379</td>
+<td> 3386</td>
+<td>  9909</td>
+<td> 3352</td>
+<td> 3371</td>
+<td>  9906</td>
+<td> 3395</td>
+<td> 3365</td>
+<td>  9909</td>
+<td> 3406</td>
+<td> 3373</td>
+</tr>
+<tr>
+<th>340</th>
+<td> 10213</td>
+<td> 3488</td>
+<td> 3470</td>
+<td> 10209</td>
+<td> 3454</td>
+<td> 3466</td>
+<td> 10206</td>
+<td> 3496</td>
+<td> 3465</td>
+<td> 10209</td>
+<td> 3495</td>
+<td> 3465</td>
+</tr>
+<tr>
+<th>350</th>
+<td> 10513</td>
+<td> 3593</td>
+<td> 3557</td>
+<td> 10509</td>
+<td> 3556</td>
+<td> 3505</td>
+<td> 10506</td>
+<td> 3552</td>
+<td> 3524</td>
+<td> 10509</td>
+<td> 3578</td>
+<td> 3564</td>
+</tr>
+<tr>
+<th>360</th>
+<td> 10813</td>
+<td> 3643</td>
+<td> 3644</td>
+<td> 10809</td>
+<td> 3642</td>
+<td> 3636</td>
+<td> 10806</td>
+<td> 3666</td>
+<td> 3629</td>
+<td> 10809</td>
+<td> 3632</td>
+<td> 3631</td>
+</tr>
+<tr>
+<th>370</th>
+<td> 11113</td>
+<td> 3701</td>
+<td> 3697</td>
+<td> 11109</td>
+<td> 3750</td>
+<td> 3739</td>
+<td> 11106</td>
+<td> 3717</td>
+<td> 3709</td>
+<td> 11109</td>
+<td> 3731</td>
+<td> 3713</td>
+</tr>
+<tr>
+<th>380</th>
+<td> 11413</td>
+<td> 3836</td>
+<td> 3839</td>
+<td> 11409</td>
+<td> 3831</td>
+<td> 3796</td>
+<td> 11406</td>
+<td> 3796</td>
+<td> 3806</td>
+<td> 11409</td>
+<td> 3827</td>
+<td> 3809</td>
+</tr>
+<tr>
+<th>390</th>
+<td> 11713</td>
+<td> 3950</td>
+<td> 3905</td>
+<td> 11709</td>
+<td> 3963</td>
+<td> 3920</td>
+<td> 11706</td>
+<td> 3882</td>
+<td> 3910</td>
+<td> 11709</td>
+<td> 3882</td>
+<td> 3890</td>
+</tr>
+<tr>
+<th>400</th>
+<td> 12013</td>
+<td> 4002</td>
+<td> 3984</td>
+<td> 12009</td>
+<td> 4014</td>
+<td> 3977</td>
+<td> 12006</td>
+<td> 4009</td>
+<td> 3988</td>
+<td> 12009</td>
+<td> 3992</td>
+<td> 3960</td>
+</tr>
+<tr>
+<th>410</th>
+<td> 12313</td>
+<td> 4128</td>
+<td> 4048</td>
+<td> 12309</td>
+<td> 4066</td>
+<td> 4089</td>
+<td> 12306</td>
+<td> 4075</td>
+<td> 4062</td>
+<td> 12309</td>
+<td> 4091</td>
+<td> 4094</td>
+</tr>
+<tr>
+<th>420</th>
+<td> 12613</td>
+<td> 4137</td>
+<td> 4181</td>
+<td> 12609</td>
+<td> 4181</td>
+<td> 4132</td>
+<td> 12606</td>
+<td> 4167</td>
+<td> 4175</td>
+<td> 12609</td>
+<td> 4159</td>
+<td> 4169</td>
+</tr>
+<tr>
+<th>430</th>
+<td> 12913</td>
+<td> 4286</td>
+<td> 4257</td>
+<td> 12909</td>
+<td> 4260</td>
+<td> 4254</td>
+<td> 12906</td>
+<td> 4285</td>
+<td> 4206</td>
+<td> 12909</td>
+<td> 4240</td>
+<td> 4255</td>
+</tr>
+<tr>
+<th>440</th>
+<td> 13213</td>
+<td> 4360</td>
+<td> 4325</td>
+<td> 13209</td>
+<td> 4346</td>
+<td> 4325</td>
+<td> 13206</td>
+<td> 4346</td>
+<td> 4323</td>
+<td> 13209</td>
+<td> 4353</td>
+<td> 4379</td>
+</tr>
+<tr>
+<th>450</th>
+<td> 13513</td>
+<td> 4424</td>
+<td> 4400</td>
+<td> 13509</td>
+<td> 4415</td>
+<td> 4392</td>
+<td> 13506</td>
+<td> 4399</td>
+<td> 4441</td>
+<td> 13509</td>
+<td> 4438</td>
+<td> 4401</td>
+</tr>
+<tr>
+<th>460</th>
+<td> 13813</td>
+<td> 4508</td>
+<td> 4524</td>
+<td> 13809</td>
+<td> 4558</td>
+<td> 4479</td>
+<td> 13806</td>
+<td> 4525</td>
+<td> 4496</td>
+<td> 13809</td>
+<td> 4528</td>
+<td> 4517</td>
+</tr>
+<tr>
+<th>470</th>
+<td> 14113</td>
+<td> 4659</td>
+<td> 4631</td>
+<td> 14109</td>
+<td> 4586</td>
+<td> 4635</td>
+<td> 14106</td>
+<td> 4617</td>
+<td> 4619</td>
+<td> 14109</td>
+<td> 4631</td>
+<td> 4608</td>
+</tr>
+<tr>
+<th>480</th>
+<td> 14413</td>
+<td> 4661</td>
+<td> 4651</td>
+<td> 14409</td>
+<td> 4677</td>
+<td> 4718</td>
+<td> 14406</td>
+<td> 4695</td>
+<td> 4669</td>
+<td> 14409</td>
+<td> 4685</td>
+<td> 4663</td>
+</tr>
+<tr>
+<th>490</th>
+<td> 14713</td>
+<td> 4820</td>
+<td> 4769</td>
+<td> 14709</td>
+<td> 4757</td>
+<td> 4753</td>
+<td> 14706</td>
+<td> 4808</td>
+<td> 4781</td>
+<td> 14709</td>
+<td> 4835</td>
+<td> 4747</td>
+</tr>
+<tr>
+<th>500</th>
+<td> 15013</td>
+<td> 4838</td>
+<td> 4834</td>
+<td> 15009</td>
+<td> 4832</td>
+<td> 4840</td>
+<td> 15006</td>
+<td> 4883</td>
+<td> 4838</td>
+<td> 15009</td>
+<td> 4893</td>
+<td> 4860</td>
+</tr>
+<tr>
+<th>510</th>
+<td> 15313</td>
+<td> 4943</td>
+<td> 4988</td>
+<td> 15309</td>
+<td> 4943</td>
+<td> 4984</td>
+<td> 15306</td>
+<td> 4951</td>
+<td> 4906</td>
+<td> 15309</td>
+<td> 4970</td>
+<td> 4948</td>
+</tr>
+<tr>
+<th>520</th>
+<td> 15613</td>
+<td> 5065</td>
+<td> 5024</td>
+<td> 15609</td>
+<td> 5024</td>
+<td> 4973</td>
+<td> 15606</td>
+<td> 5063</td>
+<td> 5081</td>
+<td> 15609</td>
+<td> 5024</td>
+<td> 5076</td>
+</tr>
+<tr>
+<th>530</th>
+<td> 15913</td>
+<td> 5119</td>
+<td> 5106</td>
+<td> 15909</td>
+<td> 5137</td>
+<td> 5138</td>
+<td> 15906</td>
+<td> 5130</td>
+<td> 5070</td>
+<td> 15909</td>
+<td> 5094</td>
+<td> 5129</td>
+</tr>
+<tr>
+<th>540</th>
+<td> 16213</td>
+<td> 5255</td>
+<td> 5226</td>
+<td> 16209</td>
+<td> 5187</td>
+<td> 5211</td>
+<td> 16206</td>
+<td> 5224</td>
+<td> 5228</td>
+<td> 16209</td>
+<td> 5220</td>
+<td> 5202</td>
+</tr>
+<tr>
+<th>550</th>
+<td> 16513</td>
+<td> 5291</td>
+<td> 5253</td>
+<td> 16509</td>
+<td> 5272</td>
+<td> 5348</td>
+<td> 16506</td>
+<td> 5271</td>
+<td> 5327</td>
+<td> 16509</td>
+<td> 5339</td>
+<td> 5321</td>
+</tr>
+<tr>
+<th>560</th>
+<td> 16813</td>
+<td> 5397</td>
+<td> 5387</td>
+<td> 16809</td>
+<td> 5448</td>
+<td> 5368</td>
+<td> 16806</td>
+<td> 5401</td>
+<td> 5375</td>
+<td> 16809</td>
+<td> 5409</td>
+<td> 5419</td>
+</tr>
+<tr>
+<th>570</th>
+<td> 17113</td>
+<td> 5502</td>
+<td> 5446</td>
+<td> 17109</td>
+<td> 5449</td>
+<td> 5449</td>
+<td> 17106</td>
+<td> 5467</td>
+<td> 5502</td>
+<td> 17109</td>
+<td> 5494</td>
+<td> 5442</td>
+</tr>
+<tr>
+<th>580</th>
+<td> 17413</td>
+<td> 5512</td>
+<td> 5501</td>
+<td> 17409</td>
+<td> 5579</td>
+<td> 5566</td>
+<td> 17406</td>
+<td> 5578</td>
+<td> 5486</td>
+<td> 17409</td>
+<td> 5566</td>
+<td> 5487</td>
+</tr>
+<tr>
+<th>590</th>
+<td> 17713</td>
+<td> 5662</td>
+<td> 5639</td>
+<td> 17709</td>
+<td> 5652</td>
+<td> 5593</td>
+<td> 17706</td>
+<td> 5643</td>
+<td> 5607</td>
+<td> 17709</td>
+<td> 5678</td>
+<td> 5624</td>
+</tr>
+</tbody>
+</table>
+<p>50 rows × 12 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [13]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="n">figsize</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="size-comparison-by-method">Size Comparison By Method</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [14]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">(</span><span class="s">'bson'</span><span class="p">,</span> <span class="s">'json'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="s">'raw'</span><span class="p">,</span> <span class="p">)]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'raw'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'raw'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt output_prompt">
+    Out[14]:</div>
+<div class="output_text output_subarea output_pyout">
+<pre>
+&lt;matplotlib.axes.AxesSubplot at 0x4033150&gt;
 </pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="size-comparison-by-method">
-        Size Comparison By Method
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [14]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">(</span><span class="s">'bson'</span><span class="p">,</span> <span class="s">'json'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="s">'raw'</span><span class="p">,</span> <span class="p">)]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'raw'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'raw'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt output_prompt">
-         Out[14]:
-        </div>
-        <div class="output_text output_subarea output_pyout">
-         <pre>
-<matplotlib.axes.AxesSubplot at 0x4033150>
-</pre>
-        </div>
-       </div>
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_png output_subarea ">
-         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABKMAAAFwCAYAAABkaLg3AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+</div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABKMAAAFwCAYAAABkaLg3AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl81NW9//H3JGEJhCUhQEAIIRJJgigBQpQiCS4Qrxu4
 FoRe3C5ae7FibKVasdW6oL0iiIAtVizS+tNKqbSCgkaISgICYiFYCKsgS1hC2LPM74+vM5mZTIaQ
 7ZvJeT0fj/P4fs93CWd4m/u4fHrOGYfT6XQKAAAAAAAAaAAhdg8AAAAAAAAA5qAYBQAAAAAAgAZD
@@ -4711,54 +3295,45 @@ NMgEBgaaAQMGGJfLZYzhz7eT1NWMJTc314SHh5uAgADzxBNPXPV9fYy5js2AAAAAAAAAwA1wxDY9
 AAAAAAAANA4MowAAAAAAAFBvGEYBAAAAAACg3jCMAgAAAAAAQL1hGAUAAAAAAIB6wzAKAAAAAAAA
 9YZhFAAAAAAAAOoNwygAAAAAAADUm/8DsvT+D0rySbcAAAAASUVORK5CYII=
 ">
-         </img>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h3 id="size-comparison-by-method-and-zlib-compressed">
-        Size Comparison By Method And zlib Compressed
-       </h3>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [15]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,(</span><span class="s">'bson(z)'</span><span class="p">,</span> <span class="s">'json(z)'</span><span class="p">,</span> <span class="s">'msgpack(z)'</span><span class="p">,</span> <span class="s">'raw(z)'</span><span class="p">,</span> <span class="p">)]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'raw(z)'</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'raw(z)'</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="size-comparison-by-method-and-zlib-compressed">Size Comparison By Method And zlib Compressed</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [15]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,(</span><span class="s">'bson(z)'</span><span class="p">,</span> <span class="s">'json(z)'</span><span class="p">,</span> <span class="s">'msgpack(z)'</span><span class="p">,</span> <span class="s">'raw(z)'</span><span class="p">,</span> <span class="p">)]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'raw(z)'</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'raw(z)'</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt output_prompt">
+    Out[15]:</div>
+<div class="output_text output_subarea output_pyout">
+<pre>
+&lt;matplotlib.axes.AxesSubplot at 0x4037250&gt;
 </pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt output_prompt">
-         Out[15]:
-        </div>
-        <div class="output_text output_subarea output_pyout">
-         <pre>
-<matplotlib.axes.AxesSubplot at 0x4037250>
-</pre>
-        </div>
-       </div>
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_png output_subarea ">
-         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJYAAAFwCAYAAADqsvFLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+</div>
+</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJYAAAFwCAYAAADqsvFLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xl8VPXVx/HPJKyBJGSDLEBCwr4vsojIIhZ9Va27iIri
 VupSV2zLoz7Sp7ao1IpaVLBatGC11Vp3qYIBQQk7lIQtCxASIPsess19/rhkSCAJJJnJzHC/79dr
 XnJn7tz7mxwHMmfOOddmGIaBiIiIiIiIiIhIM/m4ewEiIiIiIiIiIuKdlFgSEREREREREZEWUWJJ
@@ -6495,50 +5070,43 @@ iIiIiIiIwgMTS0RERERERERE5BcmloiIiIiIiIiIyC9MLBERERERERERkV+YWCIiIiIiIiIiIr8w
 sURERERERERERH5hYomIiIiIiIiIiPzCxBIREREREREREfnl/wfQdoJm/5JyvAAAAABJRU5ErkJg
 gg==
 ">
-         </img>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h2 id="compress-rate-by-method">
-        Compress Rate By Method
-       </h2>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [16]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="compress-rate-by-method">Compress Rate By Method</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [16]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'bson'</span><span class="p">,</span> <span class="s">'json'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="s">'raw'</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'</span><span class="si">%s</span><span class="s">(z)'</span> <span class="o">%</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">i</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">i</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="p">)</span>
     
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_png output_subarea ">
-         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3XdcleX/x/HXAWSogIgpIiIuECdogJoDv85faWKO3Jqj
 Mq1cDUdfbapZWpazb660oVaONHc4KsQZpjjBgThBWTIEzu+PYxSBZogckPfz8bgfcu77uq/zubj9
 h/fjuq7bYDQajYiIiIiIiIiIiOSBhbkLEBERERERERGRokvhkoiIiIiIiIiI5JnCJRERERERERER
@@ -7357,50 +5925,43 @@ Gtnv98cxeVfX4+Njbm5u0uv1Mp1O8/HxIe8Ku76+zuXlZXq9Xt7e3pI431XyVf3Ker1Ot9vN+fl5
 JpPJH61dTz5xAQ8AAAAAfvFPXosDAAAA4P+gXAIAAACgNOUSAAAAAKUplwAAAAAoTbkEAAAAQGnK
 JQAAAABKUy4BAAAAUJpyCQAAAIDSfgLj4TXZjwWhwQAAAABJRU5ErkJggg==
 ">
-         </img>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h2 id="compression-method-gzip-vs.-zlib">
-        Compression Method: gzip vs. zlib
-       </h2>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [17]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="compression-method-gzip-vs.-zlib">Compression Method: gzip vs. zlib</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [17]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'bson'</span><span class="p">,</span> <span class="s">'json'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="s">'raw'</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'</span><span class="si">%s</span><span class="s">(z)'</span> <span class="o">%</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'</span><span class="si">%s</span><span class="s">(g)'</span> <span class="o">%</span> <span class="n">i</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'</span><span class="si">%s</span><span class="s">(g)'</span> <span class="o">%</span> <span class="n">i</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s">'</span><span class="si">%s</span><span class="s"> z/g'</span> <span class="o">%</span> <span class="n">i</span><span class="p">,</span> <span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_png output_subarea ">
-         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJcAAAFwCAYAAAAFcJp1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8W/W9+P+XvIe87XjFA8cOZDjONhkk4QaSkEDZI6tQ
 RtPSCRd6S0sbaOEL/CilUCgkudBCQyilcCnDSQiUELJwSEKGsx0n8d5Dlqek8/vjWIpky1uyJPv9
 fDz0SHR0JH1s2ZbO+7yHRlEUBSGEEEIIIYQQQgghBsDL1QsQQgghhBBCCCGEEJ5LgktCCCGEEEII
@@ -9573,83 +8134,65 @@ IiIiIiIi+j+/5GVxRERERERERET0e+DkEhERERERERER+Y2TS0RERERERERE5DdOLhERERERERER
 kd84uURERERERERERH7j5BIREREREREREfmNk0tEREREREREROQ3Ti4REREREREREZHf/gM2xYiQ
 l4itIwAAAABJRU5ErkJggg==
 ">
-         </img>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing code_cell rendered">
-     <div class="input">
-      <div class="prompt input_prompt">
-       In [18]:
-      </div>
-      <div class="inner_cell">
-       <div class="input_area">
-        <div class="highlight">
-         <pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'bson'</span><span class="p">,</span> <span class="s">'json'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="s">'raw'</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In [18]:
+</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="s">'bson'</span><span class="p">,</span> <span class="s">'json'</span><span class="p">,</span> <span class="s">'msgpack'</span><span class="p">,</span> <span class="s">'raw'</span><span class="p">,</span> <span class="p">)</span> <span class="p">:</span>
     <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'</span><span class="si">%s</span><span class="s">(z)'</span> <span class="o">%</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s">'</span><span class="si">%s</span><span class="s">(g)'</span> <span class="o">%</span> <span class="n">i</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="s">'index'</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-</pre>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="output_wrapper">
-      <div class="output">
-       <div class="output_area">
-        <div class="prompt">
-        </div>
-        <div class="output_subarea output_stream output_stdout output_text">
-         <pre>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
 bson 84
 json 93
 msgpack 78
 raw 76
 
 </pre>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <h1 id="conclusion">
-        Conclusion
-       </h1>
-      </div>
-     </div>
-    </div>
-    <div class="cell border-box-sizing text_cell rendered">
-     <div class="prompt input_prompt">
-     </div>
-     <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-       <p>
-        I compared which serializing method and tool shows the best compaction result with or without compressing. As the result is shown above, I could not find any meaningful differences between the methods. At first, I have expected the
-        <code>
-         bson
-        </code>
-        will show the best compaction result because it can serialize as binaries, but on the contrary,
-        <code>
-         bson
-        </code>
-        makes the input to be oversized.
-       </p>
-      </div>
-     </div>
-    </div>
-    <script src="https://apis.google.com/js/plusone.js">
-    </script>
-    <div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html">
-    </div>
-    <footer>
-     <pre><a href="/">Home</a> / Written By <a href="http://github.com/spikeekips">Spike^ekipS</a> | <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a></pre>
-    </footer>
-   </div>
-  </div>
- </body>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="conclusion">Conclusion</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I compared which serializing method and tool shows the best compaction result with or without compressing. As the result is shown above, I could not find any meaningful differences between the methods. At first, I have expected the <code>bson</code> will show the best compaction result because it can serialize as binaries, but on the contrary, <code>bson</code> makes the input to be oversized.</p>
+</div>
+</div>
+</div>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html">
+</div>
+<footer>
+<pre><a href="/">Home</a> / Written By <a href="http://github.com/spikeekips">Spike^ekipS</a> | <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a></pre>
+</footer>
+</div>
+</div>
+</body>
 </html>
