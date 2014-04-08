@@ -131,7 +131,7 @@ footer pre
 {{ super() }}
 
 
-<!-- START: Livefyre Embed -->
+<!-- START: Livefyre Embed 
 <div id='comment'>
 <div id="livefyre-comments"></div>
 </div>
@@ -155,11 +155,21 @@ if (window.location.pathname != '/')
     }());
 }
 </script>
-<!-- END: Livefyre Embed -->
+END: Livefyre Embed -->
+
+
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div class="g-comments"
+    data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html"
+    data-width="642"
+    data-first_party_property="BLOGGER"
+    data-view_type="FILTERED_POSTMOD">
+</div>
+
 
   <footer>
-  <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
-  <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a>
+  <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a> | <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a></pre>
+  
   </footer>
     </div>
   </div>
