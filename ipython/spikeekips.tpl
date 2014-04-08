@@ -161,9 +161,7 @@ END: Livefyre Embed -->
 <script src="https://apis.google.com/js/plusone.js"></script>
 <div class="g-comments"
     data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html"
-    data-width="642"
-    data-first_party_property="BLOGGER"
-    data-view_type="FILTERED_POSTMOD">
+    data-first_party_property="BLOGGER">
 </div>
 
 
