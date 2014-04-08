@@ -20,7 +20,7 @@ def nbconvert (f, ) :
         ), )
 
 
-RE_MARKDOWN_TAGS = re.compile('[\s]*#[\s]*(.*)', re.U | re.M, )
+RE_MARKDOWN_TAGS = re.compile('([\s]*#[\s]*|)(.*)', re.U | re.M, )
 INDEX_JSON_FILE = '.index.json'
 
 CELL = dict(
@@ -62,13 +62,13 @@ for i in glob.glob('notebook/*.ipynb') :
     nbconvert(i, )
 
     with file(_target, 'wb', )  as f :
-        import BeautifulSoup
-        _bf = BeautifulSoup.BeautifulSoup(file(_output, ).read(), )
+        from bs4 import BeautifulSoup
+        _bf = BeautifulSoup(file(_output, ).read(), )
 
         _b = _bf.find('div', {'class': 'g-comments', }, )
         _url = urllib.basejoin('http://spikeekips.github.io/', _target, )
         _b['data-href'] = _url
-        f.write(str(_bf, ), )
+        f.write(_bf.prettify(formatter=None, ).encode('utf-8'), )
 
     _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0], _target, _url, ), )
 
