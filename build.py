@@ -71,6 +71,8 @@ for i in glob.glob('notebook/*.ipynb') :
     if _target not in _already_built :
         _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0], _target, ), )
 
+    os.remove(_output, )
+
 
 ################################################################################
 # create index.html
