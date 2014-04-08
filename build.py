@@ -70,7 +70,7 @@ for i in glob.glob('notebook/*.ipynb') :
         _b['data-href'] = _url
         f.write(_bf.prettify(formatter=None, ).encode('utf-8'), )
 
-    _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0], _target, _url, ), )
+    _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0][1], _target, _url, ), )
 
     os.remove(_output, )
 

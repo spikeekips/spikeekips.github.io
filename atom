@@ -10,7 +10,7 @@
   </author>
   <generator>PyAtom</generator>
   <entry xml:base="http://spikeekips.github.io/atom">
-    <title type="text">(u'', u'Basic Usage Of serf-python')</title>
+    <title type="text">Basic Usage Of serf-python</title>
     <id>http://spikeekips.github.io/post/Basic Usage Of serf-python.html</id>
     <updated>2014-04-08T20:35:19Z</updated>
     <link href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html" />
@@ -1888,7 +1888,7 @@ Written atTue Apr  8 20:09:18 KST 2014
 </content>
   </entry>
   <entry xml:base="http://spikeekips.github.io/atom">
-    <title type="text">(u'# ', u'Comparison Of Serializing Python Object: msgpack Vs. Json')</title>
+    <title type="text">Comparison Of Serializing Python Object: msgpack Vs. Json</title>
     <id>http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html</id>
     <updated>2014-04-04T21:25:19Z</updated>
     <link href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html" />
