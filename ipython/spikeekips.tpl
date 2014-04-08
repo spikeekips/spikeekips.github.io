@@ -130,34 +130,6 @@ footer pre
   </header>
 {{ super() }}
 
-
-<!-- START: Livefyre Embed 
-<div id='comment'>
-<div id="livefyre-comments"></div>
-</div>
-<script type="text/javascript" src="//zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-<script type="text/javascript">
-if (window.location.pathname != '/')
-{
-    (function () {
-        var articleId = fyre.conv.load.makeArticleId(null);
-        fyre.conv.load({}, [{
-            el: 'livefyre-comments',
-            network: "livefyre.com",
-            siteId: "356593",
-            articleId: articleId,
-            signed: false,
-            collectionMeta: {
-                articleId: articleId,
-                url: fyre.conv.load.makeCollectionUrl(),
-            }
-        }], function() {});
-    }());
-}
-</script>
-END: Livefyre Embed -->
-
-
 <script src="https://apis.google.com/js/plusone.js"></script>
 <div class="g-comments"
     data-href="http://spikeekips.github.io/post/serializing-python-object-msgpack-vs-json.html"
