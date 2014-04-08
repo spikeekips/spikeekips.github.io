@@ -126,7 +126,7 @@ footer pre
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
   <header>
-    <a href='/'><h2>Spike^ekipS</h2></a> work for me
+    <a href='/'><h2>By Spike ekipS</h2></a> work for me
   </header>
 {{ super() }}
 
@@ -159,6 +159,7 @@ if (window.location.pathname != '/')
 
   <footer>
   <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a></pre>
+  <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a>
   </footer>
     </div>
   </div>
