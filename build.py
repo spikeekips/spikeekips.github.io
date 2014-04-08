@@ -31,11 +31,12 @@ CELL = dict(
 
 
 # read .index.json
-if not os.path.exists(INDEX_JSON_FILE, ) :
-    _index = list()
-else :
-    _index = json.loads(file(INDEX_JSON_FILE, ).read(), )
+#if not os.path.exists(INDEX_JSON_FILE, ) :
+#    _index = list()
+#else :
+#    _index = json.loads(file(INDEX_JSON_FILE, ).read(), )
 
+_index = list()
 
 _already_built = dict()
 for _date_written, _title, _target in _index :
@@ -49,7 +50,7 @@ for i in glob.glob('notebook/*.ipynb') :
 
     # title
     _title = None
-    _date_written = datetime.datetime.fromtimestamp(os.path.getmtime(i, ), ).isoformat()
+    _date_written = datetime.datetime.fromtimestamp(os.path.getmtime(i, ), )
     for j in _parsed.get('worksheets')[0].get('cells') :
         if j.get('cell_type') not in ('markdown', 'heading', ) :
             continue
@@ -65,11 +66,11 @@ for i in glob.glob('notebook/*.ipynb') :
         _bf = BeautifulSoup.BeautifulSoup(file(_output, ).read(), )
 
         _b = _bf.find('div', {'class': 'g-comments', }, )
-        _b['data-href'] = urllib.basejoin('http://spikeekips.github.io/', _target, )
+        _url = urllib.basejoin('http://spikeekips.github.io/', _target, )
+        _b['data-href'] = _url
         f.write(str(_bf, ), )
 
-    if _target not in _already_built :
-        _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0], _target, ), )
+    _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0], _target, _url, ), )
 
     os.remove(_output, )
 
@@ -81,8 +82,8 @@ _index.reverse()
 
 
 # store .index.json
-with file(INDEX_JSON_FILE, 'wb', ) as f :
-    json.dump(_index, f, )
+#with file(INDEX_JSON_FILE, 'wb', ) as f :
+#    json.dump(_index, f, )
 
 
 # write index.html
@@ -95,13 +96,33 @@ _index_data = dict(
             ), ),
     )
 
-for _date_written, _title, _target in _index :
+import pyatom
+_feed = pyatom.AtomFeed(title='Spike^ekipS Blog',
+        feed_url='http://spikeekips.github.io/atom',
+        url='http://spikeekips.github.io',
+        author='Spike^ekipS',
+    )
+
+
+for _date_written, _title, _target, _url in _index :
     _cell = copy.deepcopy(CELL, )
     _cell['source'].append(
-            u'ㅎ. %s: &nbsp; [%s](%s)' % (_date_written, _title, _target, ),
+            u'ㅎ. %s: &nbsp; [%s](%s)' % (_date_written.isoformat(), _title, _target, ),
         )
     _index_data['worksheets'][0]['cells'].append(_cell, )
 
+    with file('/tmp/kkk.html', 'wb', ) as f :
+        f.write(file(_target, ).read())
+
+    _feed.add(title=_title,
+            content=file(_target, ).read().decode('utf-8'),
+            content_type='text/html',
+            url=_url,
+            updated=_date_written,
+        )
+
+with file('atom', 'wb', ) as f :
+    f.write(_feed.to_string().encode('utf-8'), )
 
 import pprint
 pprint.pprint(_index_data, )

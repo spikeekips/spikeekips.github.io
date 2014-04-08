@@ -7,19 +7,20 @@
 <html>
 <head>
 
-<meta charset="utf-8" />
+<meta charset='utf-8' />
 <title>{{resources['metadata']['name']}}</title>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link type='application/atom+xml' rel='alternate' href='http://spikeekips.github.io/atom' />
+<script src='//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
 
 {% for css in resources.inlining.css -%}
-    <style type="text/css">
+    <style type='text/css'>
     {{ css }}
     </style>
 {% endfor %}
 
-<style type="text/css">
+<style type='text/css'>
 /* Overrides of notebook CSS for static HTML export */
 body {
   overflow: visible;
@@ -50,13 +51,13 @@ div#notebook {
 <!-- Loading mathjax macro -->
 {{ mathjax() }}
 
-<link href="//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700" rel="stylesheet" type="text/css">
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700' rel='stylesheet' type='text/css'>
 
-<style type="text/css">
+<style type='text/css'>
 
 body
 {
-    font-family: Ubuntu, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Ubuntu, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 header
@@ -123,21 +124,21 @@ footer pre
 
 {% block body %}
 <body>
-  <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
+  <div tabindex='-1' id='notebook' class='border-box-sizing'>
+    <div class='container' id='notebook-container'>
   <header>
     <a href='/'><h2>By Spike ekipS</h2></a> work for me
   </header>
 {{ super() }}
 
-<script src="https://apis.google.com/js/plusone.js"></script>
-<div class="g-comments"
-    data-href="http://spikeekips.github.io/"
-    data-first_party_property="BLOGGER">
+<script src='https://apis.google.com/js/plusone.js'></script>
+<div class='g-comments'
+    data-href='http://spikeekips.github.io/'
+    data-first_party_property='BLOGGER'>
 </div>
 
   <footer>
-  <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a> | <a href="https://plus.google.com/101452362887920966223?rel=author">Google</a></pre>
+  <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a> | <a href='https://plus.google.com/101452362887920966223?rel=author'>Google</a></pre>
   
   </footer>
     </div>
