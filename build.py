@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import datetime
+import urllib
 import copy
 import os
 import json
@@ -58,7 +59,14 @@ for i in glob.glob('notebook/*.ipynb') :
             break
 
     nbconvert(i, )
-    shutil.move(_output, _target, )
+
+    with file(_target, 'wb', )  as f :
+        import BeautifulSoup
+        _bf = BeautifulSoup.BeautifulSoup(file(_output, ).read(), )
+
+        _b = _bf.find('div', {'class': 'g-comments', }, )
+        _b['data-href'] = urllib.basejoin('http://spikeekips.github.io/', _target, )
+        f.write(str(_bf, ), )
 
     if _target not in _already_built :
         _index.append((_date_written, RE_MARKDOWN_TAGS.findall(_title, )[0], _target, ), )
