@@ -1725,6 +1725,18 @@ footer pre
     background-color: inherit;
 }
 
+.rendered_html > pre
+{
+    margin: 1em 0;
+}
+
+.rendered_html > pre > code
+{
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 </style>
 </link></head>
 <body>
@@ -1774,7 +1786,7 @@ Written at Thu Apr 10 18:15:28 KST 2014
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="what-is-serf">What is <code>serf</code>?</h2>
+<h2 id="what-is-serf-">What is <code>serf</code>?</h2>
 </div>
 </div>
 </div>
@@ -1783,9 +1795,11 @@ Written at Thu Apr 10 18:15:28 KST 2014
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Recently I found some interesting project, that is <a href="http://www.serfdom.io/">serf</a> http://www.serfdom.io/. They explains,</p>
+<p>Recently I found some interesting project, that is <a href="http://www.serfdom.io/">serf</a> <a href="http://www.serfdom.io/">http://www.serfdom.io/</a>. They explains,</p>
 <blockquote>
-<p>Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.</p>
+<p>Serf is a decentralized solution
+for service discovery and orchestration
+that is lightweight, highly available, and fault tolerant.</p>
 </blockquote>
 <p>For several years, I have been trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.</p>
 <p>In fact, serf is still in development and has the critical limitations,</p>
@@ -1965,15 +1979,13 @@ In [8]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To install <code>serf</code>, see the official installation document, http://www.serfdom.io/intro/getting-started/install.html. As you can find, there is just one binary file, so you don't need to install the other additional libraries or files, very simple and intuitive.</p>
-<p>In latest OSX, download latest serf binary from http://www.serfdom.io/downloads.html .</p>
+<p>To install <code>serf</code>, see the official installation document, <a href="http://www.serfdom.io/intro/getting-started/install.html">http://www.serfdom.io/intro/getting-started/install.html</a>. As you can find, there is just one binary file, so you don't need to install the other additional libraries or files, very simple and intuitive.</p>
+<p>In latest OSX, download latest serf binary from <a href="http://www.serfdom.io/downloads.html">http://www.serfdom.io/downloads.html</a> .</p>
 <p>You need <code>virtualenv</code>.</p>
-<pre><code>$ virtualenv i_am_alive
-$ cd i_am_alive
-$ source i_am_alive
-$ curl -L -o serf-0.5.0.zip https://dl.bintray.com/mitchellh/serf/0.5.0_darwin_amd64.zip
-$ unzip serf-0.5.0.zip
-$ mv serf bin/</code></pre>
+<pre><code class="language-sh">@<span class="localvars">@0</span>@@ cd i_am_alive
+@<span class="localvars">@1</span>@@ curl -L -o serf-<span class="number">0.5</span><span class="number">.0</span><span class="preprocessor">.zip</span> https://dl<span class="preprocessor">.bintray</span><span class="preprocessor">.com</span>/mitchellh/serf/<span class="number">0.5</span><span class="number">.0</span>_darwin_amd64<span class="preprocessor">.zip</span>
+@<span class="localvars">@2</span>@@ mv serf bin/
+</code></pre>
 </div>
 </div>
 </div>
@@ -1982,7 +1994,7 @@ $ mv serf bin/</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="install-serf-python">Install <code>serf-python</code></h2>
+<h2 id="install-serf-python-">Install <code>serf-python</code></h2>
 </div>
 </div>
 </div>
@@ -1992,10 +2004,11 @@ $ mv serf bin/</code></pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can easily <code>serf-python</code> with <code>pip</code>.</p>
-<pre><code>$ pip install serf-python
+<pre><code class="language-sh">$ pip install serf-python
 
 $ python
-&gt;&gt;&gt; import serf</code></pre>
+&gt;&gt;&gt; <span class="preprocessor"><span class="keyword">import</span> serf
+</span></code></pre>
 </div>
 </div>
 </div>
@@ -2004,7 +2017,7 @@ $ python
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="i_am_alive.py"><code>i_am_alive.py</code></h2>
+<h2 id="-i_am_alive-py-"><code>i_am_alive.py</code></h2>
 </div>
 </div>
 </div>
@@ -2022,103 +2035,104 @@ $ python
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> os
-<span class="ch">import</span> re
-<span class="ch">import</span> time
-<span class="ch">import</span> sys
-<span class="ch">import</span> threading
-<span class="ch">import</span> logging
-<span class="ch">import</span> serf
+<pre><code class="language-python"><span class="keyword">import</span> os
+<span class="keyword">import</span> re
+<span class="keyword">import</span> time
+<span class="keyword">import</span> sys
+<span class="keyword">import</span> threading
+<span class="keyword">import</span> logging
+<span class="keyword">import</span> serf
 
 
-<span class="co"># set logging</span>
+<span class="comment"># set logging</span>
 logging.basicConfig()
 
-log = logging.getLogger(<span class="st">'serf-rpc-client'</span>, )
-<span class="co">#log.setLevel(logging.INFO, ) # For see the log from `serf-python`, uncomment this.</span>
+log = logging.getLogger(<span class="string">'serf-rpc-client'</span>, )
+<span class="comment">#log.setLevel(logging.INFO, ) # For see the log from `serf-python`, uncomment this.</span>
 
-log = logging.getLogger(<span class="st">'i_am_alive'</span>, )
+log = logging.getLogger(<span class="string">'i_am_alive'</span>, )
 log.setLevel(logging.WARN, )
-<span class="co">#log.setLevel(logging.INFO, ) # if you want to see the log from this script, uncomment this.</span>
+<span class="comment">#log.setLevel(logging.INFO, ) # if you want to see the log from this script, uncomment this.</span>
 
 
-INTERVAL_SEND_EVENT = <span class="dv">2</span> <span class="co"># interval to send event</span>
-WAIT_TIME_CLIENT = INTERVAL_SEND_EVENT + <span class="dv">1</span>
+INTERVAL_SEND_EVENT = <span class="number">2</span> <span class="comment"># interval to send event</span>
+WAIT_TIME_CLIENT = INTERVAL_SEND_EVENT + <span class="number">1</span>
 
 
-<span class="co"># this thread-based class will send event</span>
-<span class="kw">class</span> EventSender (threading.Thread, ) :
-    interval = <span class="dv">2</span>
+<span class="comment"># this thread-based class will send event</span>
+<span class="class"><span class="keyword">class</span> <span class="title">EventSender</span> <span class="params">(threading.Thread, )</span> :</span>
+    interval = <span class="number">2</span>
 
-    <span class="kw">def</span> <span class="ot">__init__</span> (<span class="ot">self</span>, client, client_id, ) :
-        threading.Thread.<span class="ot">__init__</span>(<span class="ot">self</span>)
+    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span> <span class="params">(self, client, client_id, )</span> :</span>
+        threading.Thread.__init__(self)
 
-        <span class="ot">self</span>._client = client
-        <span class="ot">self</span>._client_id = client_id
+        self._client = client
+        self._client_id = client_id
 
-    <span class="kw">def</span> run (<span class="ot">self</span>, ) :
-        <span class="kw">while</span> <span class="ot">True</span> :
-            log.info(<span class="st">'send `event_i_am_alive` event'</span>, )
-            <span class="ot">self</span>._client.event(
-                    Name=<span class="st">'event_i_am_alive-</span><span class="ot">%s</span><span class="st">'</span> % <span class="ot">self</span>._client_id,
+    <span class="function"><span class="keyword">def</span> <span class="title">run</span> <span class="params">(self, )</span> :</span>
+        <span class="keyword">while</span> <span class="built_in">True</span> :
+            log.info(<span class="string">'send `event_i_am_alive` event'</span>, )
+            self._client.event(
+                    Name=<span class="string">'event_i_am_alive-%s'</span> % self._client_id,
                     Payload=CLIENT_ID,
-                    Coalesce=<span class="ot">True</span>,
+                    Coalesce=<span class="built_in">True</span>,
                 ).request()
             time.sleep(INTERVAL_SEND_EVENT, )
-        
-        <span class="kw">return</span>
+
+        <span class="keyword">return</span>
 
 
-<span class="kw">def</span> _callback_stream (response, ) :
-    log.info(<span class="st">'got response: </span><span class="ot">%s</span><span class="st">'</span> % response, )
-    log.info(<span class="st">'</span><span class="ch">\t</span><span class="st"> body: </span><span class="ot">%s</span><span class="st">'</span> % response.body, )
+<span class="function"><span class="keyword">def</span> <span class="title">_callback_stream</span> <span class="params">(response, )</span> :</span>
+    log.info(<span class="string">'got response: %s'</span> % response, )
+    log.info(<span class="string">'\t body: %s'</span> % response.body, )
 
-    <span class="kw">if</span> response.body.get(<span class="st">'Event'</span>) not in (<span class="st">'user'</span>, ) :
-        <span class="kw">return</span>
+    <span class="keyword">if</span> response.body.get(<span class="string">'Event'</span>) <span class="keyword">not</span> <span class="keyword">in</span> (<span class="string">'user'</span>, ) :
+        <span class="keyword">return</span>
 
-    <span class="kw">if</span> not response.body.get(<span class="st">'Name'</span>).startswith(<span class="st">'event_i_am_alive-'</span>) :
-        <span class="kw">return</span>
+    <span class="keyword">if</span> <span class="keyword">not</span> response.body.get(<span class="string">'Name'</span>).startswith(<span class="string">'event_i_am_alive-'</span>) :
+        <span class="keyword">return</span>
 
-    _client_id_received = re.<span class="dt">compile</span>(<span class="st">'^event_i_am_alive-(?P&lt;client_id&gt;\d+)$'</span>).search(
-            response.body.get(<span class="st">'Name'</span>, ),
-        ).groupdict().get(<span class="st">'client_id'</span>)
-    _is_new = _client_id_received not in CLIENTS
+    _client_id_received = re.compile(<span class="string">'^event_i_am_alive-(?P&lt;client_id&gt;\d+)$'</span>).search(
+            response.body.get(<span class="string">'Name'</span>, ),
+        ).groupdict().get(<span class="string">'client_id'</span>)
+    _is_new = _client_id_received <span class="keyword">not</span> <span class="keyword">in</span> CLIENTS
 
     CLIENTS[_client_id_received] = time.time()
 
-    <span class="dt">print</span> <span class="st">'</span><span class="ch">\n</span><span class="st">found </span><span class="ot">%d</span><span class="st"> clients: </span><span class="ot">%s</span><span class="st">'</span> % (<span class="dt">len</span>(CLIENTS), time.time(), )
-    <span class="kw">for</span> _client_id, _updated in CLIENTS.items() :
-        <span class="kw">if</span> _updated &lt; time.time() - WAIT_TIME_CLIENT :
-            <span class="kw">del</span> CLIENTS[_client_id]
-            <span class="kw">continue</span>
+    <span class="keyword">print</span> <span class="string">'\nfound %d clients: %s'</span> % (len(CLIENTS), time.time(), )
+    <span class="keyword">for</span> _client_id, _updated <span class="keyword">in</span> CLIENTS.items() :
+        <span class="keyword">if</span> _updated &lt; time.time() - WAIT_TIME_CLIENT :
+            <span class="keyword">del</span> CLIENTS[_client_id]
+            <span class="keyword">continue</span>
 
-        <span class="dt">print</span> <span class="st">'* client-id: </span><span class="ot">%s</span><span class="st">, last updated: </span><span class="ot">%s</span><span class="st">, [</span><span class="ot">%-5s</span><span class="st">], [</span><span class="ot">%-5s</span><span class="st">]'</span> % (
+        <span class="keyword">print</span> <span class="string">'* client-id: %s, last updated: %s, [%-5s], [%-5s]'</span> % (
                 _client_id,
-                <span class="st">'</span><span class="ot">%0.2f</span><span class="st">'</span> % _updated,
-                <span class="co">'me'</span> <span class="kw">if</span> _client_id == CLIENT_ID <span class="kw">else</span> <span class="st">'other'</span>,
-                <span class="co">'new'</span> <span class="kw">if</span> _client_id == _client_id_received and _is_new <span class="kw">else</span> <span class="st">'known'</span>
+                <span class="string">'%0.2f'</span> % _updated,
+                <span class="string">'me'</span> <span class="keyword">if</span> _client_id == CLIENT_ID <span class="keyword">else</span> <span class="string">'other'</span>,
+                <span class="string">'new'</span> <span class="keyword">if</span> _client_id == _client_id_received <span class="keyword">and</span> _is_new <span class="keyword">else</span> <span class="string">'known'</span>
             )
 
 
-CLIENTS = <span class="dt">dict</span>()
-CLIENT_ID = <span class="st">'</span><span class="ot">%s</span><span class="st">'</span> % os.getpid()
+CLIENTS = dict()
+CLIENT_ID = <span class="string">'%s'</span> % os.getpid()
 
-<span class="co"># create client</span>
-client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>)
+<span class="comment"># create client</span>
+client = serf.Client(<span class="string">'serf://127.0.0.1:7373'</span>)
 
-<span class="co"># start event thread</span>
+<span class="comment"># start event thread</span>
 event_sender = EventSender(client, CLIENT_ID, )
-event_sender.setDaemon(<span class="ot">True</span>, )
+event_sender.setDaemon(<span class="built_in">True</span>, )
 event_sender.start()
 
 
-<span class="co"># watch all stream</span>
-<span class="kw">try</span> :
+<span class="comment"># watch all stream</span>
+<span class="keyword">try</span> :
     client.stream(
-            Type=<span class="st">'*'</span>,
+            Type=<span class="string">'*'</span>,
         ).add_callback(_callback_stream, ).watch()
-<span class="kw">except</span> <span class="ot">KeyboardInterrupt</span> :
-    sys.exit()</code></pre>
+<span class="keyword">except</span> KeyboardInterrupt :
+    sys.exit()
+</code></pre>
 </div>
 </div>
 </div>
@@ -2145,14 +2159,17 @@ event_sender.start()
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> serf
+<pre><code class="language-python"><span class="keyword">import</span> serf
 
-client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, )</code></pre>
+client = serf.Client(<span class="string">'serf://127.0.0.1:7373'</span>, )
+</code></pre>
 <p>This will create <code>serf</code> client. The argument, <code>'serf://127.0.0.1:7373'</code> means, you will connect two serf server and it has the <code>7373</code> <code>RPC</code> port. You must set the valid <code>RPC</code> address. You can set the multiple serf rpc addresses like this,</p>
-<pre class="sourceCode python"><code class="sourceCode python">client = serf.Client(<span class="st">'serf://127.0.0.1:7373,192.168.0.1:7374'</span>, )</code></pre>
+<pre><code class="language-python">client = serf.Client(<span class="string">'serf://127.0.0.1:7373,192.168.0.1:7374'</span>, )
+</code></pre>
 <p>You'd better to set the multiple rpc address for persistant connection to cluster. The client of <code>serf-python</code> at first will connect the first address you set, and then if that server is lost(server is down, network diabled or any other reasons), the client will try to connect the next one. If all the server is failed to connect, the client will be exited with the exception, <code>serf._exceptions.ConnectionError</code>.</p>
 <p>If you want connect persistantly even if all the connection is lost, use <code>auto_reconnect=True</code> argument in <code>serf.Client</code> like this,</p>
-<pre class="sourceCode python"><code class="sourceCode python">client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, auto_reconnect=<span class="ot">True</span>, )</code></pre>
+<pre><code class="language-python">client = serf.Client(<span class="string">'serf://127.0.0.1:7373'</span>, auto_reconnect=<span class="built_in">True</span>, )
+</code></pre>
 </div>
 </div>
 </div>
@@ -2171,11 +2188,12 @@ client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, )</code></
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Sending event to serf is so simple. In the above <code>i_am_alive.py</code>,</p>
-<pre class="sourceCode python"><code class="sourceCode python">            <span class="ot">self</span>._client.event(
-                    Name=<span class="st">'event_i_am_alive-</span><span class="ot">%s</span><span class="st">'</span> % <span class="ot">self</span>._client_id,
+<pre><code class="language-python">            self._client.event(
+                    Name=<span class="string">'event_i_am_alive-%s'</span> % self._client_id,
                     Payload=CLIENT_ID,
-                    Coalesce=<span class="ot">True</span>,
-                ).request()</code></pre>
+                    Coalesce=<span class="built_in">True</span>,
+                ).request()
+</code></pre>
 <p>To differentiate each client, I included <code>self._client_id</code> in the event <code>Name</code>.</p>
 </div>
 </div>
@@ -2194,39 +2212,41 @@ client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, )</code></
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<pre class="sourceCode python"><code class="sourceCode python">client.stream(
-        Type=<span class="st">'*'</span>,
-    ).add_callback(_callback_stream, ).watch()</code></pre>
+<pre><code class="language-python">client.stream(
+        Type=<span class="string">'*'</span>,
+    ).add_callback(_callback_stream, ).watch()
+</code></pre>
 <p>This will listen all the event from serf server and call the <code>_callback_stream</code> when a response is received.</p>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> _callback_stream (response, ) :
-    log.info(<span class="st">'got response: </span><span class="ot">%s</span><span class="st">'</span> % response, )
-    log.info(<span class="st">'</span><span class="ch">\t</span><span class="st"> body: </span><span class="ot">%s</span><span class="st">'</span> % response.body, )
+<pre><code class="language-python"><span class="function"><span class="keyword">def</span> <span class="title">_callback_stream</span> <span class="params">(response, )</span> :</span>
+    log.info(<span class="string">'got response: %s'</span> % response, )
+    log.info(<span class="string">'\t body: %s'</span> % response.body, )
 
-    <span class="kw">if</span> response.body.get(<span class="st">'Event'</span>) not in (<span class="st">'user'</span>, ) :
-        <span class="kw">return</span>
+    <span class="keyword">if</span> response.body.get(<span class="string">'Event'</span>) <span class="keyword">not</span> <span class="keyword">in</span> (<span class="string">'user'</span>, ) :
+        <span class="keyword">return</span>
 
-    <span class="kw">if</span> not response.body.get(<span class="st">'Name'</span>).startswith(<span class="st">'event_i_am_alive-'</span>) :
-        <span class="kw">return</span>
+    <span class="keyword">if</span> <span class="keyword">not</span> response.body.get(<span class="string">'Name'</span>).startswith(<span class="string">'event_i_am_alive-'</span>) :
+        <span class="keyword">return</span>
 
-    _client_id_received = re.<span class="dt">compile</span>(<span class="st">'^event_i_am_alive-(?P&lt;client_id&gt;\d+)$'</span>).search(
-            response.body.get(<span class="st">'Name'</span>, ),
-        ).groupdict().get(<span class="st">'client_id'</span>)
-    _is_new = _client_id_received not in CLIENTS
+    _client_id_received = re.compile(<span class="string">'^event_i_am_alive-(?P&lt;client_id&gt;\d+)$'</span>).search(
+            response.body.get(<span class="string">'Name'</span>, ),
+        ).groupdict().get(<span class="string">'client_id'</span>)
+    _is_new = _client_id_received <span class="keyword">not</span> <span class="keyword">in</span> CLIENTS
 
     CLIENTS[_client_id_received] = time.time()
 
-    <span class="dt">print</span> <span class="st">'</span><span class="ch">\n</span><span class="st">found </span><span class="ot">%d</span><span class="st"> clients: </span><span class="ot">%s</span><span class="st">'</span> % (<span class="dt">len</span>(CLIENTS), time.time(), )
-    <span class="kw">for</span> _client_id, _updated in CLIENTS.items() :
-        <span class="kw">if</span> _updated &lt; time.time() - WAIT_TIME_CLIENT :
-            <span class="kw">del</span> CLIENTS[_client_id]
-            <span class="kw">continue</span>
+    <span class="keyword">print</span> <span class="string">'\nfound %d clients: %s'</span> % (len(CLIENTS), time.time(), )
+    <span class="keyword">for</span> _client_id, _updated <span class="keyword">in</span> CLIENTS.items() :
+        <span class="keyword">if</span> _updated &lt; time.time() - WAIT_TIME_CLIENT :
+            <span class="keyword">del</span> CLIENTS[_client_id]
+            <span class="keyword">continue</span>
 
-        <span class="dt">print</span> <span class="st">'* client-id: </span><span class="ot">%s</span><span class="st">, last updated: </span><span class="ot">%s</span><span class="st">, [</span><span class="ot">%-5s</span><span class="st">], [</span><span class="ot">%-5s</span><span class="st">]'</span> % (
+        <span class="keyword">print</span> <span class="string">'* client-id: %s, last updated: %s, [%-5s], [%-5s]'</span> % (
                 _client_id,
-                <span class="st">'</span><span class="ot">%0.2f</span><span class="st">'</span> % _updated,
-                <span class="co">'me'</span> <span class="kw">if</span> _client_id == CLIENT_ID <span class="kw">else</span> <span class="st">'other'</span>,
-                <span class="co">'new'</span> <span class="kw">if</span> _client_id == _client_id_received and _is_new <span class="kw">else</span> <span class="st">'known'</span>
-            )</code></pre>
+                <span class="string">'%0.2f'</span> % _updated,
+                <span class="string">'me'</span> <span class="keyword">if</span> _client_id == CLIENT_ID <span class="keyword">else</span> <span class="string">'other'</span>,
+                <span class="string">'new'</span> <span class="keyword">if</span> _client_id == _client_id_received <span class="keyword">and</span> _is_new <span class="keyword">else</span> <span class="string">'known'</span>
+            )
+</code></pre>
 <p>This is <code>_callback_stream</code>, parses the response and print the collected clients.</p>
 </div>
 </div>
@@ -2254,16 +2274,18 @@ client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, )</code></
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I will run the 2 serf node with a different port, name and rpc port.</p>
+<p>I will run the 2 serf node with a different port, name and rpc port. </p>
 <ul>
 <li>serf0</li>
 </ul>
-<pre><code>$ serf agent -node serf0 -bind 127.0.0.1:7946 -rpc-addr=127.0.0.1:7373 -join 127.0.0.1:7946 -join 127.0.0.1:7947</code></pre>
+<pre><code class="language-sh"><span class="comment">$</span> <span class="comment">serf</span> <span class="comment">agent</span> <span class="literal">-</span><span class="comment">node</span> <span class="comment">serf0</span> <span class="literal">-</span><span class="comment">bind</span> <span class="comment">127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7946</span> <span class="literal">-</span><span class="comment">rpc</span>-<span class="comment">addr=127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7373</span> <span class="literal">-</span><span class="comment">join</span> <span class="comment">127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7946</span> <span class="literal">-</span><span class="comment">join</span> <span class="comment">127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7947
+</span></code></pre>
 <ul>
 <li>serf1</li>
 </ul>
-<pre><code>$ serf agent -node serf1 -bind 127.0.0.1:7947 -rpc-addr=127.0.0.1:7374 -join 127.0.0.1:7946 -join 127.0.0.1:7947</code></pre>
-<p>This examples will automatically join the 2 nodes as cluster, you can add another node with <code>-join</code> option. For more options, see http://www.serfdom.io/docs/agent/basics.html.</p>
+<pre><code class="language-sh"><span class="comment">$</span> <span class="comment">serf</span> <span class="comment">agent</span> <span class="literal">-</span><span class="comment">node</span> <span class="comment">serf1</span> <span class="literal">-</span><span class="comment">bind</span> <span class="comment">127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7947</span> <span class="literal">-</span><span class="comment">rpc</span>-<span class="comment">addr=127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7374</span> <span class="literal">-</span><span class="comment">join</span> <span class="comment">127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7946</span> <span class="literal">-</span><span class="comment">join</span> <span class="comment">127</span>.<span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1:7947
+</span></code></pre>
+<p>This examples will automatically join the 2 nodes as cluster, you can add another node with <code>-join</code> option. For more options, see <a href="http://www.serfdom.io/docs/agent/basics.html">http://www.serfdom.io/docs/agent/basics.html</a>.</p>
 <p>So we launched serf cluster, which has 2 nodes.</p>
 </div>
 </div>
@@ -2273,7 +2295,7 @@ client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, )</code></
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="run-i_am_alive.py">Run <code>i_am_alive.py</code></h3>
+<h3 id="run-i_am_alive-py-">Run <code>i_am_alive.py</code></h3>
 </div>
 </div>
 </div>
@@ -2283,21 +2305,22 @@ client = serf.Client(<span class="st">'serf://127.0.0.1:7373'</span>, )</code></
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We need to open 3 seperated terminal windows and run this in each terminal.</p>
-<pre><code>$ python i_am_alive.py
+<pre><code class="language-sh"><span class="char">$ </span>python i_am_alive.py
 
-found 1 clients: 1397120891.38
-* client-id: 65370, last updated: 1397120891.38, [other], [new  ]
+found <span class="number">1</span> <span class="method">clients:</span> <span class="number">1397120891.38</span>
+* client-<span class="method">id:</span> <span class="number">65370</span>, last <span class="method">updated:</span> <span class="number">1397120891.38</span>, [other], [new  ]
 
-found 2 clients: 1397120891.38
-* client-id: 65535, last updated: 1397120891.38, [me   ], [new  ]
-* client-id: 65370, last updated: 1397120891.38, [other], [known]
+found <span class="number">2</span> <span class="method">clients:</span> <span class="number">1397120891.38</span>
+* client-<span class="method">id:</span> <span class="number">65535</span>, last <span class="method">updated:</span> <span class="number">1397120891.38</span>, [me   ], [new  ]
+* client-<span class="method">id:</span> <span class="number">65370</span>, last <span class="method">updated:</span> <span class="number">1397120891.38</span>, [other], [known]
 
-found 3 clients: 1397120891.38
-* client-id: 65535, last updated: 1397120891.38, [me   ], [known]
-* client-id: 65370, last updated: 1397120891.38, [other], [known]
-* client-id: 58542, last updated: 1397120891.38, [other], [new  ]
+found <span class="number">3</span> <span class="method">clients:</span> <span class="number">1397120891.38</span>
+* client-<span class="method">id:</span> <span class="number">65535</span>, last <span class="method">updated:</span> <span class="number">1397120891.38</span>, [me   ], [known]
+* client-<span class="method">id:</span> <span class="number">65370</span>, last <span class="method">updated:</span> <span class="number">1397120891.38</span>, [other], [known]
+* client-<span class="method">id:</span> <span class="number">58542</span>, last <span class="method">updated:</span> <span class="number">1397120891.38</span>, [other], [new  ]
 
-...</code></pre>
+...
+</code></pre>
 <p>We will see like this. <code>i_am_alive.py</code> will collect client's data and print them. You can replace the code in the <code>_callback_stream</code> function with you own code.</p>
 </div>
 </div>
@@ -2307,7 +2330,7 @@ found 3 clients: 1397120891.38
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you find out more deeply in <code>serf</code> and <code>serf-python</code>, please read the test code for <code>serf-python</code> at https://github.com/spikeekips/serf-python/tree/master/test. Next time, I will show you, how to find out the running django servers in real-time using serf.</p>
+<p>If you find out more deeply in <code>serf</code> and <code>serf-python</code>, please read the test code for <code>serf-python</code> at <a href="https://github.com/spikeekips/serf-python/tree/master/test">https://github.com/spikeekips/serf-python/tree/master/test</a>. Next time, I will show you, how to find out the running django servers in real-time using serf.</p>
 <p>Thanks for reading this post. :)</p>
 </div>
 </div>

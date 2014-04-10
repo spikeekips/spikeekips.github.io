@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Spike^ekipS Blog</title>
   <id>http://spikeekips.github.io/atom</id>
-  <updated>2014-04-10T18:52:20Z</updated>
+  <updated>2014-04-10T19:26:48Z</updated>
   <link href="http://spikeekips.github.io" />
   <link href="http://spikeekips.github.io/atom" rel="self" />
   <author>
@@ -12,7 +12,7 @@
   <entry xml:base="http://spikeekips.github.io/atom">
     <title type="text">Simple Example Of serf-python</title>
     <id>http://spikeekips.github.io/post/Simple Example Of serf-python.html</id>
-    <updated>2014-04-10T18:52:20Z</updated>
+    <updated>2014-04-10T19:26:48Z</updated>
     <link href="http://spikeekips.github.io/post/Simple Example Of serf-python.html" />
     <author>
       <name></name>
@@ -1744,6 +1744,18 @@ footer pre
     background-color: inherit;
 }
 
+.rendered_html &gt; pre
+{
+    margin: 1em 0;
+}
+
+.rendered_html &gt; pre &gt; code
+{
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 &lt;/style&gt;
 &lt;/link&gt;&lt;/head&gt;
 &lt;body&gt;
@@ -1793,7 +1805,7 @@ Written at Thu Apr 10 18:15:28 KST 2014
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="what-is-serf"&gt;What is &lt;code&gt;serf&lt;/code&gt;?&lt;/h2&gt;
+&lt;h2 id="what-is-serf-"&gt;What is &lt;code&gt;serf&lt;/code&gt;?&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1802,9 +1814,11 @@ Written at Thu Apr 10 18:15:28 KST 2014
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Recently I found some interesting project, that is &lt;a href="http://www.serfdom.io/"&gt;serf&lt;/a&gt; http://www.serfdom.io/. They explains,&lt;/p&gt;
+&lt;p&gt;Recently I found some interesting project, that is &lt;a href="http://www.serfdom.io/"&gt;serf&lt;/a&gt; &lt;a href="http://www.serfdom.io/"&gt;http://www.serfdom.io/&lt;/a&gt;. They explains,&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.&lt;/p&gt;
+&lt;p&gt;Serf is a decentralized solution
+for service discovery and orchestration
+that is lightweight, highly available, and fault tolerant.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For several years, I have been trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.&lt;/p&gt;
 &lt;p&gt;In fact, serf is still in development and has the critical limitations,&lt;/p&gt;
@@ -1984,15 +1998,13 @@ In [8]:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;To install &lt;code&gt;serf&lt;/code&gt;, see the official installation document, http://www.serfdom.io/intro/getting-started/install.html. As you can find, there is just one binary file, so you don't need to install the other additional libraries or files, very simple and intuitive.&lt;/p&gt;
-&lt;p&gt;In latest OSX, download latest serf binary from http://www.serfdom.io/downloads.html .&lt;/p&gt;
+&lt;p&gt;To install &lt;code&gt;serf&lt;/code&gt;, see the official installation document, &lt;a href="http://www.serfdom.io/intro/getting-started/install.html"&gt;http://www.serfdom.io/intro/getting-started/install.html&lt;/a&gt;. As you can find, there is just one binary file, so you don't need to install the other additional libraries or files, very simple and intuitive.&lt;/p&gt;
+&lt;p&gt;In latest OSX, download latest serf binary from &lt;a href="http://www.serfdom.io/downloads.html"&gt;http://www.serfdom.io/downloads.html&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;You need &lt;code&gt;virtualenv&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ virtualenv i_am_alive
-$ cd i_am_alive
-$ source i_am_alive
-$ curl -L -o serf-0.5.0.zip https://dl.bintray.com/mitchellh/serf/0.5.0_darwin_amd64.zip
-$ unzip serf-0.5.0.zip
-$ mv serf bin/&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;@&lt;span class="localvars"&gt;@0&lt;/span&gt;@@ cd i_am_alive
+@&lt;span class="localvars"&gt;@1&lt;/span&gt;@@ curl -L -o serf-&lt;span class="number"&gt;0.5&lt;/span&gt;&lt;span class="number"&gt;.0&lt;/span&gt;&lt;span class="preprocessor"&gt;.zip&lt;/span&gt; https://dl&lt;span class="preprocessor"&gt;.bintray&lt;/span&gt;&lt;span class="preprocessor"&gt;.com&lt;/span&gt;/mitchellh/serf/&lt;span class="number"&gt;0.5&lt;/span&gt;&lt;span class="number"&gt;.0&lt;/span&gt;_darwin_amd64&lt;span class="preprocessor"&gt;.zip&lt;/span&gt;
+@&lt;span class="localvars"&gt;@2&lt;/span&gt;@@ mv serf bin/
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2001,7 +2013,7 @@ $ mv serf bin/&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="install-serf-python"&gt;Install &lt;code&gt;serf-python&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id="install-serf-python-"&gt;Install &lt;code&gt;serf-python&lt;/code&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2011,10 +2023,11 @@ $ mv serf bin/&lt;/code&gt;&lt;/pre&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;You can easily &lt;code&gt;serf-python&lt;/code&gt; with &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ pip install serf-python
+&lt;pre&gt;&lt;code class="language-sh"&gt;$ pip install serf-python
 
 $ python
-&amp;gt;&amp;gt;&amp;gt; import serf&lt;/code&gt;&lt;/pre&gt;
+&amp;gt;&amp;gt;&amp;gt; &lt;span class="preprocessor"&gt;&lt;span class="keyword"&gt;import&lt;/span&gt; serf
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2023,7 +2036,7 @@ $ python
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="i_am_alive.py"&gt;&lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id="-i_am_alive-py-"&gt;&lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2041,103 +2054,104 @@ $ python
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span class="ch"&gt;import&lt;/span&gt; os
-&lt;span class="ch"&gt;import&lt;/span&gt; re
-&lt;span class="ch"&gt;import&lt;/span&gt; time
-&lt;span class="ch"&gt;import&lt;/span&gt; sys
-&lt;span class="ch"&gt;import&lt;/span&gt; threading
-&lt;span class="ch"&gt;import&lt;/span&gt; logging
-&lt;span class="ch"&gt;import&lt;/span&gt; serf
+&lt;pre&gt;&lt;code class="language-python"&gt;&lt;span class="keyword"&gt;import&lt;/span&gt; os
+&lt;span class="keyword"&gt;import&lt;/span&gt; re
+&lt;span class="keyword"&gt;import&lt;/span&gt; time
+&lt;span class="keyword"&gt;import&lt;/span&gt; sys
+&lt;span class="keyword"&gt;import&lt;/span&gt; threading
+&lt;span class="keyword"&gt;import&lt;/span&gt; logging
+&lt;span class="keyword"&gt;import&lt;/span&gt; serf
 
 
-&lt;span class="co"&gt;# set logging&lt;/span&gt;
+&lt;span class="comment"&gt;# set logging&lt;/span&gt;
 logging.basicConfig()
 
-log = logging.getLogger(&lt;span class="st"&gt;'serf-rpc-client'&lt;/span&gt;, )
-&lt;span class="co"&gt;#log.setLevel(logging.INFO, ) # For see the log from `serf-python`, uncomment this.&lt;/span&gt;
+log = logging.getLogger(&lt;span class="string"&gt;'serf-rpc-client'&lt;/span&gt;, )
+&lt;span class="comment"&gt;#log.setLevel(logging.INFO, ) # For see the log from `serf-python`, uncomment this.&lt;/span&gt;
 
-log = logging.getLogger(&lt;span class="st"&gt;'i_am_alive'&lt;/span&gt;, )
+log = logging.getLogger(&lt;span class="string"&gt;'i_am_alive'&lt;/span&gt;, )
 log.setLevel(logging.WARN, )
-&lt;span class="co"&gt;#log.setLevel(logging.INFO, ) # if you want to see the log from this script, uncomment this.&lt;/span&gt;
+&lt;span class="comment"&gt;#log.setLevel(logging.INFO, ) # if you want to see the log from this script, uncomment this.&lt;/span&gt;
 
 
-INTERVAL_SEND_EVENT = &lt;span class="dv"&gt;2&lt;/span&gt; &lt;span class="co"&gt;# interval to send event&lt;/span&gt;
-WAIT_TIME_CLIENT = INTERVAL_SEND_EVENT + &lt;span class="dv"&gt;1&lt;/span&gt;
+INTERVAL_SEND_EVENT = &lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="comment"&gt;# interval to send event&lt;/span&gt;
+WAIT_TIME_CLIENT = INTERVAL_SEND_EVENT + &lt;span class="number"&gt;1&lt;/span&gt;
 
 
-&lt;span class="co"&gt;# this thread-based class will send event&lt;/span&gt;
-&lt;span class="kw"&gt;class&lt;/span&gt; EventSender (threading.Thread, ) :
-    interval = &lt;span class="dv"&gt;2&lt;/span&gt;
+&lt;span class="comment"&gt;# this thread-based class will send event&lt;/span&gt;
+&lt;span class="class"&gt;&lt;span class="keyword"&gt;class&lt;/span&gt; &lt;span class="title"&gt;EventSender&lt;/span&gt; &lt;span class="params"&gt;(threading.Thread, )&lt;/span&gt; :&lt;/span&gt;
+    interval = &lt;span class="number"&gt;2&lt;/span&gt;
 
-    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="ot"&gt;__init__&lt;/span&gt; (&lt;span class="ot"&gt;self&lt;/span&gt;, client, client_id, ) :
-        threading.Thread.&lt;span class="ot"&gt;__init__&lt;/span&gt;(&lt;span class="ot"&gt;self&lt;/span&gt;)
+    &lt;span class="function"&gt;&lt;span class="keyword"&gt;def&lt;/span&gt; &lt;span class="title"&gt;__init__&lt;/span&gt; &lt;span class="params"&gt;(self, client, client_id, )&lt;/span&gt; :&lt;/span&gt;
+        threading.Thread.__init__(self)
 
-        &lt;span class="ot"&gt;self&lt;/span&gt;._client = client
-        &lt;span class="ot"&gt;self&lt;/span&gt;._client_id = client_id
+        self._client = client
+        self._client_id = client_id
 
-    &lt;span class="kw"&gt;def&lt;/span&gt; run (&lt;span class="ot"&gt;self&lt;/span&gt;, ) :
-        &lt;span class="kw"&gt;while&lt;/span&gt; &lt;span class="ot"&gt;True&lt;/span&gt; :
-            log.info(&lt;span class="st"&gt;'send `event_i_am_alive` event'&lt;/span&gt;, )
-            &lt;span class="ot"&gt;self&lt;/span&gt;._client.event(
-                    Name=&lt;span class="st"&gt;'event_i_am_alive-&lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % &lt;span class="ot"&gt;self&lt;/span&gt;._client_id,
+    &lt;span class="function"&gt;&lt;span class="keyword"&gt;def&lt;/span&gt; &lt;span class="title"&gt;run&lt;/span&gt; &lt;span class="params"&gt;(self, )&lt;/span&gt; :&lt;/span&gt;
+        &lt;span class="keyword"&gt;while&lt;/span&gt; &lt;span class="built_in"&gt;True&lt;/span&gt; :
+            log.info(&lt;span class="string"&gt;'send `event_i_am_alive` event'&lt;/span&gt;, )
+            self._client.event(
+                    Name=&lt;span class="string"&gt;'event_i_am_alive-%s'&lt;/span&gt; % self._client_id,
                     Payload=CLIENT_ID,
-                    Coalesce=&lt;span class="ot"&gt;True&lt;/span&gt;,
+                    Coalesce=&lt;span class="built_in"&gt;True&lt;/span&gt;,
                 ).request()
             time.sleep(INTERVAL_SEND_EVENT, )
-        
-        &lt;span class="kw"&gt;return&lt;/span&gt;
+
+        &lt;span class="keyword"&gt;return&lt;/span&gt;
 
 
-&lt;span class="kw"&gt;def&lt;/span&gt; _callback_stream (response, ) :
-    log.info(&lt;span class="st"&gt;'got response: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response, )
-    log.info(&lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\t&lt;/span&gt;&lt;span class="st"&gt; body: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response.body, )
+&lt;span class="function"&gt;&lt;span class="keyword"&gt;def&lt;/span&gt; &lt;span class="title"&gt;_callback_stream&lt;/span&gt; &lt;span class="params"&gt;(response, )&lt;/span&gt; :&lt;/span&gt;
+    log.info(&lt;span class="string"&gt;'got response: %s'&lt;/span&gt; % response, )
+    log.info(&lt;span class="string"&gt;'\t body: %s'&lt;/span&gt; % response.body, )
 
-    &lt;span class="kw"&gt;if&lt;/span&gt; response.body.get(&lt;span class="st"&gt;'Event'&lt;/span&gt;) not in (&lt;span class="st"&gt;'user'&lt;/span&gt;, ) :
-        &lt;span class="kw"&gt;return&lt;/span&gt;
+    &lt;span class="keyword"&gt;if&lt;/span&gt; response.body.get(&lt;span class="string"&gt;'Event'&lt;/span&gt;) &lt;span class="keyword"&gt;not&lt;/span&gt; &lt;span class="keyword"&gt;in&lt;/span&gt; (&lt;span class="string"&gt;'user'&lt;/span&gt;, ) :
+        &lt;span class="keyword"&gt;return&lt;/span&gt;
 
-    &lt;span class="kw"&gt;if&lt;/span&gt; not response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;).startswith(&lt;span class="st"&gt;'event_i_am_alive-'&lt;/span&gt;) :
-        &lt;span class="kw"&gt;return&lt;/span&gt;
+    &lt;span class="keyword"&gt;if&lt;/span&gt; &lt;span class="keyword"&gt;not&lt;/span&gt; response.body.get(&lt;span class="string"&gt;'Name'&lt;/span&gt;).startswith(&lt;span class="string"&gt;'event_i_am_alive-'&lt;/span&gt;) :
+        &lt;span class="keyword"&gt;return&lt;/span&gt;
 
-    _client_id_received = re.&lt;span class="dt"&gt;compile&lt;/span&gt;(&lt;span class="st"&gt;'^event_i_am_alive-(?P&amp;lt;client_id&amp;gt;\d+)$'&lt;/span&gt;).search(
-            response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;, ),
-        ).groupdict().get(&lt;span class="st"&gt;'client_id'&lt;/span&gt;)
-    _is_new = _client_id_received not in CLIENTS
+    _client_id_received = re.compile(&lt;span class="string"&gt;'^event_i_am_alive-(?P&amp;lt;client_id&amp;gt;\d+)$'&lt;/span&gt;).search(
+            response.body.get(&lt;span class="string"&gt;'Name'&lt;/span&gt;, ),
+        ).groupdict().get(&lt;span class="string"&gt;'client_id'&lt;/span&gt;)
+    _is_new = _client_id_received &lt;span class="keyword"&gt;not&lt;/span&gt; &lt;span class="keyword"&gt;in&lt;/span&gt; CLIENTS
 
     CLIENTS[_client_id_received] = time.time()
 
-    &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\n&lt;/span&gt;&lt;span class="st"&gt;found &lt;/span&gt;&lt;span class="ot"&gt;%d&lt;/span&gt;&lt;span class="st"&gt; clients: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % (&lt;span class="dt"&gt;len&lt;/span&gt;(CLIENTS), time.time(), )
-    &lt;span class="kw"&gt;for&lt;/span&gt; _client_id, _updated in CLIENTS.items() :
-        &lt;span class="kw"&gt;if&lt;/span&gt; _updated &amp;lt; time.time() - WAIT_TIME_CLIENT :
-            &lt;span class="kw"&gt;del&lt;/span&gt; CLIENTS[_client_id]
-            &lt;span class="kw"&gt;continue&lt;/span&gt;
+    &lt;span class="keyword"&gt;print&lt;/span&gt; &lt;span class="string"&gt;'\nfound %d clients: %s'&lt;/span&gt; % (len(CLIENTS), time.time(), )
+    &lt;span class="keyword"&gt;for&lt;/span&gt; _client_id, _updated &lt;span class="keyword"&gt;in&lt;/span&gt; CLIENTS.items() :
+        &lt;span class="keyword"&gt;if&lt;/span&gt; _updated &amp;lt; time.time() - WAIT_TIME_CLIENT :
+            &lt;span class="keyword"&gt;del&lt;/span&gt; CLIENTS[_client_id]
+            &lt;span class="keyword"&gt;continue&lt;/span&gt;
 
-        &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'* client-id: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, last updated: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;], [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;]'&lt;/span&gt; % (
+        &lt;span class="keyword"&gt;print&lt;/span&gt; &lt;span class="string"&gt;'* client-id: %s, last updated: %s, [%-5s], [%-5s]'&lt;/span&gt; % (
                 _client_id,
-                &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ot"&gt;%0.2f&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % _updated,
-                &lt;span class="co"&gt;'me'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == CLIENT_ID &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'other'&lt;/span&gt;,
-                &lt;span class="co"&gt;'new'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == _client_id_received and _is_new &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'known'&lt;/span&gt;
+                &lt;span class="string"&gt;'%0.2f'&lt;/span&gt; % _updated,
+                &lt;span class="string"&gt;'me'&lt;/span&gt; &lt;span class="keyword"&gt;if&lt;/span&gt; _client_id == CLIENT_ID &lt;span class="keyword"&gt;else&lt;/span&gt; &lt;span class="string"&gt;'other'&lt;/span&gt;,
+                &lt;span class="string"&gt;'new'&lt;/span&gt; &lt;span class="keyword"&gt;if&lt;/span&gt; _client_id == _client_id_received &lt;span class="keyword"&gt;and&lt;/span&gt; _is_new &lt;span class="keyword"&gt;else&lt;/span&gt; &lt;span class="string"&gt;'known'&lt;/span&gt;
             )
 
 
-CLIENTS = &lt;span class="dt"&gt;dict&lt;/span&gt;()
-CLIENT_ID = &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % os.getpid()
+CLIENTS = dict()
+CLIENT_ID = &lt;span class="string"&gt;'%s'&lt;/span&gt; % os.getpid()
 
-&lt;span class="co"&gt;# create client&lt;/span&gt;
-client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;)
+&lt;span class="comment"&gt;# create client&lt;/span&gt;
+client = serf.Client(&lt;span class="string"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;)
 
-&lt;span class="co"&gt;# start event thread&lt;/span&gt;
+&lt;span class="comment"&gt;# start event thread&lt;/span&gt;
 event_sender = EventSender(client, CLIENT_ID, )
-event_sender.setDaemon(&lt;span class="ot"&gt;True&lt;/span&gt;, )
+event_sender.setDaemon(&lt;span class="built_in"&gt;True&lt;/span&gt;, )
 event_sender.start()
 
 
-&lt;span class="co"&gt;# watch all stream&lt;/span&gt;
-&lt;span class="kw"&gt;try&lt;/span&gt; :
+&lt;span class="comment"&gt;# watch all stream&lt;/span&gt;
+&lt;span class="keyword"&gt;try&lt;/span&gt; :
     client.stream(
-            Type=&lt;span class="st"&gt;'*'&lt;/span&gt;,
+            Type=&lt;span class="string"&gt;'*'&lt;/span&gt;,
         ).add_callback(_callback_stream, ).watch()
-&lt;span class="kw"&gt;except&lt;/span&gt; &lt;span class="ot"&gt;KeyboardInterrupt&lt;/span&gt; :
-    sys.exit()&lt;/code&gt;&lt;/pre&gt;
+&lt;span class="keyword"&gt;except&lt;/span&gt; KeyboardInterrupt :
+    sys.exit()
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2164,14 +2178,17 @@ event_sender.start()
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span class="ch"&gt;import&lt;/span&gt; serf
+&lt;pre&gt;&lt;code class="language-python"&gt;&lt;span class="keyword"&gt;import&lt;/span&gt; serf
 
-client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;, )&lt;/code&gt;&lt;/pre&gt;
+client = serf.Client(&lt;span class="string"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;, )
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This will create &lt;code&gt;serf&lt;/code&gt; client. The argument, &lt;code&gt;'serf://127.0.0.1:7373'&lt;/code&gt; means, you will connect two serf server and it has the &lt;code&gt;7373&lt;/code&gt; &lt;code&gt;RPC&lt;/code&gt; port. You must set the valid &lt;code&gt;RPC&lt;/code&gt; address. You can set the multiple serf rpc addresses like this,&lt;/p&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373,192.168.0.1:7374'&lt;/span&gt;, )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;client = serf.Client(&lt;span class="string"&gt;'serf://127.0.0.1:7373,192.168.0.1:7374'&lt;/span&gt;, )
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You'd better to set the multiple rpc address for persistant connection to cluster. The client of &lt;code&gt;serf-python&lt;/code&gt; at first will connect the first address you set, and then if that server is lost(server is down, network diabled or any other reasons), the client will try to connect the next one. If all the server is failed to connect, the client will be exited with the exception, &lt;code&gt;serf._exceptions.ConnectionError&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you want connect persistantly even if all the connection is lost, use &lt;code&gt;auto_reconnect=True&lt;/code&gt; argument in &lt;code&gt;serf.Client&lt;/code&gt; like this,&lt;/p&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;, auto_reconnect=&lt;span class="ot"&gt;True&lt;/span&gt;, )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;client = serf.Client(&lt;span class="string"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;, auto_reconnect=&lt;span class="built_in"&gt;True&lt;/span&gt;, )
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2190,11 +2207,12 @@ client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Sending event to serf is so simple. In the above &lt;code&gt;i_am_alive.py&lt;/code&gt;,&lt;/p&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;            &lt;span class="ot"&gt;self&lt;/span&gt;._client.event(
-                    Name=&lt;span class="st"&gt;'event_i_am_alive-&lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % &lt;span class="ot"&gt;self&lt;/span&gt;._client_id,
+&lt;pre&gt;&lt;code class="language-python"&gt;            self._client.event(
+                    Name=&lt;span class="string"&gt;'event_i_am_alive-%s'&lt;/span&gt; % self._client_id,
                     Payload=CLIENT_ID,
-                    Coalesce=&lt;span class="ot"&gt;True&lt;/span&gt;,
-                ).request()&lt;/code&gt;&lt;/pre&gt;
+                    Coalesce=&lt;span class="built_in"&gt;True&lt;/span&gt;,
+                ).request()
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To differentiate each client, I included &lt;code&gt;self._client_id&lt;/code&gt; in the event &lt;code&gt;Name&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2213,39 +2231,41 @@ client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;client.stream(
-        Type=&lt;span class="st"&gt;'*'&lt;/span&gt;,
-    ).add_callback(_callback_stream, ).watch()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;client.stream(
+        Type=&lt;span class="string"&gt;'*'&lt;/span&gt;,
+    ).add_callback(_callback_stream, ).watch()
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This will listen all the event from serf server and call the &lt;code&gt;_callback_stream&lt;/code&gt; when a response is received.&lt;/p&gt;
-&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span class="kw"&gt;def&lt;/span&gt; _callback_stream (response, ) :
-    log.info(&lt;span class="st"&gt;'got response: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response, )
-    log.info(&lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\t&lt;/span&gt;&lt;span class="st"&gt; body: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response.body, )
+&lt;pre&gt;&lt;code class="language-python"&gt;&lt;span class="function"&gt;&lt;span class="keyword"&gt;def&lt;/span&gt; &lt;span class="title"&gt;_callback_stream&lt;/span&gt; &lt;span class="params"&gt;(response, )&lt;/span&gt; :&lt;/span&gt;
+    log.info(&lt;span class="string"&gt;'got response: %s'&lt;/span&gt; % response, )
+    log.info(&lt;span class="string"&gt;'\t body: %s'&lt;/span&gt; % response.body, )
 
-    &lt;span class="kw"&gt;if&lt;/span&gt; response.body.get(&lt;span class="st"&gt;'Event'&lt;/span&gt;) not in (&lt;span class="st"&gt;'user'&lt;/span&gt;, ) :
-        &lt;span class="kw"&gt;return&lt;/span&gt;
+    &lt;span class="keyword"&gt;if&lt;/span&gt; response.body.get(&lt;span class="string"&gt;'Event'&lt;/span&gt;) &lt;span class="keyword"&gt;not&lt;/span&gt; &lt;span class="keyword"&gt;in&lt;/span&gt; (&lt;span class="string"&gt;'user'&lt;/span&gt;, ) :
+        &lt;span class="keyword"&gt;return&lt;/span&gt;
 
-    &lt;span class="kw"&gt;if&lt;/span&gt; not response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;).startswith(&lt;span class="st"&gt;'event_i_am_alive-'&lt;/span&gt;) :
-        &lt;span class="kw"&gt;return&lt;/span&gt;
+    &lt;span class="keyword"&gt;if&lt;/span&gt; &lt;span class="keyword"&gt;not&lt;/span&gt; response.body.get(&lt;span class="string"&gt;'Name'&lt;/span&gt;).startswith(&lt;span class="string"&gt;'event_i_am_alive-'&lt;/span&gt;) :
+        &lt;span class="keyword"&gt;return&lt;/span&gt;
 
-    _client_id_received = re.&lt;span class="dt"&gt;compile&lt;/span&gt;(&lt;span class="st"&gt;'^event_i_am_alive-(?P&amp;lt;client_id&amp;gt;\d+)$'&lt;/span&gt;).search(
-            response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;, ),
-        ).groupdict().get(&lt;span class="st"&gt;'client_id'&lt;/span&gt;)
-    _is_new = _client_id_received not in CLIENTS
+    _client_id_received = re.compile(&lt;span class="string"&gt;'^event_i_am_alive-(?P&amp;lt;client_id&amp;gt;\d+)$'&lt;/span&gt;).search(
+            response.body.get(&lt;span class="string"&gt;'Name'&lt;/span&gt;, ),
+        ).groupdict().get(&lt;span class="string"&gt;'client_id'&lt;/span&gt;)
+    _is_new = _client_id_received &lt;span class="keyword"&gt;not&lt;/span&gt; &lt;span class="keyword"&gt;in&lt;/span&gt; CLIENTS
 
     CLIENTS[_client_id_received] = time.time()
 
-    &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\n&lt;/span&gt;&lt;span class="st"&gt;found &lt;/span&gt;&lt;span class="ot"&gt;%d&lt;/span&gt;&lt;span class="st"&gt; clients: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % (&lt;span class="dt"&gt;len&lt;/span&gt;(CLIENTS), time.time(), )
-    &lt;span class="kw"&gt;for&lt;/span&gt; _client_id, _updated in CLIENTS.items() :
-        &lt;span class="kw"&gt;if&lt;/span&gt; _updated &amp;lt; time.time() - WAIT_TIME_CLIENT :
-            &lt;span class="kw"&gt;del&lt;/span&gt; CLIENTS[_client_id]
-            &lt;span class="kw"&gt;continue&lt;/span&gt;
+    &lt;span class="keyword"&gt;print&lt;/span&gt; &lt;span class="string"&gt;'\nfound %d clients: %s'&lt;/span&gt; % (len(CLIENTS), time.time(), )
+    &lt;span class="keyword"&gt;for&lt;/span&gt; _client_id, _updated &lt;span class="keyword"&gt;in&lt;/span&gt; CLIENTS.items() :
+        &lt;span class="keyword"&gt;if&lt;/span&gt; _updated &amp;lt; time.time() - WAIT_TIME_CLIENT :
+            &lt;span class="keyword"&gt;del&lt;/span&gt; CLIENTS[_client_id]
+            &lt;span class="keyword"&gt;continue&lt;/span&gt;
 
-        &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'* client-id: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, last updated: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;], [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;]'&lt;/span&gt; % (
+        &lt;span class="keyword"&gt;print&lt;/span&gt; &lt;span class="string"&gt;'* client-id: %s, last updated: %s, [%-5s], [%-5s]'&lt;/span&gt; % (
                 _client_id,
-                &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ot"&gt;%0.2f&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % _updated,
-                &lt;span class="co"&gt;'me'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == CLIENT_ID &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'other'&lt;/span&gt;,
-                &lt;span class="co"&gt;'new'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == _client_id_received and _is_new &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'known'&lt;/span&gt;
-            )&lt;/code&gt;&lt;/pre&gt;
+                &lt;span class="string"&gt;'%0.2f'&lt;/span&gt; % _updated,
+                &lt;span class="string"&gt;'me'&lt;/span&gt; &lt;span class="keyword"&gt;if&lt;/span&gt; _client_id == CLIENT_ID &lt;span class="keyword"&gt;else&lt;/span&gt; &lt;span class="string"&gt;'other'&lt;/span&gt;,
+                &lt;span class="string"&gt;'new'&lt;/span&gt; &lt;span class="keyword"&gt;if&lt;/span&gt; _client_id == _client_id_received &lt;span class="keyword"&gt;and&lt;/span&gt; _is_new &lt;span class="keyword"&gt;else&lt;/span&gt; &lt;span class="string"&gt;'known'&lt;/span&gt;
+            )
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This is &lt;code&gt;_callback_stream&lt;/code&gt;, parses the response and print the collected clients.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2273,16 +2293,18 @@ client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;I will run the 2 serf node with a different port, name and rpc port.&lt;/p&gt;
+&lt;p&gt;I will run the 2 serf node with a different port, name and rpc port. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;serf0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;$ serf agent -node serf0 -bind 127.0.0.1:7946 -rpc-addr=127.0.0.1:7373 -join 127.0.0.1:7946 -join 127.0.0.1:7947&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;&lt;span class="comment"&gt;$&lt;/span&gt; &lt;span class="comment"&gt;serf&lt;/span&gt; &lt;span class="comment"&gt;agent&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;node&lt;/span&gt; &lt;span class="comment"&gt;serf0&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;bind&lt;/span&gt; &lt;span class="comment"&gt;127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7946&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;rpc&lt;/span&gt;-&lt;span class="comment"&gt;addr=127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7373&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;join&lt;/span&gt; &lt;span class="comment"&gt;127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7946&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;join&lt;/span&gt; &lt;span class="comment"&gt;127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7947
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;serf1&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;$ serf agent -node serf1 -bind 127.0.0.1:7947 -rpc-addr=127.0.0.1:7374 -join 127.0.0.1:7946 -join 127.0.0.1:7947&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This examples will automatically join the 2 nodes as cluster, you can add another node with &lt;code&gt;-join&lt;/code&gt; option. For more options, see http://www.serfdom.io/docs/agent/basics.html.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;&lt;span class="comment"&gt;$&lt;/span&gt; &lt;span class="comment"&gt;serf&lt;/span&gt; &lt;span class="comment"&gt;agent&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;node&lt;/span&gt; &lt;span class="comment"&gt;serf1&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;bind&lt;/span&gt; &lt;span class="comment"&gt;127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7947&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;rpc&lt;/span&gt;-&lt;span class="comment"&gt;addr=127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7374&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;join&lt;/span&gt; &lt;span class="comment"&gt;127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7946&lt;/span&gt; &lt;span class="literal"&gt;-&lt;/span&gt;&lt;span class="comment"&gt;join&lt;/span&gt; &lt;span class="comment"&gt;127&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;0&lt;/span&gt;.&lt;span class="comment"&gt;1:7947
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This examples will automatically join the 2 nodes as cluster, you can add another node with &lt;code&gt;-join&lt;/code&gt; option. For more options, see &lt;a href="http://www.serfdom.io/docs/agent/basics.html"&gt;http://www.serfdom.io/docs/agent/basics.html&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So we launched serf cluster, which has 2 nodes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2292,7 +2314,7 @@ client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="run-i_am_alive.py"&gt;Run &lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id="run-i_am_alive-py-"&gt;Run &lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2302,21 +2324,22 @@ client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;We need to open 3 seperated terminal windows and run this in each terminal.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ python i_am_alive.py
+&lt;pre&gt;&lt;code class="language-sh"&gt;&lt;span class="char"&gt;$ &lt;/span&gt;python i_am_alive.py
 
-found 1 clients: 1397120891.38
-* client-id: 65370, last updated: 1397120891.38, [other], [new  ]
+found &lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="method"&gt;clients:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;
+* client-&lt;span class="method"&gt;id:&lt;/span&gt; &lt;span class="number"&gt;65370&lt;/span&gt;, last &lt;span class="method"&gt;updated:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;, [other], [new  ]
 
-found 2 clients: 1397120891.38
-* client-id: 65535, last updated: 1397120891.38, [me   ], [new  ]
-* client-id: 65370, last updated: 1397120891.38, [other], [known]
+found &lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="method"&gt;clients:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;
+* client-&lt;span class="method"&gt;id:&lt;/span&gt; &lt;span class="number"&gt;65535&lt;/span&gt;, last &lt;span class="method"&gt;updated:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;, [me   ], [new  ]
+* client-&lt;span class="method"&gt;id:&lt;/span&gt; &lt;span class="number"&gt;65370&lt;/span&gt;, last &lt;span class="method"&gt;updated:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;, [other], [known]
 
-found 3 clients: 1397120891.38
-* client-id: 65535, last updated: 1397120891.38, [me   ], [known]
-* client-id: 65370, last updated: 1397120891.38, [other], [known]
-* client-id: 58542, last updated: 1397120891.38, [other], [new  ]
+found &lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="method"&gt;clients:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;
+* client-&lt;span class="method"&gt;id:&lt;/span&gt; &lt;span class="number"&gt;65535&lt;/span&gt;, last &lt;span class="method"&gt;updated:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;, [me   ], [known]
+* client-&lt;span class="method"&gt;id:&lt;/span&gt; &lt;span class="number"&gt;65370&lt;/span&gt;, last &lt;span class="method"&gt;updated:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;, [other], [known]
+* client-&lt;span class="method"&gt;id:&lt;/span&gt; &lt;span class="number"&gt;58542&lt;/span&gt;, last &lt;span class="method"&gt;updated:&lt;/span&gt; &lt;span class="number"&gt;1397120891.38&lt;/span&gt;, [other], [new  ]
 
-...&lt;/code&gt;&lt;/pre&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We will see like this. &lt;code&gt;i_am_alive.py&lt;/code&gt; will collect client's data and print them. You can replace the code in the &lt;code&gt;_callback_stream&lt;/code&gt; function with you own code.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2326,7 +2349,7 @@ found 3 clients: 1397120891.38
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;If you find out more deeply in &lt;code&gt;serf&lt;/code&gt; and &lt;code&gt;serf-python&lt;/code&gt;, please read the test code for &lt;code&gt;serf-python&lt;/code&gt; at https://github.com/spikeekips/serf-python/tree/master/test. Next time, I will show you, how to find out the running django servers in real-time using serf.&lt;/p&gt;
+&lt;p&gt;If you find out more deeply in &lt;code&gt;serf&lt;/code&gt; and &lt;code&gt;serf-python&lt;/code&gt;, please read the test code for &lt;code&gt;serf-python&lt;/code&gt; at &lt;a href="https://github.com/spikeekips/serf-python/tree/master/test"&gt;https://github.com/spikeekips/serf-python/tree/master/test&lt;/a&gt;. Next time, I will show you, how to find out the running django servers in real-time using serf.&lt;/p&gt;
 &lt;p&gt;Thanks for reading this post. :)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4078,6 +4101,18 @@ footer pre
     background-color: inherit;
 }
 
+.rendered_html &gt; pre
+{
+    margin: 1em 0;
+}
+
+.rendered_html &gt; pre &gt; code
+{
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 &lt;/style&gt;
 &lt;/link&gt;&lt;/head&gt;
 &lt;body&gt;
@@ -4091,7 +4126,7 @@ footer pre
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="comparison-of-serializing-python-object-msgpack-vs.-json"&gt;Comparison Of Serializing Python Object: msgpack Vs. Json&lt;/h1&gt;
+&lt;h1 id="comparison-of-serializing-python-object-msgpack-vs-json"&gt;Comparison Of Serializing Python Object: msgpack Vs. Json&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4322,7 +4357,7 @@ In [8]:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="json"&gt;&lt;code&gt;json&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id="-json-"&gt;&lt;code&gt;json&lt;/code&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4347,7 +4382,7 @@ In [9]:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="bson"&gt;&lt;code&gt;bson&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id="-bson-"&gt;&lt;code&gt;bson&lt;/code&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4373,7 +4408,7 @@ In [10]:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="msgpack"&gt;&lt;code&gt;msgpack&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id="-msgpack-"&gt;&lt;code&gt;msgpack&lt;/code&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8288,7 +8323,7 @@ JQAAAABKUy4BAAAAUJpyCQAAAIDSfgLj4TXZjwWhwQAAAABJRU5ErkJggg==
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="compression-method-gzip-vs.-zlib"&gt;Compression Method: gzip vs. zlib&lt;/h2&gt;
+&lt;h2 id="compression-method-gzip-vs-zlib"&gt;Compression Method: gzip vs. zlib&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

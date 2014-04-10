@@ -118,6 +118,18 @@ footer pre
     background-color: inherit;
 }
 
+.rendered_html > pre
+{
+    margin: 1em 0;
+}
+
+.rendered_html > pre > code
+{
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 </style>
 
 </head>
