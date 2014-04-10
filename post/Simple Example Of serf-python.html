@@ -1982,9 +1982,17 @@ In [8]:
 <p>To install <code>serf</code>, see the official installation document, <a href="http://www.serfdom.io/intro/getting-started/install.html">http://www.serfdom.io/intro/getting-started/install.html</a>. As you can find, there is just one binary file, so you don't need to install the other additional libraries or files, very simple and intuitive.</p>
 <p>In latest OSX, download latest serf binary from <a href="http://www.serfdom.io/downloads.html">http://www.serfdom.io/downloads.html</a> .</p>
 <p>You need <code>virtualenv</code>.</p>
-<pre><code class="language-sh">@<span class="localvars">@0</span>@@ cd i_am_alive
-@<span class="localvars">@1</span>@@ curl -L -o serf-<span class="number">0.5</span><span class="number">.0</span><span class="preprocessor">.zip</span> https://dl<span class="preprocessor">.bintray</span><span class="preprocessor">.com</span>/mitchellh/serf/<span class="number">0.5</span><span class="number">.0</span>_darwin_amd64<span class="preprocessor">.zip</span>
-@<span class="localvars">@2</span>@@ mv serf bin/
+<pre><code class="language-sh"><span class="variable">$ </span>virtualenv i_am_alive
+
+<span class="variable">$ </span>cd i_am_alive
+
+<span class="variable">$ </span>source i_am_alive
+
+<span class="variable">$ </span>curl -<span class="constant">L</span> -o serf-<span class="number">0</span>.<span class="number">5.0</span>.zip <span class="symbol">https:</span>/<span class="regexp">/dl.bintray.com/mitchellh</span><span class="regexp">/serf/</span><span class="number">0</span>.<span class="number">5.0_</span>darwin_amd64.zip
+
+<span class="variable">$ </span>unzip serf-<span class="number">0</span>.<span class="number">5.0</span>.zip
+
+<span class="variable">$ </span>mv serf bin/
 </code></pre>
 </div>
 </div>
