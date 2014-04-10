@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Spike^ekipS Blog</title>
   <id>http://spikeekips.github.io/atom</id>
-  <updated>2014-04-08T20:35:19Z</updated>
+  <updated>2014-04-10T18:52:20Z</updated>
   <link href="http://spikeekips.github.io" />
   <link href="http://spikeekips.github.io/atom" rel="self" />
   <author>
@@ -10,10 +10,10 @@
   </author>
   <generator>PyAtom</generator>
   <entry xml:base="http://spikeekips.github.io/atom">
-    <title type="text">Basic Usage Of serf-python</title>
-    <id>http://spikeekips.github.io/post/Basic Usage Of serf-python.html</id>
-    <updated>2014-04-08T20:35:19Z</updated>
-    <link href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html" />
+    <title type="text">Simple Example Of serf-python</title>
+    <id>http://spikeekips.github.io/post/Simple Example Of serf-python.html</id>
+    <updated>2014-04-10T18:52:20Z</updated>
+    <link href="http://spikeekips.github.io/post/Simple Example Of serf-python.html" />
     <author>
       <name></name>
     </author>
@@ -22,7 +22,7 @@
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta charset="utf-8"/&gt;
-&lt;title&gt;Basic Usage Of serf-python&lt;/title&gt;
+&lt;title&gt;Simple Example Of serf-python&lt;/title&gt;
 &lt;link href="http://spikeekips.github.io/atom" rel="alternate" type="application/atom+xml"/&gt;
 &lt;script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"&gt;&lt;/script&gt;
 &lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"&gt;&lt;/script&gt;
@@ -1757,18 +1757,18 @@ footer pre
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Basic-Usage-Of-serf-python"&gt;Basic Usage Of serf-python&lt;a class="anchor-link" href="#Basic-Usage-Of-serf-python"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id="Simple-Example-Of-serf-python"&gt;Simple Example Of serf-python&lt;a class="anchor-link" href="#Simple-Example-Of-serf-python"&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;
-In [2]:
+In [283]:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'Written at'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'Written at '&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
 &lt;span class="o"&gt;!&lt;/span&gt;date
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1779,7 +1779,7 @@ In [2]:
 &lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
 &lt;pre&gt;
-Written atTue Apr  8 20:09:18 KST 2014
+Written at Thu Apr 10 18:15:28 KST 2014
 
 
 &lt;/pre&gt;
@@ -1793,18 +1793,7 @@ Written atTue Apr  8 20:09:18 KST 2014
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Recently I found some interesting project, that is &lt;a href="http://www.serfdom.io/"&gt;serf&lt;/a&gt; http://www.serfdom.io/. They explains,&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;For several years, I am trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.&lt;/p&gt;
-&lt;p&gt;In fact, serf is still in development and has the critical limitations,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;in serf you can not send or broadcast the messages, which is bigger than about 1024 bytes. To overcome this problems, you will be obliged to use the shared storage.&lt;/li&gt;
-&lt;li&gt;You can not find the mature client libraries for your languages. Until now, only python libraries available, the &lt;a href="https://github.com/KushalP/serfclient-py"&gt;serfclient-py&lt;/a&gt; and &lt;a href="https://github.com/spikeekips/serf-python"&gt;serf-python&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To use serf in my python-based application, I wrote simple client library, written in python, that is &lt;a href="https://github.com/spikeekips/serf-python"&gt;serf-python&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In this post, I will show you how the serf works and how to use &lt;code&gt;serf-python&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="what-is-serf"&gt;What is &lt;code&gt;serf&lt;/code&gt;?&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1813,12 +1802,537 @@ Written atTue Apr  8 20:09:18 KST 2014
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p id="###..-will-be-continued."&gt;###.. will be continued.&lt;a class="anchor-link" href="####..-will-be-continued."&gt;¶&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recently I found some interesting project, that is &lt;a href="http://www.serfdom.io/"&gt;serf&lt;/a&gt; http://www.serfdom.io/. They explains,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For several years, I have been trying to find the solution to create cluster for deeply networked applications with easy way. In my past projects, etcd and zookeeper just simply have been used without any further considerations, but the zookeeper is so heavy in my tiny amazon instance, and the etcd very often showed me the unstable situations, so I need another solutions.&lt;/p&gt;
+&lt;p&gt;In fact, serf is still in development and has the critical limitations,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in serf you can not send or broadcast the messages, which is bigger than about 1024 bytes. To overcome this problems, you will be obliged to use the shared storage.&lt;/li&gt;
+&lt;li&gt;You can not find the mature client libraries for your languages. Until now, only python libraries available, the &lt;a href="https://github.com/KushalP/serfclient-py"&gt;serfclient-py&lt;/a&gt; and &lt;a href="https://github.com/spikeekips/serf-python"&gt;serf-python&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use serf in my python-based application, I wrote simple client library, written in python, that is &lt;a href="https://github.com/spikeekips/serf-python"&gt;serf-python&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this post, I will show you how to deploy serf and how to use &lt;code&gt;serf-python&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="i-am-alive-cluster"&gt;I-Am-Alive Cluster&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I will show you simple python application, &lt;code&gt;i_am_alive.py&lt;/code&gt;, this will broadcast his/her state to others like heartbeats. &lt;code&gt;i_am_alive.py&lt;/code&gt; will also receive event from the others.&lt;/p&gt;
+&lt;p&gt;All &lt;code&gt;i_am_alive.py&lt;/code&gt; will be connected to the serf cluster, clustered with 2 nodes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 serf nodes&lt;/li&gt;
+&lt;li&gt;3 client of &lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [2]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;try&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;reload_ext&lt;/span&gt; &lt;span class="n"&gt;gvmagic&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;install_ext&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;raw&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cjdrake&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ipython&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;magic&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gvmagic&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;    
+    &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;load_ext&lt;/span&gt; &lt;span class="n"&gt;gvmagic&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In [8]:
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;dot&lt;/span&gt; &lt;span class="n"&gt;digraph&lt;/span&gt; &lt;span class="n"&gt;G&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;graph&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;compound&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bgcolor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bgcolor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;transparent&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"courier"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;];&lt;/span&gt;
+    &lt;span class="n"&gt;edge&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bgcolor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;transparent&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+
+    &lt;span class="n"&gt;subgraph&lt;/span&gt; &lt;span class="n"&gt;cluster&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;label&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"serf cluster with 2 nodes"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+        &lt;span class="n"&gt;serf0&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"serf: 127.0.0.1:7946&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;rpc: serf://127.0.0.1:7373"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+        &lt;span class="n"&gt;serf1&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"serf: 127.0.0.1:7947&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;rpc: serf://127.0.0.1:7374"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt; 
+
+    &lt;span class="n"&gt;serf1&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;i_am_alive0&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ltail&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cluster&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"receive other clients `event_i_am_alive-xx` events"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontcolor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;red&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="n"&gt;i_am_alive0&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;serf1&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;lhead&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cluster&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"send `event_i_am_alive-xx` event"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fontcolor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+
+    &lt;span class="n"&gt;serf0&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;i_am_alive1&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ltail&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cluster&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt; &lt;span class="n"&gt;i_am_alive1&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;serf0&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;lhead&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cluster&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="n"&gt;serf0&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;i_am_alive2&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ltail&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cluster&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt; &lt;span class="n"&gt;i_am_alive2&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;serf0&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;lhead&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cluster&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_svg output_subarea "&gt;
+&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;
+
+&lt;!-- Generated by graphviz version 2.36.0 (20140111.2315)
+ --&gt;
+&lt;!-- Title: G Pages: 1 --&gt;
+&lt;svg height="170pt" viewbox="0.00 0.00 575.45 170.00" width="575pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+&lt;g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 166)"&gt;
+&lt;title&gt;G&lt;/title&gt;
+&lt;g class="cluster" id="clust1"&gt;&lt;title&gt;cluster&lt;/title&gt;
+&lt;polygon fill="none" points="8,-74 8,-154 529,-154 529,-74 8,-74" stroke="black"&gt;&lt;/polygon&gt;
+&lt;text font-family="Times,serif" font-size="16.00" text-anchor="middle" x="268.5" y="-137.2"&gt;serf cluster with 2 nodes&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- serf0 --&gt;
+&lt;g class="node" id="node1"&gt;&lt;title&gt;serf0&lt;/title&gt;
+&lt;ellipse cx="138" cy="-102" fill="none" rx="121.46" ry="19.6" stroke="black"&gt;&lt;/ellipse&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="138" y="-104"&gt;serf: 127.0.0.1:7946&lt;/text&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="138" y="-94"&gt;rpc: serf://127.0.0.1:7373&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- i_am_alive1 --&gt;
+&lt;g class="node" id="node4"&gt;&lt;title&gt;i_am_alive1&lt;/title&gt;
+&lt;ellipse cx="75" cy="-18" fill="none" rx="47.0244" ry="18" stroke="black"&gt;&lt;/ellipse&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="75" y="-15"&gt;i_am_alive1&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- serf0&amp;#45;&amp;gt;i_am_alive1 --&gt;
+&lt;g class="edge" id="edge3"&gt;&lt;title&gt;serf0-&amp;gt;i_am_alive1&lt;/title&gt;
+&lt;path d="M115.165,-74.2509C112.374,-70.8338 109.594,-67.3573 107,-64 102.165,-57.7413 97.1229,-50.8431 92.5094,-44.3675" fill="none" stroke="black"&gt;&lt;/path&gt;
+&lt;polygon fill="black" points="95.1639,-42.0583 86.5435,-35.8988 89.4413,-46.0897 95.1639,-42.0583" stroke="black"&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+&lt;!-- i_am_alive2 --&gt;
+&lt;g class="node" id="node5"&gt;&lt;title&gt;i_am_alive2&lt;/title&gt;
+&lt;ellipse cx="188" cy="-18" fill="none" rx="47.0244" ry="18" stroke="black"&gt;&lt;/ellipse&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="188" y="-15"&gt;i_am_alive2&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- serf0&amp;#45;&amp;gt;i_am_alive2 --&gt;
+&lt;g class="edge" id="edge5"&gt;&lt;title&gt;serf0-&amp;gt;i_am_alive2&lt;/title&gt;
+&lt;path d="M154.299,-74.2696C160.139,-64.6916 166.703,-53.9265 172.476,-44.459" fill="none" stroke="black"&gt;&lt;/path&gt;
+&lt;polygon fill="black" points="175.604,-46.0529 177.821,-35.6928 169.627,-42.4086 175.604,-46.0529" stroke="black"&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+&lt;!-- serf1 --&gt;
+&lt;g class="node" id="node2"&gt;&lt;title&gt;serf1&lt;/title&gt;
+&lt;ellipse cx="399" cy="-102" fill="none" rx="121.46" ry="19.6" stroke="black"&gt;&lt;/ellipse&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="399" y="-104"&gt;serf: 127.0.0.1:7947&lt;/text&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="399" y="-94"&gt;rpc: serf://127.0.0.1:7374&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- i_am_alive0 --&gt;
+&lt;g class="node" id="node3"&gt;&lt;title&gt;i_am_alive0&lt;/title&gt;
+&lt;ellipse cx="383" cy="-18" fill="none" rx="47.0244" ry="18" stroke="black"&gt;&lt;/ellipse&gt;
+&lt;text font-family="Courier,monospace" font-size="10.00" text-anchor="middle" x="383" y="-15"&gt;i_am_alive0&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- serf1&amp;#45;&amp;gt;i_am_alive0 --&gt;
+&lt;g class="edge" id="edge1"&gt;&lt;title&gt;serf1-&amp;gt;i_am_alive0&lt;/title&gt;
+&lt;path d="M275.274,-74.2097C268.869,-71.0898 263.909,-67.6882 261.08,-64 240.591,-37.2904 285.396,-26.429 326.347,-22.0152" fill="none" stroke="black"&gt;&lt;/path&gt;
+&lt;polygon fill="black" points="326.741,-25.4935 336.359,-21.0497 326.069,-18.5258 326.741,-25.4935" stroke="black"&gt;&lt;/polygon&gt;
+&lt;text fill="red" font-family="Times,serif" font-size="9.00" text-anchor="middle" x="352.96" y="-56.3"&gt;receive other clients `event_i_am_alive-xx` events&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- i_am_alive0&amp;#45;&amp;gt;serf1 --&gt;
+&lt;g class="edge" id="edge2"&gt;&lt;title&gt;i_am_alive0-&amp;gt;serf1&lt;/title&gt;
+&lt;path d="M416.627,-30.8286C426.942,-36.2209 437.114,-43.7519 443,-54 445.172,-57.7819 445.66,-61.5027 444.927,-65.0934" fill="none" stroke="black"&gt;&lt;/path&gt;
+&lt;polygon fill="black" points="441.7,-63.7252 440.45,-74.2462 447.988,-66.8005 441.7,-63.7252" stroke="black"&gt;&lt;/polygon&gt;
+&lt;text fill="blue" font-family="Times,serif" font-size="9.00" text-anchor="middle" x="506.227" y="-56.3"&gt;send `event_i_am_alive-xx` event&lt;/text&gt;
+&lt;/g&gt;
+&lt;!-- i_am_alive1&amp;#45;&amp;gt;serf0 --&gt;
+&lt;g class="edge" id="edge4"&gt;&lt;title&gt;i_am_alive1-&amp;gt;serf0&lt;/title&gt;
+&lt;path d="M90.8552,-35.2661C96.1894,-41.0142 102.041,-47.6351 107,-54 111.791,-60.1494 116.605,-67.0286 120.964,-73.5862" fill="none" stroke="black"&gt;&lt;/path&gt;
+&lt;polygon fill="black" points="111.327,-71.3238 121.579,-74 115.234,-65.5148 111.327,-71.3238" stroke="black"&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+&lt;!-- i_am_alive2&amp;#45;&amp;gt;serf0 --&gt;
+&lt;g class="edge" id="edge6"&gt;&lt;title&gt;i_am_alive2-&amp;gt;serf0&lt;/title&gt;
+&lt;path d="M183.243,-35.9184C180.388,-44.6576 176.28,-55.2861 171,-64 170.607,-64.6492 170.201,-65.2975 169.785,-65.9443" fill="none" stroke="black"&gt;&lt;/path&gt;
+&lt;polygon fill="black" points="166.845,-64.0385 163.874,-74.2083 172.539,-68.1107 166.845,-64.0385" stroke="black"&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="install-and-deploy-serf"&gt;Install and Deploy serf&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;To install &lt;code&gt;serf&lt;/code&gt;, see the official installation document, http://www.serfdom.io/intro/getting-started/install.html. As you can find, there is just one binary file, so you don't need to install the other additional libraries or files, very simple and intuitive.&lt;/p&gt;
+&lt;p&gt;In latest OSX, download latest serf binary from http://www.serfdom.io/downloads.html .&lt;/p&gt;
+&lt;p&gt;You need &lt;code&gt;virtualenv&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ virtualenv i_am_alive
+$ cd i_am_alive
+$ source i_am_alive
+$ curl -L -o serf-0.5.0.zip https://dl.bintray.com/mitchellh/serf/0.5.0_darwin_amd64.zip
+$ unzip serf-0.5.0.zip
+$ mv serf bin/&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="install-serf-python"&gt;Install &lt;code&gt;serf-python&lt;/code&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;You can easily &lt;code&gt;serf-python&lt;/code&gt; with &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pip install serf-python
+
+$ python
+&amp;gt;&amp;gt;&amp;gt; import serf&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="i_am_alive.py"&gt;&lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Save the belowed code to &lt;code&gt;i_am_alive.py&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span class="ch"&gt;import&lt;/span&gt; os
+&lt;span class="ch"&gt;import&lt;/span&gt; re
+&lt;span class="ch"&gt;import&lt;/span&gt; time
+&lt;span class="ch"&gt;import&lt;/span&gt; sys
+&lt;span class="ch"&gt;import&lt;/span&gt; threading
+&lt;span class="ch"&gt;import&lt;/span&gt; logging
+&lt;span class="ch"&gt;import&lt;/span&gt; serf
+
+
+&lt;span class="co"&gt;# set logging&lt;/span&gt;
+logging.basicConfig()
+
+log = logging.getLogger(&lt;span class="st"&gt;'serf-rpc-client'&lt;/span&gt;, )
+&lt;span class="co"&gt;#log.setLevel(logging.INFO, ) # For see the log from `serf-python`, uncomment this.&lt;/span&gt;
+
+log = logging.getLogger(&lt;span class="st"&gt;'i_am_alive'&lt;/span&gt;, )
+log.setLevel(logging.WARN, )
+&lt;span class="co"&gt;#log.setLevel(logging.INFO, ) # if you want to see the log from this script, uncomment this.&lt;/span&gt;
+
+
+INTERVAL_SEND_EVENT = &lt;span class="dv"&gt;2&lt;/span&gt; &lt;span class="co"&gt;# interval to send event&lt;/span&gt;
+WAIT_TIME_CLIENT = INTERVAL_SEND_EVENT + &lt;span class="dv"&gt;1&lt;/span&gt;
+
+
+&lt;span class="co"&gt;# this thread-based class will send event&lt;/span&gt;
+&lt;span class="kw"&gt;class&lt;/span&gt; EventSender (threading.Thread, ) :
+    interval = &lt;span class="dv"&gt;2&lt;/span&gt;
+
+    &lt;span class="kw"&gt;def&lt;/span&gt; &lt;span class="ot"&gt;__init__&lt;/span&gt; (&lt;span class="ot"&gt;self&lt;/span&gt;, client, client_id, ) :
+        threading.Thread.&lt;span class="ot"&gt;__init__&lt;/span&gt;(&lt;span class="ot"&gt;self&lt;/span&gt;)
+
+        &lt;span class="ot"&gt;self&lt;/span&gt;._client = client
+        &lt;span class="ot"&gt;self&lt;/span&gt;._client_id = client_id
+
+    &lt;span class="kw"&gt;def&lt;/span&gt; run (&lt;span class="ot"&gt;self&lt;/span&gt;, ) :
+        &lt;span class="kw"&gt;while&lt;/span&gt; &lt;span class="ot"&gt;True&lt;/span&gt; :
+            log.info(&lt;span class="st"&gt;'send `event_i_am_alive` event'&lt;/span&gt;, )
+            &lt;span class="ot"&gt;self&lt;/span&gt;._client.event(
+                    Name=&lt;span class="st"&gt;'event_i_am_alive-&lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % &lt;span class="ot"&gt;self&lt;/span&gt;._client_id,
+                    Payload=CLIENT_ID,
+                    Coalesce=&lt;span class="ot"&gt;True&lt;/span&gt;,
+                ).request()
+            time.sleep(INTERVAL_SEND_EVENT, )
+        
+        &lt;span class="kw"&gt;return&lt;/span&gt;
+
+
+&lt;span class="kw"&gt;def&lt;/span&gt; _callback_stream (response, ) :
+    log.info(&lt;span class="st"&gt;'got response: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response, )
+    log.info(&lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\t&lt;/span&gt;&lt;span class="st"&gt; body: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response.body, )
+
+    &lt;span class="kw"&gt;if&lt;/span&gt; response.body.get(&lt;span class="st"&gt;'Event'&lt;/span&gt;) not in (&lt;span class="st"&gt;'user'&lt;/span&gt;, ) :
+        &lt;span class="kw"&gt;return&lt;/span&gt;
+
+    &lt;span class="kw"&gt;if&lt;/span&gt; not response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;).startswith(&lt;span class="st"&gt;'event_i_am_alive-'&lt;/span&gt;) :
+        &lt;span class="kw"&gt;return&lt;/span&gt;
+
+    _client_id_received = re.&lt;span class="dt"&gt;compile&lt;/span&gt;(&lt;span class="st"&gt;'^event_i_am_alive-(?P&amp;lt;client_id&amp;gt;\d+)$'&lt;/span&gt;).search(
+            response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;, ),
+        ).groupdict().get(&lt;span class="st"&gt;'client_id'&lt;/span&gt;)
+    _is_new = _client_id_received not in CLIENTS
+
+    CLIENTS[_client_id_received] = time.time()
+
+    &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\n&lt;/span&gt;&lt;span class="st"&gt;found &lt;/span&gt;&lt;span class="ot"&gt;%d&lt;/span&gt;&lt;span class="st"&gt; clients: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % (&lt;span class="dt"&gt;len&lt;/span&gt;(CLIENTS), time.time(), )
+    &lt;span class="kw"&gt;for&lt;/span&gt; _client_id, _updated in CLIENTS.items() :
+        &lt;span class="kw"&gt;if&lt;/span&gt; _updated &amp;lt; time.time() - WAIT_TIME_CLIENT :
+            &lt;span class="kw"&gt;del&lt;/span&gt; CLIENTS[_client_id]
+            &lt;span class="kw"&gt;continue&lt;/span&gt;
+
+        &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'* client-id: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, last updated: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;], [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;]'&lt;/span&gt; % (
+                _client_id,
+                &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ot"&gt;%0.2f&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % _updated,
+                &lt;span class="co"&gt;'me'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == CLIENT_ID &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'other'&lt;/span&gt;,
+                &lt;span class="co"&gt;'new'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == _client_id_received and _is_new &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'known'&lt;/span&gt;
+            )
+
+
+CLIENTS = &lt;span class="dt"&gt;dict&lt;/span&gt;()
+CLIENT_ID = &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % os.getpid()
+
+&lt;span class="co"&gt;# create client&lt;/span&gt;
+client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;)
+
+&lt;span class="co"&gt;# start event thread&lt;/span&gt;
+event_sender = EventSender(client, CLIENT_ID, )
+event_sender.setDaemon(&lt;span class="ot"&gt;True&lt;/span&gt;, )
+event_sender.start()
+
+
+&lt;span class="co"&gt;# watch all stream&lt;/span&gt;
+&lt;span class="kw"&gt;try&lt;/span&gt; :
+    client.stream(
+            Type=&lt;span class="st"&gt;'*'&lt;/span&gt;,
+        ).add_callback(_callback_stream, ).watch()
+&lt;span class="kw"&gt;except&lt;/span&gt; &lt;span class="ot"&gt;KeyboardInterrupt&lt;/span&gt; :
+    sys.exit()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;This script, &lt;code&gt;i_am_alive.py&lt;/code&gt; will send event to the serf and try to receive the event from other &lt;code&gt;i_am_alive.py&lt;/code&gt; client.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="connect-to-serf"&gt;Connect To serf&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span class="ch"&gt;import&lt;/span&gt; serf
+
+client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;, )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will create &lt;code&gt;serf&lt;/code&gt; client. The argument, &lt;code&gt;'serf://127.0.0.1:7373'&lt;/code&gt; means, you will connect two serf server and it has the &lt;code&gt;7373&lt;/code&gt; &lt;code&gt;RPC&lt;/code&gt; port. You must set the valid &lt;code&gt;RPC&lt;/code&gt; address. You can set the multiple serf rpc addresses like this,&lt;/p&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373,192.168.0.1:7374'&lt;/span&gt;, )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You'd better to set the multiple rpc address for persistant connection to cluster. The client of &lt;code&gt;serf-python&lt;/code&gt; at first will connect the first address you set, and then if that server is lost(server is down, network diabled or any other reasons), the client will try to connect the next one. If all the server is failed to connect, the client will be exited with the exception, &lt;code&gt;serf._exceptions.ConnectionError&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you want connect persistantly even if all the connection is lost, use &lt;code&gt;auto_reconnect=True&lt;/code&gt; argument in &lt;code&gt;serf.Client&lt;/code&gt; like this,&lt;/p&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;client = serf.Client(&lt;span class="st"&gt;'serf://127.0.0.1:7373'&lt;/span&gt;, auto_reconnect=&lt;span class="ot"&gt;True&lt;/span&gt;, )&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="send-event"&gt;Send Event&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Sending event to serf is so simple. In the above &lt;code&gt;i_am_alive.py&lt;/code&gt;,&lt;/p&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;            &lt;span class="ot"&gt;self&lt;/span&gt;._client.event(
+                    Name=&lt;span class="st"&gt;'event_i_am_alive-&lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % &lt;span class="ot"&gt;self&lt;/span&gt;._client_id,
+                    Payload=CLIENT_ID,
+                    Coalesce=&lt;span class="ot"&gt;True&lt;/span&gt;,
+                ).request()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To differentiate each client, I included &lt;code&gt;self._client_id&lt;/code&gt; in the event &lt;code&gt;Name&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="collect-clients"&gt;Collect Clients&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;client.stream(
+        Type=&lt;span class="st"&gt;'*'&lt;/span&gt;,
+    ).add_callback(_callback_stream, ).watch()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will listen all the event from serf server and call the &lt;code&gt;_callback_stream&lt;/code&gt; when a response is received.&lt;/p&gt;
+&lt;pre class="sourceCode python"&gt;&lt;code class="sourceCode python"&gt;&lt;span class="kw"&gt;def&lt;/span&gt; _callback_stream (response, ) :
+    log.info(&lt;span class="st"&gt;'got response: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response, )
+    log.info(&lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\t&lt;/span&gt;&lt;span class="st"&gt; body: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % response.body, )
+
+    &lt;span class="kw"&gt;if&lt;/span&gt; response.body.get(&lt;span class="st"&gt;'Event'&lt;/span&gt;) not in (&lt;span class="st"&gt;'user'&lt;/span&gt;, ) :
+        &lt;span class="kw"&gt;return&lt;/span&gt;
+
+    &lt;span class="kw"&gt;if&lt;/span&gt; not response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;).startswith(&lt;span class="st"&gt;'event_i_am_alive-'&lt;/span&gt;) :
+        &lt;span class="kw"&gt;return&lt;/span&gt;
+
+    _client_id_received = re.&lt;span class="dt"&gt;compile&lt;/span&gt;(&lt;span class="st"&gt;'^event_i_am_alive-(?P&amp;lt;client_id&amp;gt;\d+)$'&lt;/span&gt;).search(
+            response.body.get(&lt;span class="st"&gt;'Name'&lt;/span&gt;, ),
+        ).groupdict().get(&lt;span class="st"&gt;'client_id'&lt;/span&gt;)
+    _is_new = _client_id_received not in CLIENTS
+
+    CLIENTS[_client_id_received] = time.time()
+
+    &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ch"&gt;\n&lt;/span&gt;&lt;span class="st"&gt;found &lt;/span&gt;&lt;span class="ot"&gt;%d&lt;/span&gt;&lt;span class="st"&gt; clients: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % (&lt;span class="dt"&gt;len&lt;/span&gt;(CLIENTS), time.time(), )
+    &lt;span class="kw"&gt;for&lt;/span&gt; _client_id, _updated in CLIENTS.items() :
+        &lt;span class="kw"&gt;if&lt;/span&gt; _updated &amp;lt; time.time() - WAIT_TIME_CLIENT :
+            &lt;span class="kw"&gt;del&lt;/span&gt; CLIENTS[_client_id]
+            &lt;span class="kw"&gt;continue&lt;/span&gt;
+
+        &lt;span class="dt"&gt;print&lt;/span&gt; &lt;span class="st"&gt;'* client-id: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, last updated: &lt;/span&gt;&lt;span class="ot"&gt;%s&lt;/span&gt;&lt;span class="st"&gt;, [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;], [&lt;/span&gt;&lt;span class="ot"&gt;%-5s&lt;/span&gt;&lt;span class="st"&gt;]'&lt;/span&gt; % (
+                _client_id,
+                &lt;span class="st"&gt;'&lt;/span&gt;&lt;span class="ot"&gt;%0.2f&lt;/span&gt;&lt;span class="st"&gt;'&lt;/span&gt; % _updated,
+                &lt;span class="co"&gt;'me'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == CLIENT_ID &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'other'&lt;/span&gt;,
+                &lt;span class="co"&gt;'new'&lt;/span&gt; &lt;span class="kw"&gt;if&lt;/span&gt; _client_id == _client_id_received and _is_new &lt;span class="kw"&gt;else&lt;/span&gt; &lt;span class="st"&gt;'known'&lt;/span&gt;
+            )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is &lt;code&gt;_callback_stream&lt;/code&gt;, parses the response and print the collected clients.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="running"&gt;Running&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="deploy-serf"&gt;Deploy serf&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;I will run the 2 serf node with a different port, name and rpc port.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;serf0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ serf agent -node serf0 -bind 127.0.0.1:7946 -rpc-addr=127.0.0.1:7373 -join 127.0.0.1:7946 -join 127.0.0.1:7947&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;serf1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ serf agent -node serf1 -bind 127.0.0.1:7947 -rpc-addr=127.0.0.1:7374 -join 127.0.0.1:7946 -join 127.0.0.1:7947&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This examples will automatically join the 2 nodes as cluster, you can add another node with &lt;code&gt;-join&lt;/code&gt; option. For more options, see http://www.serfdom.io/docs/agent/basics.html.&lt;/p&gt;
+&lt;p&gt;So we launched serf cluster, which has 2 nodes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="run-i_am_alive.py"&gt;Run &lt;code&gt;i_am_alive.py&lt;/code&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;We need to open 3 seperated terminal windows and run this in each terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ python i_am_alive.py
+
+found 1 clients: 1397120891.38
+* client-id: 65370, last updated: 1397120891.38, [other], [new  ]
+
+found 2 clients: 1397120891.38
+* client-id: 65535, last updated: 1397120891.38, [me   ], [new  ]
+* client-id: 65370, last updated: 1397120891.38, [other], [known]
+
+found 3 clients: 1397120891.38
+* client-id: 65535, last updated: 1397120891.38, [me   ], [known]
+* client-id: 65370, last updated: 1397120891.38, [other], [known]
+* client-id: 58542, last updated: 1397120891.38, [other], [new  ]
+
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We will see like this. &lt;code&gt;i_am_alive.py&lt;/code&gt; will collect client's data and print them. You can replace the code in the &lt;code&gt;_callback_stream&lt;/code&gt; function with you own code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;If you find out more deeply in &lt;code&gt;serf&lt;/code&gt; and &lt;code&gt;serf-python&lt;/code&gt;, please read the test code for &lt;code&gt;serf-python&lt;/code&gt; at https://github.com/spikeekips/serf-python/tree/master/test. Next time, I will show you, how to find out the running django servers in real-time using serf.&lt;/p&gt;
+&lt;p&gt;Thanks for reading this post. :)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://apis.google.com/js/plusone.js"&gt;&lt;/script&gt;
-&lt;div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/Basic Usage Of serf-python.html"&gt;
+&lt;div class="g-comments" data-first_party_property="BLOGGER" data-href="http://spikeekips.github.io/post/Simple Example Of serf-python.html"&gt;
 &lt;/div&gt;
 &lt;footer&gt;
 &lt;pre&gt;&lt;a href="/"&gt;Home&lt;/a&gt; / Written By &lt;a href="http://github.com/spikeekips"&gt;Spike^ekipS&lt;/a&gt; | &lt;a href="https://plus.google.com/101452362887920966223?rel=author"&gt;Google&lt;/a&gt;&lt;/pre&gt;
