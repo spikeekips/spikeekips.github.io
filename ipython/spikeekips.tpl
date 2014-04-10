@@ -151,7 +151,11 @@ footer pre
 </div>
 
   <footer>
-  <pre><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a> | <a href='https://plus.google.com/101452362887920966223?rel=author'>Google</a></pre>
+  <pre><a style='display: none;' href='https://plus.google.com/101452362887920966223?rel=author'>Google</a><a href='/'>Home</a> / Written By <a href='http://github.com/spikeekips'>Spike^ekipS</a>.
+Powered by
+    * <a href='http://ipython.org/notebook.html'>IPython Notebook</a>
+    * <a href='http://github.com'>github</a>
+    * and with various kind of open source projects.</pre>
   
   </footer>
     </div>
