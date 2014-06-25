@@ -34,6 +34,7 @@ projectkk 스트레스 테스트용 로봇
     $ source activate
 
 ::
+
     $ cd /home/manage/service/manage/src/
     $ mkdir robot
     $ cd robot
@@ -109,7 +110,9 @@ projectkk 스트레스 테스트용 로봇
       -q, --quiet
 
 
-``scenario`` ::
+``scenario``
+
+..
 
     ``robot`` 이 어떤 요청을 게임서버로 보낼지 담고 있는 CSV 형태의 파일을
     지정합니다. 자세한 내용은 아래에서 추가로 설명합니다.
