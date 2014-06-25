@@ -117,19 +117,27 @@ projectkk 스트레스 테스트용 로봇
     ``robot`` 이 어떤 요청을 게임서버로 보낼지 담고 있는 CSV 형태의 파일을
     지정합니다. 자세한 내용은 아래에서 추가로 설명합니다.
 
-``-h, --help`` ::
+``-h, --help``
+
+..
 
     옵션 설명을 출력합니다.
 
-``--server-addr`` ::
+``--server-addr``
+
+..
 
     게임서버 주소를 <host>:<port> 형태로 지정합니다.
 
-``--number-to-run`` ::
+``--number-to-run``
+
+..
 
     scenario를 몇번 반복할 지 지정합니다. 기본값은 1, 한번 입니다.
 
-``--number-of-clients`` ::
+``--number-of-clients``
+
+..
 
     테스트를 수행할 client 의 개수를 지정합니다. 기본값은 1, 하나입니다. 단,
     실행하는 운영체제의 제한으로 많은 수, 1000 개 이상을 지정할 경우, 문제가
@@ -137,12 +145,16 @@ projectkk 스트레스 테스트용 로봇
     운영할 필요가 있습니다.
 
 
-``--csv`` ::
+``--csv``
+
+..
 
     테스트 결과를 CSV 파일로 저장합니다. 자세한 내용은 아래에서 추가로 설명합니다.
 
 
-``--loglevel`` ::
+``--loglevel``
+
+..
 
     로그 메세지의 수준을 지정합니다. ``info', ``debug', ``error', ``warning',
     ``critical', ``notset' 중에 하나를 지정할 수 있습니다. 각각의 자세한 내용은,
@@ -150,7 +162,9 @@ projectkk 스트레스 테스트용 로봇
 
     기본값은 기본적인 정보를 출력하는, ``info`` 입니다.
 
-``--log`` ::
+``--log``
+
+..
 
     기본적으로 로그 메세지는 console로 출력됩니다. ``--log`` 옵션에 원하는 파일
     경로를 지정해서 로그 메세지를 파일로 저장할 수 있습니다.
@@ -199,59 +213,87 @@ projectkk 스트레스 테스트용 로봇
 
 위와 같은 내용을 결과로 출력합니다. 자세하게 내용을 살펴보겠습니다.
 
-``tested at`` ::
+``tested at``
+
+..
 
     테스트를 실행한 시각
 
-``server address`` ::
+``server address``
+
+..
 
     테스트를 실행한 서버 주소
 
-``elapsed time`` ::
+``elapsed time``
+
+..
 
     테스트에 걸린 시간, 초
 
-``requests per second`` ::
+``requests per second``
+
+..
 
     초당 게임서버로 보낸 요청 수
 
-``time per request - mean`` ::
+``time per request - mean``
+
+..
 
     한 요청을 보내고 받는 데 걸린 평균 시간, 초
 
-``time per request - median`` ::
+``time per request - median``
+
+..
 
     한 요청을 보내고 받는 데 걸린 중간 시간
 
-``time per request - min`` ::
+``time per request - min``
+
+..
 
     한 요청을 보내고 받는 데 걸린 가장 적게 걸린 시간
 
-``time per request - max`` ::
+``time per request - max``
+
+..
 
     한 요청을 보내고 받는 데 걸린 가장 오래 걸린 시간
 
-``complete requests`` ::
+``complete requests``
+
+..
 
     보낸 요청 수
 
-``failed requests`` ::
+``failed requests``
+
+..
 
     보낸 요청 중 실패한 요청 수
 
-``time taken for tests`` ::
+``time taken for tests``
+
+..
 
     요청을 보내고 받는 데 걸린 시간을 모두 합한 시간, 초
 
-``total transferred`` ::
+``total transferred``
+
+..
 
     보낸 요청 데이터 값을 합한 값, 바이트
 
-``number of clients`` ::
+``number of clients``
+
+..
 
     테스트에 참가한 client 수
 
-``percentage of the requests served within total time`` ::
+``percentage of the requests served within total time``
+
+..
 
     보낸 요청들을 시간대별로 보낸 요청 수, 10%는 처음 10% 대의 보낸 요청 수 단, 테스트 시간이 긴 경우에만 의미가 있습니다.
 
@@ -267,12 +309,16 @@ projectkk 스트레스 테스트용 로봇
     char_data_list,,,,,
 
 
-``command`` ::
+``command``
+
+..
 
     보낼 요청의 command 이름, 보낼 수 있는 요청 command는 아래에서 설명합니다.
 
 
-``args`` ::
+``args``
+
+..
 
     요청에 필요한 인자들, 쉼표, ``,`` 로 분리해서 입력할 수 있습니다. member
     number 의 경우, 직접 숫자로 된 회원 번호, member number 를 지정할 수도 있습니다.
@@ -281,12 +327,16 @@ projectkk 스트레스 테스트용 로봇
     테스트합니다.
 
 
-``just once`` ::
+``just once``
+
+..
 
     해당 요청을 테스트 과정에서 딱 한번만 실행해고 싶을 때, ``1`` 로 지정합니다.
 
 
-``desc`` ::
+``desc``
+
+..
 
     간단한 설명을 추가할 수 있습니다.
 
@@ -311,36 +361,50 @@ projectkk 스트레스 테스트용 로봇
 과 같습니다. ``robot`` 이 게임서버로 보낸 모든 요청들을, 요청 종류와 결과를 그대로 저장합니다. 각 column은,
 
 
-``time_started`` ::
+``time_started``
+
+..
 
     요청을 보낸 시각
 
-``name`` ::
+``name``
+
+..
 
     요청 이름. scenario에서 지정한 요청 command의 이름과 동일합니다.
 
 
-``elapsed_time`` ::
+``elapsed_time``
+
+..
 
     요청하고 응답을 받는 데 걸린 시간
 
 
-``success`` ::
+``success``
+
+..
 
     정상적인 응답을 받았는지 여부, 정상적일 때, ``success``, 실패한 경우, ``failed``.
 
 
-``length`` ::
+``length``
+
+..
 
     요청을 보낸 데이터 길이, 바이트.
 
 
-``result`` ::
+``result``
+
+..
 
     게임서버로부터 받은 응답코드
 
 
-``worker`` ::
+``worker``
+
+..
 
     테스트에 참여한 client 이름.
 
